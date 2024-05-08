@@ -1,0 +1,93 @@
+.diagram-container {
+    text-align: center; /* Center align content */
+    margin-top: 17vh; /* Adjust margin as needed */
+    position: relative; /* Position relative for absolute children */
+  }
+  
+  
+  .diagram-title {
+    font-family: 'Karantina', cursive; /* Use Karantina font */
+    font-size: 9vw; /* Adjust font size as needed */
+    color: #808080; /* Grey color */
+    margin-bottom: 5vh; /* Add some space between title and content */    
+  }
+  
+  
+  .frame {
+    width: 45%; /* Adjust width of the frame */
+    height: 40%;
+    margin: 0 2.5%; /* Add margin between frames */
+    background-color: #ffffff; /* White background color */
+    border: 1.5vw solid #555555; /* Colored border */
+    padding: 2vw; /* Add padding inside the frame */
+    display: inline-block; /* Display frames inline */
+    position: relative; /* Position relative for absolute children */
+    z-index: 2; /* Ensure the grey frame is above the line */
+  }
+  
+  
+  .frame-text {
+    font-family: 'Karantina', cursive; /* Use Karantina font */
+    font-size: 8vw; /* Adjust font size as needed */
+    font-weight: bold; /* Make text bold */
+    color: rgb(68, 68, 68); /* Grey text color */
+    margin: 0; /* Remove default margins */
+  }
+  
+  
+  .black-frame {
+    width: 45%; /* Adjust width of the frame */
+    height: 40%;
+    margin: 2vh auto 0; /* Center the frame horizontally and add margin above */
+    background-color: #ffffff; /* White background color */
+    border: 1.5vw solid #000000; /* Colored border */
+    padding: 2vw; /* Add padding inside the frame */
+    display: inline-block; /* Display frames inline */
+    position: relative; /* Position relative for absolute children */
+    z-index: 2; /* Ensure the black frame is above the line */
+  }
+  
+  
+  .black-frame-text {
+    font-family: 'Karantina', cursive; /* Use Karantina font */
+    font-size: 8vw; /* Adjust font size as needed */
+    font-weight: bold; /* Make text bold */
+    color: rgb(0, 0, 0); /* Black text color */
+    margin: 0; /* Remove default margins */
+  }
+  
+  
+  .line {
+    border-left: 2vw solid #000000; /* Colored border */
+    height: 460%; /* Full height */
+    position: absolute; /* Position absolutely */
+    top: 40%; /* Align to the top */
+    bottom: 0; /* Align to the bottom */
+    left: 50%; /* Align to the center */
+    transform: translateX(-50%); /* Center the line */
+    z-index: 0; /* Ensure the line is below the frames */
+  }
+  
+  
+  .orange {
+    position: absolute;
+    top: 40vh;
+    left: 26%;
+    transform: translateX(-50%);
+    z-index: 3; /* Ensure the photo is above the line and frames */
+  }
+  
+  
+  .blue{
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: 30vh;
+    left: 75%;
+    transform: translateX(-50%);
+    z-index: 3; /* Ensure the photo is above the line and frames */
+  }
+  
+  
+  
+  
+  

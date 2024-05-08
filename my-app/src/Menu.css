@@ -1,0 +1,58 @@
+/* Menu.css */
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(82, 137, 188); /* Semi-transparent background */
+    z-index: 999; /* Ensure it appears above other content */
+    text-align: right; /* Align text to the right */
+    padding-top: 5vh; /* Add spacing from top */
+    overflow: scroll;
+  }
+  
+  
+  .menu-title {
+    font-size: 9vw; /* Larger title font size */
+    color: white;
+    margin-bottom: 7vh; /* Add spacing below the title */
+    margin-top: 12vh;
+    margin-right: 4vw;
+    text-align: right;
+  
+  
+  }
+  
+  
+  .menu-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 2vh; /* Add spacing above the first option */
+   
+  }
+  
+  
+  .menu-list li {
+    color: white;
+    direction: rtl; /* Right-to-left text direction */
+    margin-bottom: 3vh; /* Adjust spacing between options */
+    border-bottom: 0.5vh solid white; /* Add a line underneath */
+    padding: 1.5vh 0; /* Increase padding for each option */
+    text-align: right;
+    padding-right: 5vw;
+    font-weight: bolder;
+  
+  
+  }  
+  
+  
+  .closeBtn {
+    position: fixed;
+    top: 3vh;
+    left: 3vw;
+    /* Additional styles for the close button */
+  }
+  
