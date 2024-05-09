@@ -88,6 +88,20 @@
   }
   
   
+  .red{
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: 60vh;
+    left: 75%;
+    transform: translateX(-50%);
+    z-index: 3; /* Ensure the photo is above the line and frames */
+  }
   
   
-  
+  .triangle {
+    left: 49%;
+    top: 70vh;
+    position: absolute;
+    transform: translateX(-50%);
+    height: 57%;
+}

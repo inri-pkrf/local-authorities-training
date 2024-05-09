@@ -15,6 +15,9 @@ function Diagram() {
       </div>
       <img src={process.env.PUBLIC_URL + '/orange-removebg.png'} className="orange" alt="logo" />
       <img src={process.env.PUBLIC_URL + '/blue-removebg.png'} className="blue" alt="logo" />    
+      <img src={process.env.PUBLIC_URL + '/red-removebg.png'} className="red" alt="logo" />    
+
+      <img src={process.env.PUBLIC_URL + '/triangle.png'} className="triangle" alt="logo" />    
       {/* Add your diagram content here */}
     </div>
   );
