@@ -59,7 +59,7 @@
   
   .line {
     border-left: 2vw solid #000000; /* Colored border */
-    height: 460%; /* Full height */
+    height: 600%; /* Full height */
     position: absolute; /* Position absolutely */
     top: 40%; /* Align to the top */
     bottom: 0; /* Align to the bottom */
@@ -105,3 +105,5 @@
     transform: translateX(-50%);
     height: 57%;
 }
+
+

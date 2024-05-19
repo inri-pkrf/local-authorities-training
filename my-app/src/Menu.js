@@ -2,13 +2,7 @@
 import React from 'react';
 import './Menu.css';
 
-
 function Menu({ onClose }) {
-
-
-
-
-
 
   return (
     <div className="menu">

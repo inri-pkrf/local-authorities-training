@@ -1,73 +1,72 @@
-/* Home.css */
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Karantina:wght@300;400;700&display=swap');
-
 
 .home-container {
   display: flex;
-  flex-wrap: wrap; /* Allow boxes to wrap onto multiple lines */
-  justify-content: center;
-  align-items: flex-start; /* Align items to the top */
-  height: calc(100vh - 60vw); /* Adjust height to exclude header height and increase margin */
-  margin-top: 40vw; /* Ensure content starts below the header and increase margin */
-  position: relative; /* Relative positioning for absolute children */
+  margin-top: 35vw; /* Ensure content starts below the header and increase margin */
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: space-evenly;
+  color: white; /* Set text color to white */
+  margin-left: 8vw;
+  margin-right: 6vw;
 }
+
 .title {
-    font-family: 'Karantina', cursive; /* Use Karantina font */
-    font-size: 12vw; /* Adjust font size as needed */
-    color: #0c3f72; /* Dark blue color */
-    margin-bottom: 7vw; /* Add some space between title and grey boxes */
-    width: 100%; /* Make the title take up full width */    
-  }
- 
-  .grey-box {
-    width: 30vw;
-    height: 15vh;
-    font-size: 4vw;
-    background-color: #ccc;
-    margin: 22px;
-    font-family: "Heebo", sans-serif;
-    border-radius: 8px; /* Round corners */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
-    display: flex; /* Center text vertically and horizontally */
-    justify-content: center;
-    align-items: center;
-    color: white; /* Set text color to white */
-  }
- 
- 
-  .blue {
-    background-color: #589bdf;
- 
-  }
- 
+  font-family: 'Karantina', cursive; /* Use Karantina font */
+  font-size: 12vw; /* Adjust font size as needed */
+  color: #0c3f72; /* Dark blue color */
+  margin-bottom: 7vw; /* Add some space between title and grey boxes */
+  width: 100%; /* Make the title take up full width */
+}
+
+.grey-box {
+  width: 30vw;
+  height: 15vh;
+  background-color: #ccc;
+  margin: 6vw;
+  font-family: "Heebo", sans-serif;
+  border-radius: 8px; /* Round corners */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  text-align: center; /* Ensure text is centered */
+  padding: 0.5vw;
+}
+
+.b {
+  background-color: #589bdf;
+}
+
 /* Adjust the width for smaller screens */
 @media (max-width: 30vw) {
   .grey-box {
     width: 80vw;
   }
 }
+
 .header {
   position: absolute; /* Fixed position at the top */
   top: 0;
   width: 100%;
 }
+
 .karantina-light {
-    font-family: "Karantina", system-ui;
-    font-weight: 300;
-    font-style: normal;
-  }
- 
-  .karantina-regular {
-    font-family: "Karantina", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
- 
-  .karantina-bold {
-    font-family: "Karantina", system-ui;
-    font-weight: 700;
-    font-style: normal;
-  }
+  font-family: "Karantina", system-ui;
+  font-weight: 300;
+  font-style: normal;
+}
 
+.karantina-regular {
+  font-family: "Karantina", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 
-
+.karantina-bold {
+  font-family: "Karantina", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}

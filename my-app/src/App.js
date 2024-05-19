@@ -9,7 +9,10 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Diagram /> {/* Include the Home component */}
+      <Home /> 
+      
+      
+      {/* Include the Home component */}
       {/* Main content of your app */}
     </div>
   );
