@@ -1,6 +1,5 @@
-// Home.js
 import React from 'react';
-import './Home.css'; // Import CSS file for styling
+import './Home.css';
 
 function Home() {
   return (
@@ -14,5 +13,5 @@ function Home() {
     </div>
   );
 }
-	
+
 export default Home;
