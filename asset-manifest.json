@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/local-authorities-training/static/css/main.2d9bdf1d.css",
-    "main.js": "/local-authorities-training/static/js/main.2c4a8170.js",
+    "main.css": "/local-authorities-training/static/css/main.58df9be6.css",
+    "main.js": "/local-authorities-training/static/js/main.83b1d31d.js",
     "static/js/453.ed3810f9.chunk.js": "/local-authorities-training/static/js/453.ed3810f9.chunk.js",
     "index.html": "/local-authorities-training/index.html",
-    "main.2d9bdf1d.css.map": "/local-authorities-training/static/css/main.2d9bdf1d.css.map",
-    "main.2c4a8170.js.map": "/local-authorities-training/static/js/main.2c4a8170.js.map",
+    "main.58df9be6.css.map": "/local-authorities-training/static/css/main.58df9be6.css.map",
+    "main.83b1d31d.js.map": "/local-authorities-training/static/js/main.83b1d31d.js.map",
     "453.ed3810f9.chunk.js.map": "/local-authorities-training/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d9bdf1d.css",
-    "static/js/main.2c4a8170.js"
+    "static/css/main.58df9be6.css",
+    "static/js/main.83b1d31d.js"
   ]
 }
