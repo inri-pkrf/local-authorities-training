@@ -1,0 +1,33 @@
+/* src/CardDetails.css */
+.card-details {
+    width: 100%;
+    max-width: 60vw;
+    margin: 0 auto;
+    padding: 2vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 1vh;
+    background-color: #fff;
+  }
+  
+  .card-details-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 1vh 1vh 0 0;
+  }
+  
+  .card-details-headline {
+    font-size: 4vh;
+    margin: 2vh 0 1vh;
+  }
+  
+  .card-details-text {
+    font-size: 2vh;
+    margin-bottom: 2vh;
+  }
+  
+  .card-details-video {
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 1vh 1vh;
+  }
+  

@@ -1,0 +1,36 @@
+/* src/Gallery.css */
+.gallery {
+    position: relative;
+    top: 20vh; /* Moves the gallery down by 20% of the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2vw;
+    padding: 2vh;
+  }
+  
+  .navigation-buttons {
+    margin-top: 2vh;
+  }
+  
+  .navigation-buttons button {
+    margin: 0 1vw;
+    padding: 1vh 2vw;
+    font-size: 2vh;
+    cursor: pointer;
+    border: none;
+    border-radius: 1vh;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navigation-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  .navigation-buttons button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

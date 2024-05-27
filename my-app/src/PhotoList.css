@@ -1,0 +1,13 @@
+/* src/PhotoList.css */
+.photo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+  }
+  
+  .photo-list-item {
+    width: 9vw;
+    height: 2vh;
+    cursor: pointer;
+  }
+  

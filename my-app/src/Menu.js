@@ -14,7 +14,7 @@ function Menu({ onClose, onNavigate }) {
       <ul className="menu-list">
         <li onClick={() => handleItemClick('home')}>עמוד הבית</li>
         <li onClick={() => handleItemClick('diagram')}>אוגן איתן - תרחיש ייחוס משיקי</li>
-        <li onClick={() => handleItemClick('gallery')}>Option 3</li>
+        <li onClick={() => handleItemClick('gallery')}>הערכת מצב בראשות המקומית</li>
         {/* Add more menu options as needed */}
       </ul>
     </div>
