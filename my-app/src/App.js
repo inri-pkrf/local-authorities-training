@@ -5,6 +5,7 @@ import Home from './Home';
 import Diagram from './Diagram';
 import Menu from './Menu';
 import Gallery from './Gallery';
+import Relations from './Relations'; // Import Relations component
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,7 +29,8 @@ function App() {
         <div>
           {activeComponent === 'home' && <Home />}
           {activeComponent === 'diagram' && <Diagram />}
-          {activeComponent === 'gallery' && <Gallery/>}
+          {activeComponent === 'gallery' && <Gallery />}
+          {activeComponent === 'relations' && <Relations />} {/* Add this line */}
         </div>
       )}
     </div>

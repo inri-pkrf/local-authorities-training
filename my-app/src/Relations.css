@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Karantina:wght@300;400;700&display=swap');
+
+.relations-container {
+  display: flex;
+  margin-top: 35vw; /* Ensure content starts below the header */
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: space-evenly;
+  color: white; /* Set text color to white */
+  margin-left: 8vw;
+  margin-right: 6vw;
+}
+
+.relations-title {
+  font-family: 'Karantina', cursive; /* Use Karantina font */
+  font-size: 12vw; /* Adjust font size as needed */
+  color: #0c3f72; /* Dark blue color */
+  margin-bottom: 7vw; /* Add some space between title and boxes */
+  width: 100%; /* Make the title take up full width */
+}
+
+.colored-box {
+  width: 30vw;
+  height: 15vh;
+  margin: 6vw;
+  font-family: "Heebo", sans-serif;
+  border-radius: 8px; /* Round corners */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  text-align: center; /* Ensure text is centered */
+  padding: 0.5vw;
+}
+
+.box1 { background-color: #fcb0b0; } /* Light Coral */
+.box2 { background-color: #fddbb0; } /* Light Apricot */
+.box3 { background-color: #fbf3a7; } /* Light Lemon */
+.box4 { background-color: #d8f8b0; } /* Light Green Tea */
+.box5 { background-color: #b0f8d8; } /* Light Mint */
+.box6 { background-color: #b0e7f8; } /* Light Baby Blue */
+.box7 { background-color: #d1b0f8; } /* Light Lavender */
+.box8 { background-color: #f8b0e4; } /* Light Pink */
+
+/* Adjust the width for smaller screens */
+@media (max-width: 30vw) {
+  .colored-box {
+    width: 80vw;
+  }
+}
+
+.header {
+  position: absolute; /* Fixed position at the top */
+  top: 0;
+  width: 100%;
+}
+
+.karantina-light {
+  font-family: "Karantina", system-ui;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.karantina-regular {
+  font-family: "Karantina", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.karantina-bold {
+  font-family: "Karantina", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+  
