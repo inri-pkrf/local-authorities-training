@@ -28,15 +28,13 @@
   }
   
   .image-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .ogen-image {
-    width: 100%;
-    height: auto;
-    margin-bottom: 2vw; /* Optional: adds some space between images */
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ogen-image {
+  width: 300px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px; /* Add margin between images */
+}
