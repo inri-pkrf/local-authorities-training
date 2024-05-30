@@ -14,6 +14,12 @@ function Ogen() {
         <img src={process.env.PUBLIC_URL + '/ogen4.png'} alt="Image 4" className="ogen-image" />
         <img src={process.env.PUBLIC_URL + '/ogen5.png'} alt="Image 5" className="ogen-image" />
       </div>
+      <div className="video-container">
+        <video controls className="ogen-video">
+          <source src={process.env.PUBLIC_URL + '/ogenVideo.mp4'} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </div>
   );
 }
