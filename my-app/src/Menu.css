@@ -10,15 +10,15 @@
     background-color: rgb(82, 137, 188); /* Semi-transparent background */
     z-index: 999; /* Ensure it appears above other content */
     text-align: right; /* Align text to the right */
-    padding-top: 5vh; /* Add spacing from top */
+    padding-top: 2vh; /* Add spacing from top */
     overflow: scroll;
   }
   
   
   .menu-title {
-    font-size: 9vw; /* Larger title font size */
+    font-size: 6vw; /* Larger title font size */
     color: white;
-    margin-bottom: 7vh; /* Add spacing below the title */
+    margin-bottom: 5vh; /* Add spacing below the title */
     margin-top: 12vh;
     margin-right: 4vw;
     text-align: right;

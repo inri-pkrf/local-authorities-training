@@ -5,6 +5,9 @@ function Relations() {
   return (
     <div className="relations-container">
       <div className="relations-title">יחסי מכלולים</div>
+      <div className="relations-subtitle">
+        כאן תוכלו למצוא את כל המידע הנוגע ליחסי המכלולים ולהבין כיצד הם משתלבים בעבודת הרשות המקומית בשעת חירום.
+      </div>
       <div className="colored-box box1">שליטה ודיווח</div>
       <div className="colored-box box2">מידע לציבור</div>
       <div className="colored-box box3">לוגיסטיקה</div>

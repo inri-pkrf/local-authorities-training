@@ -1,0 +1,42 @@
+/* src/Ogen.css */
+.ogen-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 21vw; /* Adjust the margin-top */
+    padding: 2vw;
+    color: white;
+  }
+  
+  .ogen-title {
+    font-family: 'Karantina', cursive;
+    font-size: 9vw;
+    color: #0c3f72;
+    margin-bottom: 2vw;
+    margin-top: 0; /* Remove the bottom margin and add top margin */
+  }
+  
+  .ogen-subtitle {
+    font-family: 'Heebo', sans-serif;
+    font-size: 4vw;
+    color: grey;
+    text-align: center;
+    margin-bottom: 2vw;
+    margin-top: 0; /* Remove the bottom margin and add top margin */
+    width: 80%;
+  }
+  
+  .image-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ogen-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2vw; /* Optional: adds some space between images */
+  }
+  

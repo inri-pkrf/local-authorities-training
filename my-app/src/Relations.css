@@ -2,7 +2,7 @@
 
 .relations-container {
   display: flex;
-  margin-top: 35vw; /* Ensure content starts below the header */
+  margin-top: 30vw; /* Ensure content starts below the header */
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -17,8 +17,18 @@
   font-family: 'Karantina', cursive; /* Use Karantina font */
   font-size: 12vw; /* Adjust font size as needed */
   color: #0c3f72; /* Dark blue color */
-  margin-bottom: 7vw; /* Add some space between title and boxes */
+  margin-bottom: 3vw; /* Adjusted to make room for the subtitle */
   width: 100%; /* Make the title take up full width */
+  text-align: center; /* Center the title */
+}
+
+.relations-subtitle {
+  font-family: 'Heebo', sans-serif; /* Use Heebo font */
+  font-size: 4vw; /* Adjust font size as needed */
+  color: grey; /* Set text color to grey */
+  text-align: center; /* Center the subtitle */
+  margin-bottom: 7vw; /* Add some space between subtitle and boxes */
+  width: 100%; /* Make the subtitle take up full width */
 }
 
 .colored-box {
@@ -74,5 +84,3 @@
   font-weight: 700;
   font-style: normal;
 }
-
-  

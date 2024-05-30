@@ -5,7 +5,8 @@ import Home from './Home';
 import Diagram from './Diagram';
 import Menu from './Menu';
 import Gallery from './Gallery';
-import Relations from './Relations'; // Import Relations component
+import Relations from './Relations';
+import Ogen from './Ogen'; // Import Ogen component
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,10 +28,11 @@ function App() {
         <Menu onClose={() => setMenuOpen(false)} onNavigate={handleNavigate} />
       ) : (
         <div>
-          {activeComponent === 'home' && <Home />}
+          {activeComponent === 'home' && <Home onNavigate={handleNavigate} />}
           {activeComponent === 'diagram' && <Diagram />}
           {activeComponent === 'gallery' && <Gallery />}
-          {activeComponent === 'relations' && <Relations />} {/* Add this line */}
+          {activeComponent === 'relations' && <Relations />}
+          {activeComponent === 'ogen' && <Ogen />}
         </div>
       )}
     </div>
