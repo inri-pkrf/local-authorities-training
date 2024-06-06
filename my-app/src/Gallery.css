@@ -1,36 +1,54 @@
-/* src/Gallery.css */
 .gallery {
-    position: relative;
-    top: 20vh; /* Moves the gallery down by 20% of the viewport height */
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 2vw;
-    padding: 2vh;
-  }
-  
-  .navigation-buttons {
-    margin-top: 2vh;
-  }
-  
-  .navigation-buttons button {
-    margin: 0 1vw;
-    padding: 1vh 2vw;
-    font-size: 2vh;
-    cursor: pointer;
-    border: none;
-    border-radius: 1vh;
-    background-color: #007bff;
-    color: white;
-    transition: background-color 0.3s ease;
-  }
-  
-  .navigation-buttons button:hover {
-    background-color: #0056b3;
-  }
-  
-  .navigation-buttons button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2vw;
+  padding: 2vh;
+  margin-top: 12vh; /* Move the content down by 12vh */
+  position: relative; /* Ensure relative positioning for the decorative photo */
+}
+
+.decorative-photo {
+  position: fixed; /* Fixed positioning to keep it at the top-left corner */
+  top: 0;
+  left: 0;
+  width: 50vw; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  z-index: -1; /* Ensure the decorative photo is below the rest of the content */
+}
+
+.card-navigation-container {
+  width: 100%;
+  max-width: 60vw;
+  margin: 0 auto;
+  padding: 2vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 1vh;
+  background-color: #fff;
+}
+
+.navigation-buttons {
+  margin-top: 2vh;
+}
+
+.navigation-buttons button {
+  margin: 0 1vw;
+  padding: 1vh 2vw;
+  font-size: 2vh;
+  cursor: pointer;
+  border: none;
+  border-radius: 1vh;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.navigation-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.navigation-buttons button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

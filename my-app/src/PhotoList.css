@@ -1,13 +1,47 @@
-/* src/PhotoList.css */
 .photo-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1vh;
-  }
-  
-  .photo-list-item {
-    width: 9vw;
-    height: 2vh;
-    cursor: pointer;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  gap: 3vh; /* Adjust the space between items */
+  padding-top: -2vh; /* Move the photo list down */
+  font-family: 'Assistant', sans-serif; /* Use the Assistant font */
+  font-weight: bold; /* Make text bold */
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.photo-list-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 2.5vh; /* Adjust the font size */
+  border-bottom: 1px solid #ccc; /* Separation line */
+  padding-bottom: 1vh; /* Adjust space at the bottom */
+}
+
+.photo-list-item:last-child {
+  border-bottom: none; /* Remove border from the last item */
+}
+
+.photo-list-content {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.photo-list-number {
+  margin-left: 18vw; /* Adjust the spacing */
+  font-size: 5vh; /* Adjust the font size */
+}
+
+.photo-list-image {
+  width: 18vw;
+  height: auto; /* Keep the aspect ratio */
+  margin-left: 16vw; /* Adjust the spacing */
+}
+
+.photo-list-title {
+  flex-grow: 1;
+  text-align: left;
+  font-size: 3vh; /* Adjust the font size */
+  color: #000000; /* Adjust the color as needed */
+}
