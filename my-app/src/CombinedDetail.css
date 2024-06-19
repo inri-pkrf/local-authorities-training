@@ -1,0 +1,19 @@
+.combined-detail-container {
+    border: 2px solid;
+    padding: 2vw;
+    margin: 2vw;
+    text-align: center;
+  }
+  
+  .combined-detail-container h2 {
+    font-family: 'Karantina', cursive;
+    font-size: 4vw;
+    margin-bottom: 2vw;
+  }
+  
+  .combined-detail-container p {
+    font-family: 'Heebo', sans-serif;
+    font-size: 2vw;
+    margin-bottom: 2vw;
+  }
+  

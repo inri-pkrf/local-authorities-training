@@ -1,0 +1,32 @@
+.box-detail-container {
+    border: 2px solid;
+    padding: 2vw;
+    margin: 2vw;
+    text-align: center;
+    width: 80vw; /* Take most of the screen width */
+    height: 80vh; /* Take most of the screen height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .box-detail-container h2 {
+    font-family: 'Karantina', cursive;
+    font-size: 4vw;
+    margin-bottom: 2vw;
+  }
+  
+  .box-detail-container p {
+    font-family: 'Heebo', sans-serif;
+    font-size: 2vw;
+    margin-bottom: 2vw;
+    text-align: center;
+  }
+  
+  .forward-button {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+  }
+  
