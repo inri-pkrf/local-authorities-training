@@ -20,17 +20,18 @@ const combinedData = [
 ];
 
 function Relations({ onNavigate }) {
-  const [selectedBox, setSelectedBox] = useState(null); // Track selected box ID
+  const [selectedBoxes, setSelectedBoxes] = useState([]); // Track selected box IDs
   const [step, setStep] = useState(1); // Track step of interaction
 
   // Handle box selection
   const handleBoxSelect = (id) => {
     if (step === 1) {
-      setSelectedBox(id);
+      setSelectedBoxes([id]);
       setStep(2); // Move to step 2 when a box is selected
     } else if (step === 2) {
-      if (id !== selectedBox) {
-        setSelectedBox(id); // Update selected box
+      if (!selectedBoxes.includes(id)) {
+        setSelectedBoxes([...selectedBoxes, id]); // Add second box to the selection
+        setStep(3); // Move to step 3 when the second box is selected
       }
     }
   };
@@ -38,14 +39,12 @@ function Relations({ onNavigate }) {
   // Handle forward button click
   const handleForwardClick = () => {
     setStep(1); // Reset to step 1
-    setSelectedBox(null); // Clear selected box
+    setSelectedBoxes([]); // Clear selected boxes
   };
 
   // Get box style based on selection state
   const getBoxStyle = (id, color) => {
-    if (step === 1 && id === selectedBox) {
-      return { backgroundColor: 'grey', color: color, cursor: 'default' };
-    } else if (step === 2 && id !== selectedBox) {
+    if (selectedBoxes.includes(id)) {
       return { backgroundColor: 'grey', color: color, cursor: 'default' };
     }
     return { backgroundColor: color, color: 'white', cursor: 'pointer' };
@@ -53,22 +52,19 @@ function Relations({ onNavigate }) {
 
   return (
     <div className="relations-container">
-      <div className="relations-title">
-        {step === 1 && 'יחסי מכלולים'}
-        {step === 2 && selectedBox !== null && boxData.find(box => box.id === selectedBox).title}
-      </div>
+      <div className="relations-title">יחסי מכלולים</div>
       <div className="relations-subtitle">
         כאן תוכלו למצוא את כל המידע הנוגע ליחסי המכלולים ולהבין כיצד הם משתלבים בעבודת הרשות המקומית בשעת חירום.
       </div>
 
-      {/* Display individual boxes */}
+      {/* Display individual boxes in step 1 */}
       {step === 1 && (
         <div className="boxes-container">
           {boxData.map((box) => (
             <div
               key={box.id}
               className="colored-box"
-              style={{ backgroundColor: getBoxStyle(box.id, box.color).backgroundColor, cursor: getBoxStyle(box.id, box.color).cursor }}
+              style={getBoxStyle(box.id, box.color)}
               onClick={() => handleBoxSelect(box.id)}
             >
               {box.title}
@@ -77,38 +73,32 @@ function Relations({ onNavigate }) {
         </div>
       )}
 
-      {/* Display BoxDetail when a single box is selected */}
-      {step === 2 && selectedBox !== null && (
+      {/* Display BoxDetail in step 2 */}
+      {step === 2 && selectedBoxes.length === 1 && (
         <div className="details-container">
-          <BoxDetail box={boxData.find((box) => box.id === selectedBox)} />
+          <BoxDetail box={boxData.find((box) => box.id === selectedBoxes[0])} />
           <div className="forward-button-container">
-            <button
-              className="forward-button"
-              onClick={handleForwardClick}
-            >
-              Back
+            <button className="forward-button" onClick={() => setStep(1)}>
+              Forward
             </button>
           </div>
         </div>
       )}
 
-      {/* Display CombinedDetail when two boxes are selected */}
-      {step === 2 && selectedBox !== null && (
+      {/* Display CombinedDetail in step 3 */}
+      {step === 3 && selectedBoxes.length === 2 && (
         <div className="combined-details">
-          {boxData
-            .filter((box) => box.id !== selectedBox)
-            .map((otherBox) => (
-              <CombinedDetail
-                key={`${selectedBox}-${otherBox.id}`}
-                box1={boxData.find((box) => box.id === selectedBox)}
-                box2={otherBox}
-              />
-            ))}
+          <CombinedDetail
+            box1={boxData.find((box) => box.id === selectedBoxes[0])}
+            box2={boxData.find((box) => box.id === selectedBoxes[1])}
+            combinedText={combinedData.find(
+              (data) =>
+                (data.id1 === selectedBoxes[0] && data.id2 === selectedBoxes[1]) ||
+                (data.id1 === selectedBoxes[1] && data.id2 === selectedBoxes[0])
+            )}
+          />
           <div className="forward-button-container">
-            <button
-              className="forward-button"
-              onClick={handleForwardClick}
-            >
+            <button className="forward-button" onClick={handleForwardClick}>
               Back
             </button>
           </div>

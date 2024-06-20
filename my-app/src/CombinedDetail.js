@@ -1,13 +1,16 @@
 import React from 'react';
 
-const CombinedDetail = ({ box1, box2 }) => {
+const CombinedDetail = ({ box1, box2, combinedText }) => {
   return (
     <div className="combined-detail">
-      <div className="combined-detail-title">
-        {box1.title} + {box2.title}
+      <div className="combined-detail-title" style={{ color: box1.color }}>
+        {box1.title}
+      </div>
+      <div className="combined-detail-title" style={{ color: box2.color }}>
+        {box2.title}
       </div>
       <div className="combined-detail-content">
-        Combined details for {box1.title} and {box2.title}
+        {combinedText ? combinedText.text : 'No combined data available.'}
       </div>
     </div>
   );
