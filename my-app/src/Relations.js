@@ -11,7 +11,7 @@ const boxData = [
   { id: 5, title: 'הנדסה ותשתיות', color: '#b0f8d8', text: 'Definition for הנדסה ותשתיות' },
   { id: 6, title: 'חינוך', color: '#b0e7f8', text: 'Definition for חינוך' },
   { id: 7, title: 'מהל כללי ומשא״ן', color: '#d1b0f8', text: 'Definition for מהל כללי ומשא״ן' },
-  { id: 8, title: 'יקל״ר', color: '#f8b0e4', text: 'Definition for יקל״ר' },
+  { id: 8, title: 'יקל״ר', color: '#f8b0e4', text: 'Definition for יקל״ר' },  
 ];
 
 const combinedData = [
