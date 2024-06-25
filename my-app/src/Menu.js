@@ -9,7 +9,10 @@ function Menu({ onClose, onNavigate }) {
 
   return (
     <div className="menu">
-      <h1 className="menu-title">תפריט</h1>
+
+          <img src={process.env.PUBLIC_URL + '/whiteLogo.png'} alt="Decorative" className="whiteLogo" />
+      <h1 className="menu-title">עזר לניהול מצבי חירום ברשות המקומית
+      </h1>
       <img src={process.env.PUBLIC_URL + '/closeBtn.png'} alt="Close" onClick={onClose} className="closeBtn" />
       <ul className="menu-list">
         <li onClick={() => handleItemClick('home')}>עמוד הבית</li>

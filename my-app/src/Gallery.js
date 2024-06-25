@@ -157,7 +157,7 @@ const Gallery = () => {
           </div>
         </>
       )}
-          <img src={process.env.PUBLIC_URL + '/orangeTriangle.png'} alt="Decorative" className="decorative-photo" />
+         
     </div>
   );
 };

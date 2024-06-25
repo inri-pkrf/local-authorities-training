@@ -9,14 +9,7 @@
   position: relative; /* Ensure relative positioning for the decorative photo */
 }
 
-.decorative-photo {
-  position: fixed; /* Fixed positioning to keep it at the top-left corner */
-  top: 0;
-  left: 0;
-  width: 50vw; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
-  z-index: -1; /* Ensure the decorative photo is below the rest of the content */
-}
+
 
 .card-navigation-container {
   width: 100%;

@@ -1,82 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Karantina:wght@300;400;700&display=swap');
 
 .home-container {
-  display: flex;
-  margin-top: 30vw; /* Ensure content starts below the header and increase margin */
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  align-content: space-evenly;
+  padding-top: 30vh; /* Add padding to ensure content starts below the header */
+  padding-left: 8vw; /* Add some padding on the sides */
+  padding-right: 8vw;
+  padding-top: 16vh;
   color: white; /* Set text color to white */
-  margin-left: 8vw;
-  margin-right: 6vw;
 }
 
 .title {
   font-family: 'Karantina', cursive; /* Use Karantina font */
-  font-size: 12vw; /* Adjust font size as needed */
-  color: #0c3f72; /* Dark blue color */
+  font-size: 16vw; /* Adjust font size as needed */
+  color: #50565c; /* Dark blue color */
   margin-bottom: 3vw; /* Adjusted to make room for the subtitle */
   width: 100%; /* Make the title take up full width */
   text-align: center; /* Center the title */
+  z-index: 100;
 }
 
 .subtitle {
   font-family: 'Heebo', sans-serif; /* Use Heebo font */
-  font-size: 4vw; /* Adjust font size as needed */
+  font-size: 5vw; /* Adjust font size as needed */
   color: grey; /* Set text color to grey */
   text-align: center; /* Center the subtitle */
-  margin-bottom: 7vw; /* Add some space between subtitle and grey boxes */
+  margin-bottom: 7vw; /* Add some space between subtitle and list items */
   width: 100%; /* Make the subtitle take up full width */
 }
 
-.grey-box {
-  width: 30vw;
-  height: 15vh;
-  background-color: #589bdf;
-  margin: 6vw;
-  font-family: "Heebo", sans-serif;
-  border-radius: 8px; /* Round corners */
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+.photo-list {
   display: flex;
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  text-align: center; /* Ensure text is centered */
-  padding: 0.5vw;
+  flex-direction: column;
+  gap: 3vh; /* Adjust the space between items */
 }
 
-.b {
-  background-color: #589bdf;
+.photo-list-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 2.5vh; /* Adjust the font size */
+  border-bottom: 1px solid #ccc; /* Separation line */
+  padding-bottom: 1vh; /* Adjust space at the bottom */
 }
 
-/* Adjust the width for smaller screens */
-@media (max-width: 30vw) {
-  .grey-box {
-    width: 80vw;
-  }
+.photo-list-item:last-child {
+  border-bottom: none; /* Remove border from the last item */
 }
 
-.header {
-  position: absolute; /* Fixed position at the top */
-  top: 0;
-  width: 100%;
+.photo-list-content {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
 }
 
-.karantina-light {
-  font-family: "Karantina", system-ui;
-  font-weight: 300;
-  font-style: normal;
+.photo-list-image {
+  width: 18vw;
+  height: auto; /* Keep the aspect ratio */
+  margin-left: 2vw; /* Adjust the spacing */
 }
 
-.karantina-regular {
-  font-family: "Karantina", system-ui;
-  font-weight: 400;
-  font-style: normal;
+.photo-list-title {
+  flex-grow: 1;
+  text-align: left;
+  font-size: 3vh; /* Adjust the font size */
+  color: #000000; /* Adjust the color as needed */
 }
 
-.karantina-bold {
-  font-family: "Karantina", system-ui;
-  font-weight: 700;
-  font-style: normal;
-}

@@ -1,24 +1,41 @@
-/* Header.css */
 .header {
-    position: relative;
-  }
-  
-  .App-logo {
-    height: 16vmin; /* Adjust size as needed */
-    pointer-events: none;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-  
-  .right-logo-link {
-    position: absolute;
-    top: 10px;
-    left: 10px; /* Positioning the icon to the right */
-  }
-  
-  .right-logo {
-    height: 16vmin; /* Adjust size as needed */
-    pointer-events: auto; /* Allow pointer events for clicking */
-  }
-  
+  position: fixed; /* Fixed position at the top */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the header is above other content */
+  background-color: white; /* Add background color to ensure text is readable */
+}
+
+.App-logo {
+  height: 16vmin; /* Adjust size as needed */
+  cursor: pointer; /* Change cursor to pointer */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.right-logo-link {
+  position: absolute;
+  top: 10px;
+  left: 10px; /* Positioning the icon to the left */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.decorative-photo {
+  position: fixed; /* Fixed positioning to keep it at the top-left corner */
+  top: 0;
+  left: 0;
+  width: 35vw; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  z-index: -1; /* Ensure the decorative photo is below the rest of the content */
+}
+
+.blue-t {
+  position: fixed; /* Fixed positioning to keep it at the bottom-right corner */
+  bottom: 0;
+  right: 0;
+  width: 35vw; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  z-index: -1; /* Ensure the decorative photo is below the rest of the content */
+  transform: rotate(180deg);
+}

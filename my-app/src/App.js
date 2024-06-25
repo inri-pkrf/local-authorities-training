@@ -1,4 +1,3 @@
-// App.js
 import React, { useState } from 'react';
 import './App.css';
 import Header from './Header';
@@ -6,7 +5,7 @@ import Home from './Home';
 import Diagram from './Diagram';
 import Menu from './Menu';
 import Gallery from './Gallery';
-import Relations from './Relations'; // Ensure correct import path
+import Relations from './Relations';
 import Ogen from './Ogen';
 
 function App() {
@@ -15,16 +14,22 @@ function App() {
 
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen);
+    if (!menuOpen) {
+      document.body.classList.add('menu-open');
+    } else {
+      document.body.classList.remove('menu-open');
+    }
   };
 
   const handleNavigate = (component) => {
     setActiveComponent(component);
-    setMenuOpen(false); // Close the menu after navigating
+    setMenuOpen(false);
+    document.body.classList.remove('menu-open');
   };
 
   return (
     <div className="App">
-      <Header onMenuClick={handleMenuClick} onNavigate={handleNavigate} />
+      {!menuOpen && <Header onMenuClick={handleMenuClick} />}
       {menuOpen ? (
         <Menu onClose={() => setMenuOpen(false)} onNavigate={handleNavigate} />
       ) : (

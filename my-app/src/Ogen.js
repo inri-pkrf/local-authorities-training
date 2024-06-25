@@ -19,8 +19,15 @@ function Ogen() {
 
   return (
     <div className="ogen-container">
+      
       <h1 className="ogen-title">עוגן איתן - תרחיש ייחוס משקי</h1>
       <p className="ogen-subtitle">תרחיש שמדגים משהו לגבי פיקוד העורף</p>
+      <div className="video-container">
+        <video controls className="ogen-video">
+          <source src={process.env.PUBLIC_URL + '/ogenVideo.mp4'} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
       <div className="image-container">
         {images.map((image, index) => (
           <div key={index} className="image-item">
@@ -30,12 +37,7 @@ function Ogen() {
           </div>
         ))}
       </div>
-      <div className="video-container">
-        <video controls className="ogen-video">
-          <source src={process.env.PUBLIC_URL + '/ogenVideo.mp4'} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
+     
     </div>
   );
 }

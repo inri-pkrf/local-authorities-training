@@ -29,7 +29,7 @@ function Relations({ onNavigate }) {
       setSelectedBoxes([id]);
       setStep(2); // Move to step 2 when a box is selected
     } else if (step === 2) {
-      if (!selectedBoxes.includes(id)) {
+      if (!selectedBoxes.includes(id)) { 
         setSelectedBoxes([...selectedBoxes, id]); // Add second box to the selection
         setStep(3); // Move to step 3 when the second box is selected
       }
