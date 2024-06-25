@@ -3,6 +3,7 @@ import './Diagram.css';
 
 function Diagram({ isActive }) {
   return (
+    <div className="content">
     <div className={`diagram-container ${isActive ? 'active' : ''}`}>
       <h1 className="diagram-title">מבנה הרשות המקומית בשעת חירום</h1>
       <div className="frame">
@@ -16,6 +17,7 @@ function Diagram({ isActive }) {
       <img src={process.env.PUBLIC_URL + '/blue-removebg.png'} className="blue" alt="logo" />    
       <img src={process.env.PUBLIC_URL + '/red-removebg.png'} className="red" alt="logo" />    
       <img src={process.env.PUBLIC_URL + '/triangle.png'} className="triangle" alt="logo" />    
+    </div>
     </div>
   );
 }

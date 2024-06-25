@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
-  position: relative; /* Ensure the app container does not interfere with z-index */
-  z-index: 0; /* Ensure it does not have a higher z-index */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Karantina:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Heebo', sans-serif; /* Set Heebo as the default font for the entire project */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  font-family: 'Karantina', cursive; /* Use Karantina font for titles */
 }
 
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header {
+  position: fixed; /* Fixed position at the top */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the header is above other content */
+  background-color: white; /* Add background color to ensure text is readable */
 }
 
-.App-link {
-  color: #61dafb;
+.content {
+  margin-top: 11vh; /* Start content 20vh down from the top */
+  height: 100vh; /* Occupy 80% of the viewport height */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  padding-left: 8vw; /* Add some padding on the sides */
+  padding-right: 8vw;
+  box-sizing: border-box; /* Ensure padding is included in the height calculation */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Ensure the decorative photo is behind all content */
+.decorative-photo {
+  position: fixed; /* Fixed positioning to keep it at the top-left corner */
+  top: 0;
+  left: 0;
+  width: 35vw; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  z-index: -1; /* Ensure the decorative photo is below the rest of the content */
 }
-body.menu-open {
-  overflow: hidden; /* Prevent scrolling when menu is open */
+
+.blue-t {
+  position: fixed; /* Fixed positioning to keep it at the bottom-right corner */
+  bottom: 0;
+  right: 0;
+  width: 35vw; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  z-index: -1; /* Ensure the decorative photo is below the rest of the content */
+  transform: rotate(180deg);
 }

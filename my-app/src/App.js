@@ -14,22 +14,16 @@ function App() {
 
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen);
-    if (!menuOpen) {
-      document.body.classList.add('menu-open');
-    } else {
-      document.body.classList.remove('menu-open');
-    }
   };
 
   const handleNavigate = (component) => {
     setActiveComponent(component);
-    setMenuOpen(false);
-    document.body.classList.remove('menu-open');
+    setMenuOpen(false); // Close the menu after navigating
   };
 
   return (
     <div className="App">
-      {!menuOpen && <Header onMenuClick={handleMenuClick} />}
+      <Header onMenuClick={handleMenuClick} onNavigate={handleNavigate} />
       {menuOpen ? (
         <Menu onClose={() => setMenuOpen(false)} onNavigate={handleNavigate} />
       ) : (
