@@ -24,12 +24,13 @@
 
 .photo-list-content {
   display: flex;
+ 
   flex-grow: 1;
   align-items: center;
 }
 
 .photo-list-number {
-  margin-left: 18vw; /* Adjust the spacing */
+  margin-left: 9vw; /* Adjust the spacing */
   font-size: 5vh; /* Adjust the font size */
 }
 

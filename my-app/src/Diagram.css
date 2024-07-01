@@ -1,109 +1,121 @@
 .diagram-container {
-    text-align: center; /* Center align content */
-    margin-top: 17vh; /* Adjust margin as needed */
-    position: relative; /* Position relative for absolute children */
-  }
-  
-  
-  .diagram-title {
-    font-family: 'Karantina', cursive; /* Use Karantina font */
-    font-size: 9vw; /* Adjust font size as needed */
-    color: #808080; /* Grey color */
-    margin-bottom: 5vh; /* Add some space between title and content */    
-  }
-  
-  
-  .frame {
-    width: 45%; /* Adjust width of the frame */
-    height: 40%;
-    margin: 0 2.5%; /* Add margin between frames */
-    background-color: #ffffff; /* White background color */
-    border: 1.5vw solid #555555; /* Colored border */
-    padding: 2vw; /* Add padding inside the frame */
-    display: inline-block; /* Display frames inline */
-    position: relative; /* Position relative for absolute children */
-    z-index: 2; /* Ensure the grey frame is above the line */
-  }
-  
-  
-  .frame-text {
-    font-family: 'Karantina', cursive; /* Use Karantina font */
-    font-size: 8vw; /* Adjust font size as needed */
-    font-weight: bold; /* Make text bold */
-    color: rgb(68, 68, 68); /* Grey text color */
-    margin: 0; /* Remove default margins */
-  }
-  
-  
-  .black-frame {
-    width: 45%; /* Adjust width of the frame */
-    height: 40%;
-    margin: 2vh auto 0; /* Center the frame horizontally and add margin above */
-    background-color: #ffffff; /* White background color */
-    border: 1.5vw solid #000000; /* Colored border */
-    padding: 2vw; /* Add padding inside the frame */
-    display: inline-block; /* Display frames inline */
-    position: relative; /* Position relative for absolute children */
-    z-index: 2; /* Ensure the black frame is above the line */
-  }
-  
-  
-  .black-frame-text {
-    font-family: 'Karantina', cursive; /* Use Karantina font */
-    font-size: 8vw; /* Adjust font size as needed */
-    font-weight: bold; /* Make text bold */
-    color: rgb(0, 0, 0); /* Black text color */
-    margin: 0; /* Remove default margins */
-  }
-  
-  
-  .line {
-    border-left: 2vw solid #000000; /* Colored border */
-    height: 600%; /* Full height */
-    position: absolute; /* Position absolutely */
-    top: 40%; /* Align to the top */
-    bottom: 0; /* Align to the bottom */
-    left: 50%; /* Align to the center */
-    transform: translateX(-50%); /* Center the line */
-    z-index: 0; /* Ensure the line is below the frames */
-  }
-  
-  
-  .orange {
-    position: absolute;
-    top: 40vh;
-    left: 26%;
-    transform: translateX(-50%);
-    z-index: 3; /* Ensure the photo is above the line and frames */
-  }
-  
-  
-  .blue{
-    background-color: rgba(255, 255, 255, 0);
-    position: absolute;
-    top: 30vh;
-    left: 75%;
-    transform: translateX(-50%);
-    z-index: 3; /* Ensure the photo is above the line and frames */
-  }
-  
-  
-  .red{
-    background-color: rgba(255, 255, 255, 0);
-    position: absolute;
-    top: 60vh;
-    left: 75%;
-    transform: translateX(-50%);
-    z-index: 3; /* Ensure the photo is above the line and frames */
-  }
-  
-  
-  .triangle {
-    left: 49%;
-    top: 70vh;
-    position: absolute;
-    transform: translateX(-50%);
-    height: 57%;
+  text-align: center; /* Center align content */
+  margin-top: 17vh; /* Adjust margin as needed */
+  margin-left: 20vw; /* Move the container to the left */
+  position: relative; /* Position relative for absolute children */
+}
+
+.diagram-title {
+  font-family: 'Karantina', cursive; /* Use Karantina font */
+  font-size: 9vw; /* Adjust font size as needed */
+  color: #808080; /* Grey color */
+  margin-bottom: 5vh; /* Add some space between title and content */    
+}
+
+.frame {
+  width: 45%; /* Adjust width of the frame */
+  height: 40%;
+  margin: 0 2.5%; /* Add margin between frames */
+  background-color: #555555; /* White background color */
+  border: 1.5vw solid #555555; /* Colored border */
+  padding: 2vw; /* Add padding inside the frame */
+  display: inline-block; /* Display frames inline */
+  position: relative; /* Position relative for absolute children */
+  z-index: 2; /* Ensure the grey frame is above the line */
+}
+
+.frame-text {
+  font-family: 'Karantina', cursive; /* Use Karantina font */
+  font-size: 10vw; /* Adjust font size as needed */
+  margin: 0; /* Remove default margins */
+  color: rgb(255, 255, 255); /* Grey text color */
+}
+
+.black-frame {
+  width: 45%; /* Adjust width of the frame */
+  height: 40%;
+  margin: 2vh auto 0; /* Center the frame horizontally and add margin above */
+  background-color: #000000; /* White background color */
+  border: 1.5vw solid #000000; /* Colored border */
+  padding: 2vw; /* Add padding inside the frame */
+  display: inline-block; /* Display frames inline */
+  position: relative; /* Position relative for absolute children */
+  z-index: 2; /* Ensure the black frame is above the line */
+}
+
+.black-frame-text {
+  font-family: 'Karantina', cursive; /* Use Karantina font */
+  font-size: 9vw; /* Adjust font size as needed */
+  color: rgb(255, 255, 255); /* Black text color */
+  margin: 0; /* Remove default margins */
+}
+
+.line {
+  border-left: 2vw solid #000000; /* Colored border */
+  height: 90%; /* Full height */
+  position: absolute; /* Position absolutely */
+  top: 15%; /* Align to the top */
+  bottom: 0; /* Align to the bottom */
+  left: 50%; /* Align to the center */
+  transform: translateX(-50%); /* Center the line */
+  z-index: 0; /* Ensure the line is below the frames */
+}
+
+.colored-box {
+  width: 49vw;
+  height: 11vh;
+  margin: 6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8%;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  position: relative;
+  left: -10vw; /* Adjust the position to the left */
+}
+
+.orange-box {
+  background-color:  #d87b3c; /* Orange background color */
+  border: 1.5vw solid  #d87b3c; /* Colored border */
+  color: #ffffff; /* Orange text color */
+}
+
+.blue-box {
+  background-color: #6daae2; /* Blue background color */
+  border: 1.5vw solid #6daae2; /* Colored border */
+  color: #ffffff; /* Blue text color */
+}
+
+.red-box {
+  background-color: #db3f3f; /* Red background color */
+  border: 1.5vw solid #db3f3f; /* Colored border */
+  color: #ffffff; /* White text color */
+}
+
+.colored-box-text {
+  font-family: 'Karantina', cursive; /* Use Karantina font */
+  font-size: 11vw; /* Adjust font size as needed */
+  margin: 0; /* Remove default margins */
+}
+
+.colored-box-sub{
+  width: 45vw;
+  height: 13vh;
+  margin: 6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  position: relative;
+  left: 4vw; /* Adjust the position to the left */
+  top: 5vh;
+  background-color: #044188; /* Red background color */
+  border: 1.5vw solid #044188; /* Colored border */
 }
 
 

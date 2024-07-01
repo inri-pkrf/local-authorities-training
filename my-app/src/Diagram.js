@@ -3,7 +3,6 @@ import './Diagram.css';
 
 function Diagram({ isActive }) {
   return (
-    <div className="content">
     <div className={`diagram-container ${isActive ? 'active' : ''}`}>
       <h1 className="diagram-title">מבנה הרשות המקומית בשעת חירום</h1>
       <div className="frame">
@@ -13,11 +12,31 @@ function Diagram({ isActive }) {
       <div className="black-frame">
         <p className="black-frame-text">מנכל הרשות\ ר"מט</p>
       </div>
-      <img src={process.env.PUBLIC_URL + '/orange-removebg.png'} className="orange" alt="logo" />
-      <img src={process.env.PUBLIC_URL + '/blue-removebg.png'} className="blue" alt="logo" />    
-      <img src={process.env.PUBLIC_URL + '/red-removebg.png'} className="red" alt="logo" />    
-      <img src={process.env.PUBLIC_URL + '/triangle.png'} className="triangle" alt="logo" />    
-    </div>
+      <div className="colored-box orange-box">
+        <p className="colored-box-text">אגף חירום וביטחון </p>
+      </div>
+      <div className="colored-box blue-box">
+        <p className="colored-box-text">יק"לר</p>
+      </div>
+      <div className="colored-box red-box">
+        <p className="colored-box-text">כוחות ביטחון</p>
+      </div>
+      <div className="colored-box-sub">
+        <p className="colored-box-text">מכלול אוכלוסייה</p>
+      </div>
+      <div className="colored-box-sub">
+        <p className="colored-box-text">מכלול החינוך</p>
+      </div>
+      <div className="colored-box-sub">
+        <p className="colored-box-text">מכלול הנדסה ותשתיות</p>
+      </div>
+      <div className="colored-box-sub">
+        <p className="colored-box-text">מכלול לוגיסטיקה ותפעול</p>
+      </div>
+      <div className="colored-box-sub">
+        <p className="colored-box-text"> מכלול משא"ן ומנהל כללי</p>
+      </div>
+      
     </div>
   );
 }

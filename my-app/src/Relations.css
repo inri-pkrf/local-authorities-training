@@ -29,20 +29,7 @@
   justify-content: center;
 }
 
-.colored-box {
-  width: 30vw;
-  height: 15vh;
-  margin: 1vw;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2vw;
-  font-weight: bold;
-  cursor: pointer;
-  text-align: center;
-  color: white;
-}
+
 
 .colored-box.selected {
   background-color: grey;
@@ -125,12 +112,7 @@
 }
 
 @media (max-width: 768px) {
-  .colored-box {
-    width: 80vw;
-    height: 10vh;
-    font-size: 4vw;
-    margin: 4vw;
-  }
+  
 
   .relations-title {
     font-size: 6vw;
