@@ -26,6 +26,7 @@ body {
   padding-left: 8vw; /* Add some padding on the sides */
   padding-right: 8vw;
   box-sizing: border-box; /* Ensure padding is included in the height calculation */
+  padding-bottom: 25vw;
 }
 
 /* Ensure the decorative photo is behind all content */

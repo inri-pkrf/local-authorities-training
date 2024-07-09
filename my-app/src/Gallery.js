@@ -5,8 +5,8 @@ import './Gallery.css';
 
 const cardData = [
   { photo: '/assesment1.png', title: 'ראש הראשות\ מנכ"ל (רמ"ט)', headline: '1. ראש הראשות\ מנכ"ל (רמ"ט)', text: 'מטרה ומיקוד הנושאים המרכזיים בהערכת מצב ', video: '/ass1.mp4'  },
-  { photo: '/assesment2.png', title: 'מרכז שליטה ודיווח', headline: '2. מרכז שליטה ודיווח', text: '  אירועים מרכזיים ברשות סטטוס הטיפול בהם.  תמ"צ כוחות וצוותים בשטח.  סטאטוס מימוש החלטות ראש הרשות/ הרמ"ט.    '   , video: 'path/to/video2.mp4' },
-  { photo: '/assesment3.png', title: 'יקל"ר', headline: '3. יקל"ר', text: 'תמ"צ צבאית - הערכת האיום, מצב משפטי, תמ"צ כוחות ומאמצים עיקריים בפקע"ר.  מדיניות התגוננות – מדיניות נוכחית ותמונת מצב מימוש המדיניות ופערים (פיקוח ואכיפה, פגיעה בשירותים חיוניים) + ריכוז החרגות הרשות.  תמ"צ אוכלוסייה - מגמות אוכלוסייה, צרכים והנחיות פיקוד העורף.  סטאטוס בקשות הסיוע של הרשות מפקע"ר ודרישות סיוע של פקע"ר מהרשות.', video: 'path/to/video3.mp4' },
+  { photo: '/assesment2.png', title: 'מרכז שליטה ודיווח', headline: '2. מרכז שליטה ודיווח', text: '  אירועים מרכזיים ברשות סטטוס הטיפול בהם.  תמ"צ כוחות וצוותים בשטח.  סטאטוס מימוש החלטות ראש הרשות/ הרמ"ט.    '   , video: '/ass2.mp4' },
+  { photo: '/assesment3.png', title: 'יקל"ר', headline: '3. יקל"ר', text: 'תמ"צ צבאית - הערכת האיום, מצב משפטי, תמ"צ כוחות ומאמצים עיקריים בפקע"ר.  מדיניות התגוננות – מדיניות נוכחית ותמונת מצב מימוש המדיניות ופערים (פיקוח ואכיפה, פגיעה בשירותים חיוניים) + ריכוז החרגות הרשות.  תמ"צ אוכלוסייה - מגמות אוכלוסייה, צרכים והנחיות פיקוד העורף.  סטאטוס בקשות הסיוע של הרשות מפקע"ר ודרישות סיוע של פקע"ר מהרשות.', video: '/ass3.mp4' },
   { 
     photo: '/assesment4.png', 
     title: 'מכלול אוכלוסייה', 
@@ -21,7 +21,7 @@ const cardData = [
       תמ"צ עלייה וקליטה (במידה וקיים) – עולים במרכזי הקליטה ובקהילה: סטאטוס שירותים, צרכים ופערים.
       פערים והמלצות לטיפול, סיוע ותמיכה בתושבי הרשות.
     `,
-    video: 'path/to/video4.mp4' 
+    video: '/ass4.mp4'
   },
   { 
     photo: '/assesment5.png', 
@@ -35,7 +35,7 @@ const cardData = [
       תמ"צ מסגרות לילדי עובדים – סטטוס הפעלה ופערים.
       פערים והמלצות לפעילויות הפגה ופעילויות להספקת שירותי חינוך ותמיכה בילדים.
     `,
-    video: 'path/to/video5.mp4' 
+    video: '/ass5.mp4' 
   },
   { 
     photo: '/assesment6.png', 
@@ -49,7 +49,7 @@ const cardData = [
       המסרים העיקריים לתוכנית הסברה ליממה הקרובה.
       פערים והמלצות לפעילות הסברה ולפעולות מענה לצרכי התושבים.
     `,
-    video: 'path/to/video6.mp4' 
+    video:'/ass6.mp4'
   },
 
   { 
@@ -63,7 +63,7 @@ const cardData = [
       פעילות לצמצום הסכנות מחומ"ס ומפגעי סביבה.
       פערים והמלצות לתעדוף לטיפול במבנים ובתשתיות.
     `,
-    video: 'path/to/video7.mp4' 
+    video: '/ass7.mp4'
   },
 
   { 
@@ -78,7 +78,7 @@ const cardData = [
       סיוע הניתן למפעלים חיוניים בגזרת הרשות, לפיקוד העורף ולארגוני החירום.
       פערים והמלצות לרכש, הפעלת חוזים נצורים, ויסות רשותי וסיוע חיצוני.
     `,
-    video: 'path/to/video8.mp4' 
+    video: '/ass8.mp4'
   },
 
   { 
@@ -93,11 +93,11 @@ const cardData = [
       כשירות ואבטחת מערכות התקשוב והמידע.
       פערים והמלצות לפעולות תמיכה בעובדי הרשות.
     `,
-    video: 'path/to/video9.mp4' 
+    video: '/ass9.mp4'
   },
 
 
-  { photo: '/assesment10.png', title: 'ארגוני חירום וגופי סיוע', headline: '10. ארגוני חירום וגופי סיוע', text: 'תמ"צ טיפול באירועים.  תמ"צ כוחות בשטח.', video: 'path/to/video10.mp4' },
+  { photo: '/assesment10.png', title: 'ארגוני חירום וגופי סיוע', headline: '10. ארגוני חירום וגופי סיוע', text: 'תמ"צ טיפול באירועים.  תמ"צ כוחות בשטח.', video: '/ass10.mp4' },
   { 
     photo: '/assesment11.png', 
     title: 'מרכז שליטה ודיווח(מכלול מבצעים)', 
@@ -108,7 +108,7 @@ const cardData = [
       מדיניות ההתגוננות – משימות מרכזיות למימוש והמלצות.
       דרישות הרשות לסיוע חיצוני ודרישות גופי החירום מהרשות.
     `,
-    video: 'path/to/video11.mp4' 
+    video: '/ass2.mp4'
   },
     { 
       photo: '/assesment12.png', 
@@ -118,7 +118,7 @@ const cardData = [
         משימות מרכזיות – תעדוף וטיפול.
         סיכום והנחיות לביצוע.
       `,
-      video: 'path/to/video12.mp4' 
+      video: '/ass1.mp4'
     },
     // ... other entries
 ];
@@ -151,9 +151,9 @@ const Gallery = () => {
 
 
           <div className="navigation-buttons">
-            <img onClick={handlePrevious} disabled={selectedCardIndex === 0} src="/local-authorities-training/arrow.png" alt="Previous" class="arrow">
+            <img onClick={handleNext} disabled={selectedCardIndex === cardData.length - 1}   src="/local-authorities-training/arrow.png" alt="Previous" class="arrow">
             </img>
-            <img  onClick={handleNext} disabled={selectedCardIndex === cardData.length - 1}  
+            <img  onClick={handlePrevious} disabled={selectedCardIndex === 0}
              src="/local-authorities-training/arrow.png" alt="Next" class="arrow-left"></img>
 
           </div>
