@@ -41,6 +41,8 @@
   position: fixed;
   top: 3vh;
   left: 3vw;
+  width: 20%;
+  height: 10%;
 }
 
 .whiteLogo {

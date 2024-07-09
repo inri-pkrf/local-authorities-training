@@ -21,12 +21,12 @@ function Home({ onNavigate }) {
           <img src={process.env.PUBLIC_URL + '/diagramIcon.png'} className="photo-list-image-homepage" alt="Gallery" />
         </div>
       </div>
-      {/* <div className="photo-list-item" onClick={() => onNavigate('relations')}>
+      <div className="photo-list-item" onClick={() => onNavigate('relations')}>
         <div className="photo-list-content">
-          <div className="photo-list-title">ממשק עבודה בין מכלולים</div>
-          <img src={process.env.PUBLIC_URL + '/path_to_image'} className="photo-list-image" alt="Relations" />
+          <div className="photo-list-title-homepage">ממשק עבודה בין מכלולים</div>
+          <img src={process.env.PUBLIC_URL + '/mimshak.png'} className="photo-list-image-homepage" alt="Relations" />
         </div>
-      </div> */}
+      </div>
       <div className="photo-list-item" onClick={() => onNavigate('ogen')}>
         <div className="photo-list-content">
           <div className="photo-list-title-homepage">עוגן איתן</div>
