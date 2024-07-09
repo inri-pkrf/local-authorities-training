@@ -1,0 +1,43 @@
+.popup-overlay {
+    background: #000000b3;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    background: #fff;
+    border-radius: 1vw;
+    height: 70vh;
+    overflow-y: auto;
+    padding: 2vw;
+    position: absolute;
+    top: 15vh;
+    left: 13vw;
+    width: 70vw;
+  }
+  
+  .popup-close-button {
+    position: absolute;
+    top: 3vw;
+    right: 3vw;
+    background: none;
+    border: none;
+    font-size: 8vw;
+    cursor: pointer;
+  }
+  
+  .popup-title {
+    color: #2056b9;
+    font-size: 8vw;
+    margin-bottom: 7vw;
+    margin-top: 30vw;
+  }
+  
+  .popup-body {
+    font-size: 4.5vw;
+  }
+  

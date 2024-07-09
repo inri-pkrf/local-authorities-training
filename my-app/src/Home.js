@@ -33,6 +33,13 @@ function Home({ onNavigate }) {
           <img src={process.env.PUBLIC_URL + '/ogenIcon.png'} className="photo-list-image-homepage" alt="Ogen" />
         </div>
       </div>
+
+        <img src={process.env.PUBLIC_URL+'/LOGOS2.png'} class="homePageLogos" alt="Ogen"></img>
+
+        <div className="subtitle">
+        עזר זה נבנה בשיתוף פעולה בין ענף רשויות במחלקת אוכלוסייה ומגמת אימוני רשויות במכללה הלאומית לאיתנות ישראלית
+
+      </div>
     </div>
 
     
