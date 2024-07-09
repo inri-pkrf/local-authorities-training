@@ -4,7 +4,7 @@ import CardDetails from './CardDetails';
 import './Gallery.css';
 
 const cardData = [
-  { photo: '/assesment1.png', title: 'ראש הראשות\ מנכ"ל (רמ"ט)', headline: '1. ראש הראשות\ מנכ"ל (רמ"ט)', text: 'מטרה ומיקוד הנושאים המרכזיים בהערכת מצב ', video: 'path/to/video1.mp4' },
+  { photo: '/assesment1.png', title: 'ראש הראשות\ מנכ"ל (רמ"ט)', headline: '1. ראש הראשות\ מנכ"ל (רמ"ט)', text: 'מטרה ומיקוד הנושאים המרכזיים בהערכת מצב ', video: '/ass1.mp4'  },
   { photo: '/assesment2.png', title: 'מרכז שליטה ודיווח', headline: '2. מרכז שליטה ודיווח', text: '  אירועים מרכזיים ברשות סטטוס הטיפול בהם.  תמ"צ כוחות וצוותים בשטח.  סטאטוס מימוש החלטות ראש הרשות/ הרמ"ט.    '   , video: 'path/to/video2.mp4' },
   { photo: '/assesment3.png', title: 'יקל"ר', headline: '3. יקל"ר', text: 'תמ"צ צבאית - הערכת האיום, מצב משפטי, תמ"צ כוחות ומאמצים עיקריים בפקע"ר.  מדיניות התגוננות – מדיניות נוכחית ותמונת מצב מימוש המדיניות ופערים (פיקוח ואכיפה, פגיעה בשירותים חיוניים) + ריכוז החרגות הרשות.  תמ"צ אוכלוסייה - מגמות אוכלוסייה, צרכים והנחיות פיקוד העורף.  סטאטוס בקשות הסיוע של הרשות מפקע"ר ודרישות סיוע של פקע"ר מהרשות.', video: 'path/to/video3.mp4' },
   { 
@@ -147,13 +147,15 @@ const Gallery = () => {
       ) : (
         <>
           <CardDetails card={cardData[selectedCardIndex]} />
+          
+
+
           <div className="navigation-buttons">
-            <button onClick={handlePrevious} disabled={selectedCardIndex === 0}>
-              Previous
-            </button>
-            <button onClick={handleNext} disabled={selectedCardIndex === cardData.length - 1}>
-              Next
-            </button>
+            <img onClick={handlePrevious} disabled={selectedCardIndex === 0} src="/local-authorities-training/arrow.png" alt="Previous" class="arrow">
+            </img>
+            <img  onClick={handleNext} disabled={selectedCardIndex === cardData.length - 1}  
+             src="/local-authorities-training/arrow.png" alt="Next" class="arrow-left"></img>
+
           </div>
         </>
       )}

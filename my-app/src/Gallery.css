@@ -45,3 +45,13 @@
   background-color: #ccc;
   cursor: not-allowed;
 }
+
+.arrow, .arrow-left {
+  height: 10vh;
+  width: auto;
+}
+
+
+.arrow-left {
+  transform: scaleX(-1);
+}
