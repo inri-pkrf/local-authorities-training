@@ -10,6 +10,7 @@
   font-size: 16vw; /* Adjust font size as needed */
   color: #50565c; /* Dark blue color */
   margin-bottom: 3vw; /* Adjusted to make room for the subtitle */
+  margin-top: 6vh;
   width: 100%; /* Make the title take up full width */
   text-align: center; /* Center the title */
   

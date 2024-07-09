@@ -1,11 +1,14 @@
 .diagram-container {
   text-align: center; /* Center align content */
-  margin-top: 17vh; /* Adjust margin as needed */
+  margin-top: 32vh; /* Adjust margin as needed */
   margin-left: 20vw; /* Move the container to the left */
   position: relative; /* Position relative for absolute children */
 }
 
 .diagram-title {
+  position: absolute;
+   top: -15vh;
+   left: -11vw;
   font-family: 'Karantina', cursive; /* Use Karantina font */
   font-size: 9vw; /* Adjust font size as needed */
   color: #808080; /* Grey color */
@@ -101,7 +104,7 @@
 }
 
 .colored-box-sub{
-  width: 45vw;
+  width: 62vw;
   height: 13vh;
   margin: 6vw;
   display: flex;
@@ -112,10 +115,10 @@
   text-align: center;
   color: white;
   position: relative;
-  left: 4vw; /* Adjust the position to the left */
+  left: -8vw;
   top: 5vh;
-  background-color: #044188; /* Red background color */
-  border: 1.5vw solid #044188; /* Colored border */
+  background-color: #044188;
+  border: 1.5vw solid #044188;
 }
 
 
