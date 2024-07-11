@@ -4,20 +4,24 @@ import './Home.css';
 function Home({ onNavigate }) {
   return (
     <div className="content">
+
+<div className="mini-headline">עזר דיגיטלי לניהול מצבי חירום ברשות המקומית</div>
       <div className="title">מנהלים ומנהלות<br />מתאמנים ומתאמנות</div>
       <div className="subtitle">
         הכירו את הכלי הדיגיטלי שעושה סדר בין ממשקי העבודה ברשות המקומית בשעת חירום,
-        באמצעותו תכירו את היעדים הלאומיים ותתכוננו לעוגן צפוני
+        באמצעותו תכירו את היעדים הלאומיים ותתכוננו לעוגן איתן
       </div>
+      <img src={process.env.PUBLIC_URL+'/hpArrow.png'} class="hpArrow" alt="Ogen"></img>
+
       <div className="photo-list-item" onClick={() => onNavigate('diagram')}>
         <div className="photo-list-content">
-          <div className="photo-list-title-homepage">הרשות בשע"ח</div>
+          <div className="photo-list-title-homepage">מבנה הרשות המקומית בחירום</div>
           <img src={process.env.PUBLIC_URL + '/mivne.png'} className="photo-list-image-homepage" alt="Diagram" />
         </div>
       </div>
       <div className="photo-list-item" onClick={() => onNavigate('gallery')}>
         <div className="photo-list-content">
-          <div className="photo-list-title-homepage">הערכת מצב</div>
+          <div className="photo-list-title-homepage"> הערכת מצב ברשות המקומית</div>
           <img src={process.env.PUBLIC_URL + '/diagramIcon.png'} className="photo-list-image-homepage" alt="Gallery" />
         </div>
       </div>
@@ -29,10 +33,13 @@ function Home({ onNavigate }) {
       </div>
       <div className="photo-list-item" onClick={() => onNavigate('ogen')}>
         <div className="photo-list-content">
-          <div className="photo-list-title-homepage">עוגן איתן</div>
+          <div className="photo-list-title-homepage"> עוגן איתן'  - תרחיש ייחוס משיקי'</div>
           <img src={process.env.PUBLIC_URL + '/ogenIcon.png'} className="photo-list-image-homepage" alt="Ogen" />
         </div>
       </div>
+
+      <img src={process.env.PUBLIC_URL+'/hpArrow.png'} class="hpArrow" alt="Ogen"></img>
+
 
         <img src={process.env.PUBLIC_URL+'/LOGOS2.png'} class="homePageLogos" alt="Ogen"></img>
 
