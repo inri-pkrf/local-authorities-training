@@ -22,11 +22,11 @@ function Header({ onMenuClick }) {
         alt="Decorative"
         className="decorative-photo"
       />
-      <img
+      {/* <img
         src={process.env.PUBLIC_URL + '/blueTriangle.png'}
         alt="Decorative"
         className="blue-t"
-      />
+      /> */}
     </header>
   );
 }
