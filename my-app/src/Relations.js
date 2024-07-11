@@ -4,20 +4,18 @@ import BoxDetail from './BoxDetail';
 import CombinedDetail from './CombinedDetail';
 
 const boxData = [
-  { id: 1, title: 'שליטה ודיווח', color: '#fcb0b0', text: 'Definition for שליטה ודיווח' },
-  { id: 2, title: 'מידע לציבור', color: '#fddbb0', text: 'Definition for מידע לציבור' },
-  { id: 3, title: 'לוגיסטיקה', color: '#fbf3a7', text: 'Definition for לוגיסטיקה' },
-  { id: 4, title: 'אוכלוסייה', color: '#d8f8b0', text: 'Definition for אוכלוסייה' },
-  { id: 5, title: 'הנדסה ותשתיות', color: '#b0f8d8', text: 'Definition for הנדסה ותשתיות' },
-  { id: 6, title: 'חינוך', color: '#b0e7f8', text: 'Definition for חינוך' },
-  { id: 7, title: 'מהל כללי ומשא״ן', color: '#d1b0f8', text: 'Definition for מהל כללי ומשא״ן' },
-  { id: 8, title: 'יקל״ר', color: '#f8b0e4', text: 'Definition for יקל״ר' },  
+ 
+  { id: 1, title: 'מידע לציבור', color: '#a2185b', text: 'Definition for מידע לציבור' },
+  { id: 2, title: 'שליטה ודיווח', color: '#233c6c', text: 'Definition for שליטה ודיווח' },
+  { id: 3, title: 'אוכלוסייה', color: '#f39200', text: 'Definition for אוכלוסייה' },
+  { id: 4, title: 'לוגיסטיקה', color: '#3bb38b', text: 'Definition for לוגיסטיקה' },
+  { id: 5, title: 'חינוך', color: '#ad4693', text: 'Definition for חינוך' },
+  { id: 6, title: 'הנדסה ותשתיות', color: '#00b1eb', text: 'Definition for הנדסה ותשתיות' },
+  { id: 7, title: 'יקל״ר', color: '#f9b143', text: 'Definition for יקל״ר' },  
+  { id: 8, title: 'מהל כללי ומשא״ן', color: '#575656', text: 'Definition for מהל כללי ומשא״ן' },
 ];
 
-const combinedData = [
-  { id1: 1, id2: 2, text: 'Combined info for שליטה ודיווח and מידע לציבור' },
-  // Add more combined data entries for each pair of boxes
-];
+
 
 function Relations({ onNavigate }) {
   const [selectedBoxes, setSelectedBoxes] = useState([]); // Track selected box IDs
@@ -31,7 +29,6 @@ function Relations({ onNavigate }) {
     } else if (step === 2) {
       if (!selectedBoxes.includes(id)) { 
         setSelectedBoxes([...selectedBoxes, id]); // Add second box to the selection
-        setStep(3); // Move to step 3 when the second box is selected
       }
     }
   };
@@ -63,7 +60,7 @@ function Relations({ onNavigate }) {
           {boxData.map((box) => (
             <div
               key={box.id}
-              className="colored-box"
+              className="colored-box-relations"
               style={getBoxStyle(box.id, box.color)}
               onClick={() => handleBoxSelect(box.id)}
             >
@@ -85,25 +82,7 @@ function Relations({ onNavigate }) {
         </div>
       )}
 
-      {/* Display CombinedDetail in step 3 */}
-      {step === 3 && selectedBoxes.length === 2 && (
-        <div className="combined-details">
-          <CombinedDetail
-            box1={boxData.find((box) => box.id === selectedBoxes[0])}
-            box2={boxData.find((box) => box.id === selectedBoxes[1])}
-            combinedText={combinedData.find(
-              (data) =>
-                (data.id1 === selectedBoxes[0] && data.id2 === selectedBoxes[1]) ||
-                (data.id1 === selectedBoxes[1] && data.id2 === selectedBoxes[0])
-            )}
-          />
-          <div className="forward-button-container">
-            <button className="forward-button" onClick={handleForwardClick}>
-              Back
-            </button>
-          </div>
-        </div>
-      )}
+      
     </div>
   );
 }
