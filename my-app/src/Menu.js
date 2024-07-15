@@ -18,7 +18,7 @@ function Menu({ onClose, onNavigate }) {
         <li onClick={() => handleItemClick('home')}>עמוד הבית</li>
         <li onClick={() => handleItemClick('diagram')}>מבנה הראשות המקומית בחירום</li>
         <li onClick={() => handleItemClick('gallery')}>הערכת מצב בראשות המקומית</li>
-        <li onClick={() => handleItemClick('relations')}>ממשק עבודה בין מכלולים</li>
+        {/* <li onClick={() => handleItemClick('relations')}>ממשק עבודה בין מכלולים</li> */}
         <li onClick={() => handleItemClick('ogen')}> עוגן איתן - תרחיש ייחוס משקי </li> {/* Add this line */}
       </ul>
     </div>

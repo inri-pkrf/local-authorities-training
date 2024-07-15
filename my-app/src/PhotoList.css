@@ -1,10 +1,12 @@
 .photo-list {
   display: flex;
+  position: relative;
   flex-direction: column;
-  gap: 3vh; /* Adjust the space between items */
-  padding-top: -2vh; /* Move the photo list down */
-  font-family: 'Assistant', sans-serif; /* Use the Assistant font */
-  font-weight: bold; /* Make text bold */
+  top: 16vh;
+  gap: 3vh;
+  padding-top: -2vh;
+  font-family: 'Assistant', sans-serif;
+  font-weight: bold;
   padding-left: 10vw;
   padding-right: 10vw;
 }
@@ -14,7 +16,7 @@
   align-items: center;
   cursor: pointer;
   font-size: 2.5vh; /* Adjust the font size */
-  border-bottom: 1px solid #ccc; /* Separation line */
+  border-bottom: 1px dotted #ccc; /* Separation line */
   padding-bottom: 1vh; /* Adjust space at the bottom */
 }
 
@@ -46,3 +48,10 @@
   font-size: 3vh; /* Adjust the font size */
   color: #000000; /* Adjust the color as needed */
 }
+
+
+  .moveLeft{
+    position: relative;
+    right: -6%;
+  }
+  

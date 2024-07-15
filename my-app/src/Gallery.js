@@ -4,13 +4,13 @@ import CardDetails from './CardDetails';
 import './Gallery.css';
 
 const cardData = [
-  { photo: '/assesment1.png', title: 'ראש הראשות\ מנכ"ל (רמ"ט)', headline: '1. ראש הראשות\ מנכ"ל (רמ"ט)', text: 'מטרה ומיקוד הנושאים המרכזיים בהערכת מצב ', video: '/ass1.mp4'  },
-  { photo: '/assesment2.png', title: 'מרכז שליטה ודיווח', headline: '2. מרכז שליטה ודיווח', text: '  אירועים מרכזיים ברשות סטטוס הטיפול בהם.  תמ"צ כוחות וצוותים בשטח.  סטאטוס מימוש החלטות ראש הרשות/ הרמ"ט.    '   , video: '/ass2.mp4' },
+  { photo: '/assesment1.png', title: 'ראש הראשות\ מנכ"ל (רמ"ט)', headline: '1. ראש הראשות\ מנכ"ל (רמ"ט)', text: 'מטרה ומיקוד הנושאים המרכזיים בהערכת מצב ', video: '/ass1.mp4' },
+  { photo: '/assesment2.png', title: 'מרכז שליטה ודיווח', headline: '2. מרכז שליטה ודיווח', text: '  אירועים מרכזיים ברשות סטטוס הטיפול בהם.  תמ"צ כוחות וצוותים בשטח.  סטאטוס מימוש החלטות ראש הרשות/ הרמ"ט.    ', video: '/ass2.mp4' },
   { photo: '/assesment3.png', title: 'יקל"ר', headline: '3. יקל"ר', text: 'תמ"צ צבאית - הערכת האיום, מצב משפטי, תמ"צ כוחות ומאמצים עיקריים בפקע"ר.  מדיניות התגוננות – מדיניות נוכחית ותמונת מצב מימוש המדיניות ופערים (פיקוח ואכיפה, פגיעה בשירותים חיוניים) + ריכוז החרגות הרשות.  תמ"צ אוכלוסייה - מגמות אוכלוסייה, צרכים והנחיות פיקוד העורף.  סטאטוס בקשות הסיוע של הרשות מפקע"ר ודרישות סיוע של פקע"ר מהרשות.', video: '/ass3.mp4' },
-  { 
-    photo: '/assesment4.png', 
-    title: 'מכלול אוכלוסייה', 
-    headline: '4. מכלול אוכלוסייה', 
+  {
+    photo: '/assesment4.png',
+    title: 'מכלול אוכלוסייה',
+    headline: '4. מכלול אוכלוסייה',
     text: `
       כשירות המכלול לביצוע משימותיו מגמות התנהגות אוכלוסייה במרחב הרשות וצרכי האוכלוסייה.
       תמ"צ משאבי קהילה והתנדבות - משימות למול משאבים ופערים.
@@ -23,10 +23,10 @@ const cardData = [
     `,
     video: '/ass4.mp4'
   },
-  { 
-    photo: '/assesment5.png', 
-    title: 'מכלול חינוך', 
-    headline: '5. מכלול חינוך', 
+  {
+    photo: '/assesment5.png',
+    title: 'מכלול חינוך',
+    headline: '5. מכלול חינוך',
     text: `
       כשירות המכלול לביצוע משימותיו.
       תמ"צ לימודים פדגוגי – אופן ביצוע לימודים למול מדיניות התגוננות, מוכנות מוסדות החינוך ופערים.
@@ -35,12 +35,12 @@ const cardData = [
       תמ"צ מסגרות לילדי עובדים – סטטוס הפעלה ופערים.
       פערים והמלצות לפעילויות הפגה ופעילויות להספקת שירותי חינוך ותמיכה בילדים.
     `,
-    video: '/ass5.mp4' 
+    video: '/ass5.mp4'
   },
-  { 
-    photo: '/assesment6.png', 
-    title: 'מכלול מידע לציבור', 
-    headline: '6. מכלול מידע לציבור', 
+  {
+    photo: '/assesment6.png',
+    title: 'מכלול מידע לציבור',
+    headline: '6. מכלול מידע לציבור',
     text: `
       כשירות המכלול לביצוע משימותיו.
       מדד תודעת שירות לתושב – סטטוס המענה לפניות התושבים.
@@ -49,13 +49,13 @@ const cardData = [
       המסרים העיקריים לתוכנית הסברה ליממה הקרובה.
       פערים והמלצות לפעילות הסברה ולפעולות מענה לצרכי התושבים.
     `,
-    video:'/ass6.mp4'
+    video: '/ass6.mp4'
   },
 
-  { 
-    photo: '/assesment7.png', 
-    title: 'מכלול הנדסה ותשתיות', 
-    headline: '7. מכלול הנדסה ותשתיות', 
+  {
+    photo: '/assesment7.png',
+    title: 'מכלול הנדסה ותשתיות',
+    headline: '7. מכלול הנדסה ותשתיות',
     text: `
       כשירות המכלול לביצוע משימותיו.
       כ"א, קבלנים, חומרים, ציוד הנדסי.
@@ -66,10 +66,10 @@ const cardData = [
     video: '/ass7.mp4'
   },
 
-  { 
-    photo: '/assesment8.png', 
-    title: 'מכלול לוגיסטיקה ותפעול', 
-    headline: '8. מכלול לוגיסטיקה ותפעול', 
+  {
+    photo: '/assesment8.png',
+    title: 'מכלול לוגיסטיקה ותפעול',
+    headline: '8. מכלול לוגיסטיקה ותפעול',
     text: `
       כשירות המכלול לביצוע משימותיו.
       תמ"צ שירותים חיוניים למול מדיניות התגוננות.
@@ -81,10 +81,10 @@ const cardData = [
     video: '/ass8.mp4'
   },
 
-  { 
-    photo: '/assesment9.png', 
-    title: 'מכלול משאבי אנוש ומנהל כללי', 
-    headline: '9. מכלול משאבי אנוש ומנהל כללי', 
+  {
+    photo: '/assesment9.png',
+    title: 'מכלול משאבי אנוש ומנהל כללי',
+    headline: '9. מכלול משאבי אנוש ומנהל כללי',
     text: `
       כשירות המכלול לביצוע משימותיו.
       תמ"צ כוח אדם למול צרכי הרשות והמלצות לצמצום הפערים.
@@ -98,10 +98,10 @@ const cardData = [
 
 
   { photo: '/assesment10.png', title: 'ארגוני חירום וגופי סיוע', headline: '10. ארגוני חירום וגופי סיוע', text: 'תמ"צ טיפול באירועים.  תמ"צ כוחות בשטח.', video: '/ass10.mp4' },
-  { 
-    photo: '/assesment11.png', 
-    title: 'מרכז שליטה ודיווח(מכלול מבצעים)', 
-    headline: '11. מרכז שליטה ודיווח(מכלול מבצעים)', 
+  {
+    photo: '/assesment11.png',
+    title: 'מרכז שליטה ודיווח(מכלול מבצעים)',
+    headline: '11. מרכז שליטה ודיווח(מכלול מבצעים)',
     text: `
       כשירות המכלול לביצוע משימותיו.
       תמ"צ מקלטים (ציבוריים ומשותפים) וכשירות צופרים.
@@ -110,17 +110,17 @@ const cardData = [
     `,
     video: '/ass2.mp4'
   },
-    { 
-      photo: '/assesment12.png', 
-      title: 'ראש הרשות', 
-      headline: '12. ראש הרשות', 
-      text: `
+  {
+    photo: '/assesment12.png',
+    title: 'ראש הרשות',
+    headline: '12. ראש הרשות',
+    text: `
         משימות מרכזיות – תעדוף וטיפול.
         סיכום והנחיות לביצוע.
       `,
-      video: '/ass1.mp4'
-    },
-    // ... other entries
+    video: '/ass1.mp4'
+  },
+  // ... other entries
 ];
 
 const Gallery = () => {
@@ -140,26 +140,46 @@ const Gallery = () => {
 
   return (
     <div className="gallery">
-      <h1 className="ogen-title">הערכת מצב ברשות המקומית</h1>
-      <p className="ogen-subtitle">יש להקפיד על סדר הדוברים, מיקוד בהצפת הפערים והמלצות חיוניות לאפקטיביות הערכת מצב</p>
+      <h1 className="Gallery-title">הערכת מצב ברשות המקומית</h1>
+      <p className="gallery-subtitle">
+        לפניך סדר הדוברים המומלץ לביצוע הערכת מצב בשעת חירום
+        <br />
+        <img src={process.env.PUBLIC_URL+'/table.jpg'} class="table-gallery" alt="table"></img>
+        <br />
+        <br />
+        <br />
+        <b>
+          יש להקפיד על סדר הדוברים, להתמקד בהצפת פערים והמלצות חיוניות לאפקטיביות הערכת המצב
+        </b>
+        <br />
+        <br />
+        בלחיצה על כל דובר יפתח חלון עם הסבר נוסף וסרטון הדגמה -
+
+        <img src={process.env.PUBLIC_URL+'/hpArrow.png'} class="hpArrow-gallery" alt="Ogen"></img>
+
+      </p>
       {selectedCardIndex === null ? (
         <PhotoList data={cardData} onPhotoClick={handlePhotoClick} />
       ) : (
         <>
           <CardDetails card={cardData[selectedCardIndex]} />
-          
+
 
 
           <div className="navigation-buttons">
-            <img onClick={handleNext} disabled={selectedCardIndex === cardData.length - 1}   src="/local-authorities-training/arrow.png" alt="Previous" class="arrow">
+            <div onClick={handleNext} disabled={selectedCardIndex === cardData.length - 1} alt="Next" className="arrowDiv">הבא בתור</div>
+            <div onClick={handlePrevious} disabled={selectedCardIndex === 0} alt="Previous" className="arrowDiv arrowDivLeft"> הקודם</div>
+            {/* <img onClick={handleNext} disabled={selectedCardIndex === cardData.length - 1} src="/local-authorities-training/arrow.png" alt="Previous" class="arrow">
             </img>
-            <img  onClick={handlePrevious} disabled={selectedCardIndex === 0}
-             src="/local-authorities-training/arrow.png" alt="Next" class="arrow-left"></img>
+            <img onClick={handlePrevious} disabled={selectedCardIndex === 0}
+              src="/local-authorities-training/arrow.png" alt="Next" class="arrow-left">
+            </img> */}
+            <div className='prev-btn-gallery'> חזרה לסדר דוברים</div>
 
           </div>
         </>
       )}
-         
+
     </div>
   );
 };

@@ -1,8 +1,11 @@
 .home-container {
-  padding-top: 40vh; /* Add padding to ensure content starts below the header */
-  padding-left: 8vw; /* Add some padding on the sides */
+  padding-top: 40vh;
+  /* Add padding to ensure content starts below the header */
+  padding-left: 8vw;
+  /* Add some padding on the sides */
   padding-right: 8vw;
-  color: white; /* Set text color to white */
+  color: white;
+  /* Set text color to white */
   padding-bottom: 25vw;
   font-family: 'Heebo', sans-serif;
 }
@@ -16,14 +19,20 @@
 }
 
 .title {
-  font-family: 'Karantina', cursive; /* Use Karantina font */
-  font-size: 16vw; /* Adjust font size as needed */
-  color: #50565c; /* Dark blue color */
-  margin-bottom: 3vw; /* Adjusted to make room for the subtitle */
+  font-family: 'Karantina', cursive;
+  /* Use Karantina font */
+  font-size: 16vw;
+  /* Adjust font size as needed */
+  color: #50565c;
+  /* Dark blue color */
+  margin-bottom: 3vw;
+  /* Adjusted to make room for the subtitle */
   margin-top: 6vh;
-  width: 100%; /* Make the title take up full width */
-  text-align: center; /* Center the title */
-  
+  width: 100%;
+  /* Make the title take up full width */
+  text-align: center;
+  /* Center the title */
+
 }
 
 .subtitle {
@@ -39,20 +48,25 @@
 .photo-list {
   display: flex;
   flex-direction: column;
-  gap: 3vh; /* Adjust the space between items */
+  gap: 3vh;
+  /* Adjust the space between items */
 }
 
 .photo-list-item {
   display: flex;
   align-items: center;
   cursor: pointer;
-  font-size: 2.5vh; /* Adjust the font size */
-  border-bottom: 1px solid #ccc; /* Separation line */
-  padding-bottom: 1vh; /* Adjust space at the bottom */
+  font-size: 2.5vh;
+  /* Adjust the font size */
+  border-bottom: 1px solid #ccc;
+  /* Separation line */
+  padding-bottom: 1vh;
+  /* Adjust space at the bottom */
 }
 
 .photo-list-item:last-child {
-  border-bottom: none; /* Remove border from the last item */
+  border-bottom: none;
+  /* Remove border from the last item */
 }
 
 .photo-list-content {
@@ -63,31 +77,43 @@
 
 .photo-list-image-homepage {
   width: 17vw;
-    height: auto;
-    margin-left: 7vw;
-    padding-top: 3vh;;
+  height: auto;
+  margin-left: 7vw;
+  padding-top: 3vh;
+  ;
 }
 
 .photo-list-title-homepage {
   flex-grow: 1;
   text-align: right;
-  padding-left :8vw ;
-  font-size: 3vh; /* Adjust the font size */
-  color: #000000; /* Adjust the color as needed */
+  padding-left: 8vw;
+  font-size: 3vh;
+  /* Adjust the font size */
+  color: #50565c;
+  /* Adjust the color as needed */
   font-weight: bolder;
 }
 
 .homePageLogos {
   height: auto;
   margin-left: 11vw;
-
   width: 58vw;
 }
 
-.hpArrow{
+.hpArrow {
   height: auto;
-    margin-left: 32vw;
-    padding-top: 9vh;
-    padding-bottom: 10vh;
-    width: 21vw;
+  margin-left: 32vw;
+  padding-top: 9vh;
+  padding-bottom: 10vh;
+  width: 21vw;
+}
+
+
+.date {
+  font-size: 3vh;
+  color: #50565c;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 6vh;
+  margin-top: 6vh;
 }
