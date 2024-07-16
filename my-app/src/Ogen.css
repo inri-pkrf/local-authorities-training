@@ -88,11 +88,12 @@
     }
   
     .ogen-title {
-      font-size: 10vw;
+      font-size: 13vw;
+      text-align: center;
     }
   
     .ogen-subtitle {
-      font-size: 4vw;
+      font-size: 6vw;
     }
   
     .image-title {
@@ -102,5 +103,10 @@
     .image-text {
       font-size: 3.5vw;
     }
+  }
+
+  #image-text-10{
+    position: relative;
+    top: 2vh;  
   }
   

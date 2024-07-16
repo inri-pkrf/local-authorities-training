@@ -122,7 +122,6 @@ const cardData = [
   },
   // ... other entries
 ];
-
 const Gallery = () => {
   const [selectedCardIndex, setSelectedCardIndex] = useState(null);
 
@@ -138,48 +137,51 @@ const Gallery = () => {
     setSelectedCardIndex((prevIndex) => (prevIndex - 1 + cardData.length) % cardData.length);
   };
 
+  const handleBackToList = () => {
+    setSelectedCardIndex(null);
+  };
+
   return (
     <div className="gallery">
       <h1 className="Gallery-title">הערכת מצב ברשות המקומית</h1>
-      <p className="gallery-subtitle">
-        לפניך סדר הדוברים המומלץ לביצוע הערכת מצב בשעת חירום
-        <br />
-        <img src={process.env.PUBLIC_URL+'/table.jpg'} class="table-gallery" alt="table"></img>
-        <br />
-        <br />
-        <br />
-        <b>
-          יש להקפיד על סדר הדוברים, להתמקד בהצפת פערים והמלצות חיוניות לאפקטיביות הערכת המצב
-        </b>
-        <br />
-        <br />
-        בלחיצה על כל דובר יפתח חלון עם הסבר נוסף וסרטון הדגמה -
+      {selectedCardIndex === null ? (
+        <div id='temp-title'>
+          <p className="gallery-subtitle">
+            לפניך סדר הדוברים המומלץ לביצוע הערכת מצב בשעת חירום
+            <br />
+            <img src={process.env.PUBLIC_URL + '/table.jpg'} className="table-gallery" alt="table"></img>
+            <br />
+            <br />
+            <br />
+            <b>
+              יש להקפיד על סדר הדוברים, להתמקד בהצפת פערים והמלצות חיוניות לאפקטיביות הערכת המצב
+            </b>
+            <br />
+            <br />
+            בלחיצה על כל דובר יפתח חלון עם הסבר נוסף וסרטון הדגמה -
+            <img src={process.env.PUBLIC_URL + '/hpArrow.png'} className="hpArrow-gallery" alt="Ogen"></img>
+          </p>
+        </div>
+      ) : null}
 
-        <img src={process.env.PUBLIC_URL+'/hpArrow.png'} class="hpArrow-gallery" alt="Ogen"></img>
-
-      </p>
       {selectedCardIndex === null ? (
         <PhotoList data={cardData} onPhotoClick={handlePhotoClick} />
       ) : (
         <>
           <CardDetails card={cardData[selectedCardIndex]} />
 
-
-
           <div className="navigation-buttons">
-            <div onClick={handleNext} disabled={selectedCardIndex === cardData.length - 1} alt="Next" className="arrowDiv">הבא בתור</div>
-            <div onClick={handlePrevious} disabled={selectedCardIndex === 0} alt="Previous" className="arrowDiv arrowDivLeft"> הקודם</div>
-            {/* <img onClick={handleNext} disabled={selectedCardIndex === cardData.length - 1} src="/local-authorities-training/arrow.png" alt="Previous" class="arrow">
-            </img>
-            <img onClick={handlePrevious} disabled={selectedCardIndex === 0}
-              src="/local-authorities-training/arrow.png" alt="Next" class="arrow-left">
-            </img> */}
-            <div className='prev-btn-gallery'> חזרה לסדר דוברים</div>
-
+            <div onClick={handleNext} alt="Next" className="arrowDiv">הבא בתור</div>
+            <div onClick={handlePrevious} alt="Previous" className="arrowDiv arrowDivLeft"> הקודם</div>
+            <div onClick={handleBackToList} className='prev-btn-gallery'> חזרה לסדר דוברים</div>
           </div>
         </>
       )}
 
+      <div className='btn-print'>
+        <img src={process.env.PUBLIC_URL + '/print.png'} className="print-img" alt="print"></img>
+        <p className='text-print'>הורדת גרסה להדפסה</p>
+      </div>
     </div>
   );
 };

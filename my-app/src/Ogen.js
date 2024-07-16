@@ -33,8 +33,8 @@ function Ogen() {
           <div key={index} className="image-item">
             <img src={process.env.PUBLIC_URL + image.src} alt={`Image ${index + 1}`} className="ogen-image" />
             <h2 className="image-title">{image.title}</h2>
-            <p className="image-text">{image.text}</p>
-          </div>
+            <p id={`image-text-${index}`} className="image-text">{image.text}</p>
+            </div>
         ))}
       </div>
      

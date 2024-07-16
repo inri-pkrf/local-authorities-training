@@ -12,7 +12,7 @@ const PopUp = ({ isVisible, onClose, title, content, color }) => {
         <button className="popup-close-button" onClick={onClose}>
           &times;
         </button>
-        <h2 className="popup-title" style={{ color }}>{title}</h2> {/* Set the color dynamically */}
+        <h2 className="popup-title" >{title}</h2> {/* Set the color dynamically */}
         <div className="popup-body">{content}</div>
       </div>
     </div>

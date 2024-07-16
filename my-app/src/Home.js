@@ -19,12 +19,16 @@ function Home({ onNavigate }) {
           <img src={process.env.PUBLIC_URL + '/mivne.png'} className="photo-list-image-homepage" alt="Diagram" />
         </div>
       </div>
+      <div id='line1' className='dot-line'>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</div>
+
       <div className="photo-list-item" onClick={() => onNavigate('gallery')}>
         <div className="photo-list-content">
           <div className="photo-list-title-homepage"> הערכת מצב ברשות המקומית</div>
           <img src={process.env.PUBLIC_URL + '/diagramIcon.png'} className="photo-list-image-homepage" alt="Gallery" />
         </div>
       </div>
+      <div id='line2' className='dot-line'>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</div>
+
       {/* <div className="photo-list-item" onClick={() => onNavigate('relations')}>
         <div className="photo-list-content">
           <div className="photo-list-title-homepage">ממשק עבודה בין מכלולים</div>
@@ -37,6 +41,7 @@ function Home({ onNavigate }) {
           <img src={process.env.PUBLIC_URL + '/ogenIcon.png'} className="photo-list-image-homepage" alt="Ogen" />
         </div>
       </div>
+      <div id='line3' className='dot-line'>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</div>
 
       <img src={process.env.PUBLIC_URL+'/hpArrow.png'} class="hpArrow" alt="Ogen"></img>
 
@@ -47,7 +52,7 @@ function Home({ onNavigate }) {
         עזר זה נבנה בשיתוף פעולה בין ענף רשויות במחלקת אוכלוסייה ומגמת אימוני רשויות במכללה הלאומית לאיתנות ישראלית
 
       </div>
-      <div className='dot-line'>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</div>
+      <div id='line4' className='dot-line'>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</div>
       <div className='date'> יוני 2024 </div>
     </div>
 

@@ -19,8 +19,9 @@
   text-align: center;
   margin-bottom: 2vw;
   margin-top: 0;
-  /* Remove the bottom margin and add top margin */
-  width: 80%;
+  width: 97%;
+  position: relative;
+  left: 2vw;
 }
 
 .Gallery-title {
@@ -36,9 +37,9 @@
 
 .table-gallery {
   position: relative;
-  width: 93vw;
-  top: 4vh;
-  left: -8vw;
+    width: 93vw;
+    top: 4vh;
+    left: 0vw;
 }
 
 .hpArrow-gallery {
@@ -47,7 +48,7 @@
   width: 29vw;
   display: block;
   width: 29vw;
-  left: 23vw;
+  left: 31vw;
 }
 
 .card-navigation-container {
@@ -99,8 +100,8 @@
   background-color: #175a85;
   color: white;
   position: relative;
-  left: 25vw;
-  width: 35vw;
+  left: 29vw;
+  width: 33vw;
   height: 6vh;
   padding: 2vh;
   text-align: center;
@@ -109,7 +110,7 @@
 
 .arrowDivLeft {
   background-color: #b7b7b7;
-  left: -17vw;
+  left: -12vw;
   bottom: 10vh;
 }
 
@@ -124,4 +125,28 @@
   padding: 2vh;
   text-align: center;
   font-size: 6vmin;
+}
+
+.btn-print{
+  position: relative;
+  top: 2vh;
+  left: 4vw;
+}
+
+.print-img{
+  position: relative;
+  top: 19.5vh;
+  left: 30vw;
+  width: 7vw;
+}
+
+.text-print{
+  position: relative;
+  top: 13vh;
+  left: -7vw;
+  font-size: 4vmin;
+  text-decoration: underline;
+  color: #595959;
+  font-weight: bold;
+
 }

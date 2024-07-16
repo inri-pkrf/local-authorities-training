@@ -9,8 +9,8 @@
   }
   
   .popup-content {
-    background: #fff;
-    border-radius: 1vw;
+    background: #efefef;
+    border-radius: 12vw;
     height: 70vh;
     overflow-y: auto;
     padding: 2vw;
@@ -22,8 +22,8 @@
   
   .popup-close-button {
     position: absolute;
-    top: 3vw;
-    right: 3vw;
+    top: 5vw;
+    left: 5vw;
     background: none;
     border: none;
     font-size: 8vw;
@@ -31,10 +31,12 @@
   }
   
   .popup-title {
-    color: #2056b9;
-    font-size: 8vw;
+    font-family: 'Karantina';
+    font-weight: normal;
+    color: #595959;
+    font-size: 15vw;
     margin-bottom: 7vw;
-    margin-top: 30vw;
+    margin-top: 16vw;
   }
   
   .popup-body {
