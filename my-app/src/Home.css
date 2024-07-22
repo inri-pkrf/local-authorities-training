@@ -41,8 +41,19 @@
   color: grey;
   text-align: center;
   margin-bottom: 6vh;
-  margin-top: 6vh;
+  margin-top: 2vh;
   width: 100%;
+}
+
+.subtitle2{
+  font-family: 'Heebo', sans-serif;
+  font-size: 7vw;
+  color: grey;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  top: -6vh;
+  margin-bottom: -4vh;
 }
 
 .photo-list {
@@ -95,16 +106,23 @@
 
 .homePageLogos {
   height: auto;
-  margin-left: 11vw;
+  margin-left: 17vw;
   width: 58vw;
+  position: relative;
+  top: -9vh;
+}
+
+.div-list {
+  position: relative;
+  top: -6vh;
 }
 
 .hpArrow {
   height: auto;
-  margin-left: 32vw;
-  padding-top: 9vh;
+  margin-left: 36vw;
+  padding-top: 0vh;
   padding-bottom: 10vh;
-  width: 21vw;
+  width: 17vw;
 }
 
 
@@ -114,5 +132,5 @@
   font-weight: bolder;
   text-align: center;
   margin-bottom: 6vh;
-  margin-top: 6vh;
+  margin-top: 4vh;
 }

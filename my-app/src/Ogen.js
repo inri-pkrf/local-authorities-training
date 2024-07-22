@@ -17,27 +17,43 @@ function Ogen() {
     { src: '/ogen12.png', title: 'גפ"מ ', text: 'שיבושים במועדי ההספקה ' },
   ];
 
+  const handlePrintOgenClick = () => {
+    window.open(`${process.env.PUBLIC_URL}/עזר עוגן איתן - מאפשרים.pdf`, '_blank');
+  };
+
   return (
     <div className="ogen-container">
-      
-      <h1 className="ogen-title">עוגן איתן - תרחיש ייחוס משקי</h1>
-      <p className="ogen-subtitle">תרחיש שמדגים משהו לגבי פיקוד העורף</p>
+      <img src={process.env.PUBLIC_URL + '/ogenIcon.png'} alt="ogenIcon" className="ogenIcon" />
+      <h1 className="ogen-title1"> תרחיש ייחוס משקי </h1>
+      <p className="ogen-subtitle1"> לפניך סרטון הסבר ופירוט תרחיש הייחוס לתוכנית 'עוגן איתן' וההשפעות הצפויות על המשק </p>
+
       <div className="video-container">
-        <video controls className="ogen-video">
+        <video controls className="ogen-video"  poster={process.env.PUBLIC_URL + '/poster.jpg'}>
           <source src={process.env.PUBLIC_URL + '/ogenVideo.mp4'} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
+
+      <img src={process.env.PUBLIC_URL + '/hpArrow.png'} className="hpArrow-Ogen" alt="Ogen"></img>
+
+      <h1 className="ogen-title2">עוגן איתן - תרחיש ייחוס משקי</h1>
+      <p className="ogen-subtitle2">תרחיש שמדגים משהו לגבי פיקוד העורף</p>
+
       <div className="image-container">
         {images.map((image, index) => (
           <div key={index} className="image-item">
             <img src={process.env.PUBLIC_URL + image.src} alt={`Image ${index + 1}`} className="ogen-image" />
             <h2 className="image-title">{image.title}</h2>
             <p id={`image-text-${index}`} className="image-text">{image.text}</p>
-            </div>
+          </div>
         ))}
       </div>
-     
+
+      <div className='btn-print-ogen' onClick={handlePrintOgenClick}>
+        <img src={process.env.PUBLIC_URL + '/print.png'} className="print-img-gallery" alt="print"></img>
+        <p className='text-print'>הורדת גרסה להדפסה</p>
+      </div>
+
     </div>
   );
 }

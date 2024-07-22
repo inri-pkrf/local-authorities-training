@@ -35,7 +35,7 @@
   position: fixed; /* Fixed positioning to keep it at the bottom-right corner */
   bottom: 0;
   right: 0;
-  width: 30vw; /* Adjust the width as needed */
+  width: 24vw; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
   z-index: -1; /* Ensure the decorative photo is below the rest of the content */
   transform: rotate(180deg);

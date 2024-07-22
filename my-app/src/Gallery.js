@@ -141,6 +141,10 @@ const Gallery = () => {
     setSelectedCardIndex(null);
   };
 
+  const handlePrintGalleryClick = () => {
+    window.open(`${process.env.PUBLIC_URL}/עזר - הערכת מצב רשות.pdf`, '_blank');
+  };
+
   return (
     <div className="gallery">
       <h1 className="Gallery-title">הערכת מצב ברשות המקומית</h1>
@@ -178,8 +182,8 @@ const Gallery = () => {
         </>
       )}
 
-      <div className='btn-print'>
-        <img src={process.env.PUBLIC_URL + '/print.png'} className="print-img" alt="print"></img>
+      <div className='btn-print-gallery'  onClick={handlePrintGalleryClick}>
+        <img src={process.env.PUBLIC_URL + '/print.png'} className="print-img-gallery" alt="print"></img>
         <p className='text-print'>הורדת גרסה להדפסה</p>
       </div>
     </div>

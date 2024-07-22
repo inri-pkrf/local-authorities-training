@@ -16,7 +16,7 @@
 }
 
 .frame {
-  width: 45%; /* Adjust width of the frame */
+  width: 74%; /* Adjust width of the frame */
   height: 40%;
   margin: 0 2.5%; /* Add margin between frames */
   background-color: #053859; /* White background color */
@@ -29,13 +29,13 @@
 
 .frame-text {
   font-family: 'Karantina', cursive; /* Use Karantina font */
-  font-size: 10vw; /* Adjust font size as needed */
+  font-size: 13vw; /* Adjust font size as needed */
   margin: 0; /* Remove default margins */
   color: rgb(255, 255, 255); /* Grey text color */
 }
 
 .black-frame {
-  width: 45%; /* Adjust width of the frame */
+  width: 74%; /* Adjust width of the frame */
   height: 40%;
   margin: 2vh auto 0; /* Center the frame horizontally and add margin above */
   background-color: #175a85; /* White background color */
@@ -48,7 +48,7 @@
 
 .black-frame-text {
   font-family: 'Karantina', cursive; /* Use Karantina font */
-  font-size: 9vw; /* Adjust font size as needed */
+  font-size: 13vw; /* Adjust font size as needed */
   color: rgb(255, 255, 255); /* Black text color */
   margin: 0; /* Remove default margins */
 }
@@ -57,7 +57,7 @@
   border-left: 2vw solid #000000;
   height: 102%;
   position: absolute;
-  top: 2%;
+  top: 1%;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -105,7 +105,7 @@
 
 .colored-box-sub{
   width: 62vw;
-  height: 13vh;
+  height: 11vh;
   margin: 6vw;
   display: flex;
   justify-content: center;
@@ -137,14 +137,31 @@
 
 .all-diagram{
   position: relative;
-  top: 19vh;
+  top: 11vh;
 }
  
 .hpArrow-diagram{
   position: relative;
-  top: 9vh;
-  width: 29vw;
+  top: 7vh ; 
+  width: 17vw;
+  width: 17vw;
   left: -7vw;
+}
+
+.btn-print-diagram{
+  position: relative;
+  top: 16vh;
+  left: -7vw;
+  background-color: transparent;
+  width: 56vw;
+  height: 5vh;
+}
+
+.print-img-diagram{
+  position: relative;
+  top: 0.5vh;
+  left: 28vw;
+  width: 7vw;
 }
 
 

@@ -10,7 +10,8 @@ const PopUp = ({ isVisible, onClose, title, content, color }) => {
     <div className="popup-overlay">
       <div className="popup-content">
         <button className="popup-close-button" onClick={onClose}>
-          &times;
+          {/* &times; */}
+          <img src={process.env.PUBLIC_URL + '/XBtn.png'} alt="Close" className="XBtn" />
         </button>
         <h2 className="popup-title" >{title}</h2> {/* Set the color dynamically */}
         <div className="popup-body">{content}</div>

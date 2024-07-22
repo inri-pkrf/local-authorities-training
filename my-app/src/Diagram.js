@@ -15,6 +15,10 @@ const Diagram = () => {
     setPopupVisible(false);
   };
 
+  const handlePrintDiagramClick = () => {
+    window.open(`${process.env.PUBLIC_URL}/מבנה הרשות המקומית בשעת חירום.pdf`, '_blank');
+  };
+
   return (
     <div className="diagram-container">
       <h1 className="diagram-title">מבנה הרשות המקומית בשעת חירום</h1>
@@ -24,7 +28,7 @@ const Diagram = () => {
         בלחיצה על כל רכיב יפתח חלון עם הסבר נוסף -
       </div>
 
-      <img src={process.env.PUBLIC_URL+'/hpArrow.png'} class="hpArrow-diagram" alt="Ogen"></img>
+      <img src={process.env.PUBLIC_URL + '/hpArrow.png'} class="hpArrow-diagram" alt="Ogen"></img>
 
       <div className='all-diagram'>
         <div
@@ -74,6 +78,12 @@ const Diagram = () => {
         content={popupContent.content}
         color={popupContent.color} // Pass color to the popup component
       />
+
+      <div className='btn-print-diagram' onClick={handlePrintDiagramClick}>
+        <img src={process.env.PUBLIC_URL + '/print.png'} className="print-img-diagram" alt="print"></img>
+        <p className='text-print'>הורדת גרסה להדפסה</p>
+      </div>
+
     </div>
   );
 };
