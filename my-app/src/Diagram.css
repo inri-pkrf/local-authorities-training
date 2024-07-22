@@ -155,13 +155,24 @@
   background-color: transparent;
   width: 56vw;
   height: 5vh;
+  margin-bottom: 8vh;
 }
 
 .print-img-diagram{
   position: relative;
-  top: 0.5vh;
-  left: 28vw;
-  width: 7vw;
+    top: -0.5vh;
+    left: 28vw;
+    width: 7vw;
+}
+
+.text-print-diagram{
+  position: relative;
+  top: -7vh;
+  left: 5vw;
+  font-size: 4vmin;
+  text-decoration: underline;
+  color: #595959;
+  font-weight: bold;
 }
 
 

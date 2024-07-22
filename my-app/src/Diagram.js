@@ -48,11 +48,11 @@ const Diagram = () => {
           className="black-frame"
           onClick={() => handleBoxClick('מנכל הרשות\ ר"מט',
             (<>
-              Detailed information about מנכל הרשות\ ר"מט'
+              Detailed information about מנכל הרשות \ ר"מט'
             </>),
             '#000000')}
         >
-          <p className="black-frame-text">מנכל הרשות\ ר"מט</p>
+          <p className="black-frame-text">מנכל הרשות \ ר"מט</p>
         </div>
 
         <div className="colored-box blue-box" onClick={() => handleBoxClick('אגף חירום וביטחון',
@@ -69,7 +69,7 @@ const Diagram = () => {
             Detailed information about יק"לר
           </>)
           , '#d87b3c')}>
-          <p className="colored-box-text">יק"לר</p>
+          <p className="colored-box-text">יקל"ר</p>
         </div>
 
         <div className="colored-box red-box" onClick={() => handleBoxClick('כוחות ביטחון',
@@ -215,7 +215,7 @@ const Diagram = () => {
 
       <div className='btn-print-diagram' onClick={handlePrintDiagramClick}>
         <img src={process.env.PUBLIC_URL + '/print.png'} className="print-img-diagram" alt="print"></img>
-        <p className='text-print'>הורדת גרסה להדפסה</p>
+        <p className='text-print-diagram'>הורדת גרסה להדפסה</p>
       </div>
 
     </div>

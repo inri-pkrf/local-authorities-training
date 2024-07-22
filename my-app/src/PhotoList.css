@@ -11,12 +11,12 @@
   padding-right: 10vw;
 }
 
-.photo-list-item {
+.photo-list-item-gallery{
   display: flex;
   align-items: center;
   cursor: pointer;
   font-size: 2.5vh; /* Adjust the font size */
-  /* border-bottom: 1px dotted #ccc;  */
+  border-bottom: 1px solid #ccc; 
   padding-bottom: 1vh; /* Adjust space at the bottom */
 }
 

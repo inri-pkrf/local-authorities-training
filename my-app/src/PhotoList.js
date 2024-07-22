@@ -7,7 +7,7 @@ const PhotoList = ({ data, onPhotoClick }) => {
     <div className="photo-list">
 
       {data.map((item, index) => (
-        <div key={index} className="photo-list-item" onClick={() => onPhotoClick(index)}>
+        <div key={index} className="photo-list-item-gallery" onClick={() => onPhotoClick(index)}>
           <div className="photo-list-content">
             <div className="photo-list-title">{item.title}</div>
             <img src={process.env.PUBLIC_URL + item.photo} 

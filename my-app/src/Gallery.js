@@ -6,8 +6,8 @@ import './Gallery.css';
 const cardData = [
   {
     photo: '/assesment1.png',
-    title: 'ראש הראשות\ מנכ"ל (רמ"ט)',
-    headline: '1. ראש הראשות\ מנכ"ל (רמ"ט)',
+    title: 'ראש הרשות\ מנכ"ל (רמ"ט)',
+    headline: '1. ראש הרשות\ מנכ"ל (רמ"ט)',
     text: (
       <>
         מטרה ומיקוד הנושאים המרכזיים בהערכת מצב
@@ -223,11 +223,21 @@ const Gallery = () => {
   };
 
   const handleNext = () => {
-    setSelectedCardIndex((prevIndex) => (prevIndex + 1) % cardData.length);
+    // setSelectedCardIndex((prevIndex) => (prevIndex + 1) % cardData.length);
+    setSelectedCardIndex((prevIndex) => {
+      const newIndex = (prevIndex + 1) % cardData.length;
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return newIndex;
+    });
   };
 
   const handlePrevious = () => {
-    setSelectedCardIndex((prevIndex) => (prevIndex - 1 + cardData.length) % cardData.length);
+    // setSelectedCardIndex((prevIndex) => (prevIndex - 1 + cardData.length) % cardData.length);
+    setSelectedCardIndex((prevIndex) => {
+      const newIndex = (prevIndex - 1 + cardData.length) % cardData.length;
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return newIndex;
+    });
   };
 
   const handleBackToList = () => {
@@ -255,7 +265,7 @@ const Gallery = () => {
             </b>
             <br />
             <br />
-            בלחיצה על כל דובר יפתח חלון עם הסבר נוסף וסרטון הדגמה -
+            בלחיצה על כל דובר יפתח חלון עם הסבר נוסף וסרטון הדגמה
             <img src={process.env.PUBLIC_URL + '/hpArrow.png'} className="hpArrow-gallery" alt="Ogen"></img>
           </p>
         </div>
