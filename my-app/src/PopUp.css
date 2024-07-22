@@ -18,6 +18,7 @@
     top: 15vh;
     left: 13vw;
     width: 70vw;
+    overflow: hidden;
   }
 
   .XBtn{
@@ -44,12 +45,18 @@
     font-family: 'Karantina';
     font-weight: normal;
     color: #595959;
-    font-size: 15vw;
+    font-size: 13vw;
     margin-bottom: 7vw;
-    margin-top: 16vw;
+    margin-top: 8vw;
   }
   
   .popup-body {
-    font-size: 4.5vw;
+    font-size: 3.7vw;
+    direction: rtl;
+    margin-right: 0.5vh;
+    text-align: right;
+    margin-left: 0.5vh;  
+    height: 50vh;
+    overflow: auto;
   }
   
