@@ -14,7 +14,11 @@ const PopUp = ({ isVisible, onClose, title, content, color }) => {
           <img src={process.env.PUBLIC_URL + '/XBtn.png'} alt="Close" className="XBtn" />
         </button>
         <h2 className="popup-title" >{title}</h2> {/* Set the color dynamically */}
-        <div className="popup-body">{content}</div>
+        <div className="popup-body">
+          <div className="popup-body-text">
+            {content}
+          </div>
+        </div>
       </div>
     </div>
   );
