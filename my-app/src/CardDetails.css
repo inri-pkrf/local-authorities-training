@@ -9,6 +9,7 @@
     background-color: #fff;
     direction: rtl;
     font-family: 'Heebo', sans-serif;
+    margin-top: -6vh;
   }
   
   .card-details-photo {
@@ -29,7 +30,7 @@
   
   .card-details-text {
     font-size: 2vh;
-    margin-bottom: 8vh;
+    margin-bottom: 2vh;
     width: 75vw;
   }
   

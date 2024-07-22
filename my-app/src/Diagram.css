@@ -54,12 +54,12 @@
 }
 
 .line {
-  border-left: 2vw solid #000000;
-  height: 102%;
+  border-left: 2vw solid #000;
+  bottom: 0;
+  height: 98%;
+  left: 50%;
   position: absolute;
   top: 1%;
-  bottom: 0;
-  left: 50%;
   transform: translateX(-50%);
   z-index: 0;
 }
@@ -116,7 +116,7 @@
   color: white;
   position: relative;
   left: -8vw;
-  top: 5vh;
+  top: 1vh;
   background-color: #56c3e8;
   border: 1.5vw solid #56c3e8;
 }
