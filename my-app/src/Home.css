@@ -134,3 +134,8 @@
   margin-bottom: 6vh;
   margin-top: 4vh;
 }
+
+.dot-line{
+  position: relative;
+  left: 2vw;
+}
