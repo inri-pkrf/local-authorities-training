@@ -16,8 +16,8 @@ function Menu({ onClose, onNavigate }) {
       <img src={process.env.PUBLIC_URL + '/closeBtn.png'} alt="Close" onClick={onClose} className="closeBtn" />
       <ul className="menu-list">
         <li onClick={() => handleItemClick('home')}>עמוד הבית</li>
-        <li onClick={() => handleItemClick('diagram')}>מבנה הראשות המקומית בחירום</li>
-        <li onClick={() => handleItemClick('gallery')}>הערכת מצב בראשות המקומית</li>
+        <li onClick={() => handleItemClick('diagram')}>מבנה הרשות המקומית בחירום</li>
+        <li onClick={() => handleItemClick('gallery')}>הערכת מצב ברשות המקומית</li>
         {/* <li onClick={() => handleItemClick('relations')}>ממשק עבודה בין מכלולים</li> */}
         <li onClick={() => handleItemClick('ogen')}> עוגן איתן - תרחיש ייחוס משקי </li> {/* Add this line */}
       </ul>

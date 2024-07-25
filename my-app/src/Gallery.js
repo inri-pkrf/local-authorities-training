@@ -254,7 +254,7 @@ const Gallery = () => {
       {selectedCardIndex === null ? (
         <div id='temp-title'>
           <p className="gallery-subtitle">
-            לפניך סדר הדוברים המומלץ לביצוע הערכת מצב בשעת חירום
+            לפניך סדר הדוברים לביצוע הערכת מצב בשעת חירום
             <br />
             <img src={process.env.PUBLIC_URL + '/table.jpg'} className="table-gallery" alt="table"></img>
             <br />

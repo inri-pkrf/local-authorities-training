@@ -1,15 +1,14 @@
-// Header.js
 import React from 'react';
 import './Header.css';
 
-function Header({ onMenuClick }) {
+function Header({ onMenuClick, onNavigate }) {
   return (
     <header className="header">
       <img
         src={process.env.PUBLIC_URL + '/collegeLogoText.png'}
         className="App-logo"
         alt="logo"
-        onClick={() => window.location.reload()} // Redirects to home page
+        onClick={() => onNavigate('home')} // Navigate to 'home' component
       />
       <img
         src={process.env.PUBLIC_URL + '/navbar.png'}

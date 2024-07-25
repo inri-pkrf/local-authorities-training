@@ -7,10 +7,11 @@ import Menu from './Menu';
 import Gallery from './Gallery';
 import Relations from './Relations';
 import Ogen from './Ogen';
+import IntroComponent from './IntroComponent.js';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeComponent, setActiveComponent] = useState('home');
+  const [activeComponent, setActiveComponent] = useState('intro'); // Default to 'intro' to show the intro component first
 
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen);
@@ -21,22 +22,31 @@ function App() {
     setMenuOpen(false); // Close the menu after navigating
   };
 
+  const handleIntroEnd = () => {
+    setActiveComponent('home'); // Set the active component to 'home' after the intro ends
+  };
+
   return (
     <div className="App">
-      <Header onMenuClick={handleMenuClick} onNavigate={handleNavigate} />
-      {menuOpen ? (
-        <Menu onClose={() => setMenuOpen(false)} onNavigate={handleNavigate} />
+      {activeComponent === 'intro' ? (
+        <IntroComponent onMoveNext={handleIntroEnd} />
       ) : (
-        <div>
-          {activeComponent === 'home' && <Home onNavigate={handleNavigate} />}
-          {activeComponent === 'diagram' && <Diagram />}
-          {activeComponent === 'gallery' && <Gallery />}
-          {activeComponent === 'relations' && <Relations onNavigate={handleNavigate} />}
-          {activeComponent === 'ogen' && <Ogen />}
-        </div>
-      )}
+        <>
+          <Header onMenuClick={handleMenuClick} onNavigate={handleNavigate} />
+          {menuOpen ? (
+            <Menu onClose={() => setMenuOpen(false)} onNavigate={handleNavigate} />
+          ) : (
+            <div>
+              {activeComponent === 'home' && <Home onNavigate={handleNavigate} />}
+              {activeComponent === 'diagram' && <Diagram />}
+              {activeComponent === 'gallery' && <Gallery />}
+              {activeComponent === 'relations' && <Relations onNavigate={handleNavigate} />}
+              {activeComponent === 'ogen' && <Ogen />}
+            </div>
+          )}
+        </>
+       )} 
     </div>
   );
 }
-
 export default App;

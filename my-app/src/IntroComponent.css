@@ -1,0 +1,135 @@
+
+  
+  #intro-lomda {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    background-image: url('/public/Bg1.png');
+}
+
+#logo-white {
+    position: absolute;
+    width: 50vw;
+    height: auto;
+    z-index: 5;
+    right: 50%;
+    transform: translateX(50%);
+    top: 5%;
+  }
+  
+  #welcome-text-intro {
+    /* color: white;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 4em;
+    text-align: center;
+    top: 15vh;
+    z-index: 5;
+    width: 90vw;
+    font-family: "karantina"; */
+
+    font-family: 'Karantina';
+    font-size: 16vw;
+    color: white;
+    margin-bottom: 3vw;
+    margin-top: 6vh;
+    width: 100%;
+    text-align: center;
+  }
+
+  #introduction-sub{
+    font-family: 'Heebo', sans-serif;
+    font-size: 6vw;
+    color: white;
+    text-align: center;
+    margin-bottom: 6vh;
+    margin-top: 2vh;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: 5vh;
+  }
+  
+
+  .hpArrow-intro{
+    /* height: auto;
+    width: 17vw;
+    position: relative;
+    top: 6vh;
+    left: -40vw;
+    z-index: 100; */
+
+    position: absolute;
+  z-index: 5;
+  right: 50%;
+  transform: translateX(50%);
+  bottom: 20vh;
+  animation: bounce2 2s ease infinite;
+  height: 10vh;
+  width: auto;
+  }
+
+  .video-intro {
+    position: absolute;
+    right:50%;
+    transform: translateX(50%);
+    height: 100vh;
+  }
+  
+  .skip {
+    position: absolute;
+    top: 6%;
+    left: 2%;
+    background-color: transparent;
+    font-family: 'Assistant', sans-serif;
+    font-size: 1em;
+    color: black;
+    z-index: 9999999;
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  #video.fade-out {
+    animation: fadeOut 0.3s forwards;
+  }
+
+  .intro-text-slide-in {
+    animation: slide-in-from-top 1.5s forwards;
+  }
+  
+  @keyframes slide-in-from-top {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounce2 {
+    0% {
+      bottom: 8vh;
+    }
+    50% {
+      bottom: 5vh;
+    }
+    100% {
+      bottom: 8vh;
+    }
+  }
