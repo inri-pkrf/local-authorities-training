@@ -98,23 +98,24 @@
 } */
 
 .arrowDiv {
-  background-color: #175a85;
+  background-color: #1cb4e3;
   color: white;
   position: relative;
   left: 24vw;
-  width: 33vw;
-  height: 5vh;
+  width: 38vw;
+  height: 3vh;
   top: -1vh;
-  padding: 2vh;
+  padding: 1vh;
   text-align: center;
-  font-size: 6vmin;
+  font-size: 4vmin;
+  font-weight: bold;
   border-radius: 15vw;
 }
 
 .arrowDivLeft {
   background-color: #b7b7b7;
-  left: -18vw;
-  top: -10vh;
+  left: -19vw;
+  top: -6vh;
 }
 
 .prev-btn-gallery {
@@ -124,7 +125,8 @@
   top: -5vh;
   text-decoration: underline;
   font-size: 6vmin;
-  margin-bottom: -21vh;
+  margin-bottom: -10vh;
+  margin-top: 3vh;
 }
 
 .btn-print-gallery{

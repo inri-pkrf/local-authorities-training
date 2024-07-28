@@ -46,13 +46,13 @@ const Diagram = () => {
 
         <div
           className="black-frame"
-          onClick={() => handleBoxClick('מנכל הרשות\ ר"מט',
+          onClick={() => handleBoxClick(' מנכ"ל / רמ"ט',
             (<>
               טקסט חסר, יש להשלים מקור.
             </>),
             '#000000')}
         >
-          <p className="black-frame-text">מנכל הרשות \ ר"מט</p>
+          <p className="black-frame-text"> מנכ"ל / רמ"ט </p>
         </div>
 
         <div className="colored-box blue-box" onClick={() => handleBoxClick('אגף חירום וביטחון',

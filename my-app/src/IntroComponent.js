@@ -42,7 +42,7 @@ function IntroComponent({ onMoveNext }) {
     <div id="intro-lomda">
       {!isVideoEnded && (
         <>
-          <button className="skip" onClick={skipVideo}>דלג</button>
+          <button className="skip" onClick={skipVideo}>לדלג</button>
           <video className="video-intro" autoPlay muted playsInline>
             <source src={process.env.PUBLIC_URL + '/introVid.mp4'} type="video/mp4" />
             Your browser does not support the video tag.

@@ -10,6 +10,8 @@ const cardData = [
     headline: '1. ראש הרשות\ מנכ"ל (רמ"ט)',
     text: (
       <>
+      <b>תפקיד המכלול בהערכת מצב:</b>
+      <br /> <br />
         מטרה ומיקוד הנושאים המרכזיים בהערכת מצב
       </>
     ),
@@ -20,7 +22,8 @@ const cardData = [
     title: 'מרכז שליטה ודיווח',
     headline: '2. מרכז שליטה ודיווח',
     text: (
-      <>
+      <><b>תפקיד המכלול בהערכת מצב:</b>
+      <br /> <br />
         <b>אירועים מרכזיים</b> ברשות וסטאטוס הטיפול בהם.
         <br />
         <b>תמ"צ כוחות וצוותים</b> בשטח.
@@ -35,7 +38,8 @@ const cardData = [
     title: 'יקל"ר',
     headline: '3. יקל"ר',
     text: (
-      <>
+      <><b>תפקיד המכלול בהערכת מצב:</b>
+      <br /> <br />
         <b>תמ"צ צבאית -</b> הערכת האיום, מצב משפטית, תמ"צ כוחות ומאמצים עיקריים בפקע"ר.
         <br />
         <b> מדיניות התגוננות –</b> מדיניות נוכחית ותמונת מצב
@@ -56,7 +60,8 @@ const cardData = [
     photo: '/assesment4.png',
     title: 'מכלול אוכלוסייה',
     headline: '4. מכלול אוכלוסייה',
-    text: (<>
+    text: (<><b>תפקיד המכלול בהערכת מצב:</b>
+      <br /> <br />
       <b>כשירות המכלול לביצוע משימותיו.</b>
       <br />
       <b>מגמות התנהגות אוכלוסייה במרחב הרשות וצרכי האוכלוסייה.</b>
@@ -81,7 +86,8 @@ const cardData = [
     photo: '/assesment5.png',
     title: 'מכלול חינוך',
     headline: '5. מכלול חינוך',
-    text: (<>
+    text: (<><b>תפקיד המכלול בהערכת מצב:</b>
+      <br /> <br />
       <b>כשירות המכלול לביצוע משימותיו.</b>
       <br />
       <b>תמ"צ לימודים פדגוגי –</b> – אופן ביצוע לימודים למול
@@ -104,7 +110,8 @@ const cardData = [
     photo: '/assesment6.png',
     title: 'מכלול מידע לציבור',
     headline: '6. מכלול מידע לציבור',
-    text: (<>
+    text: (<><b>תפקיד המכלול בהערכת מצב:</b>
+      <br /> <br />
       <b>כשירות המכלול לביצוע משימותיו.</b>
       <br />
       <b>מדד תודעת שירות לתושב –</b> סטטוס המענה לפניות התושבים.
@@ -125,7 +132,8 @@ const cardData = [
     photo: '/assesment7.png',
     title: 'מכלול הנדסה ותשתיות',
     headline: '7. מכלול הנדסה ותשתיות',
-    text: (<>
+    text: (<><b>תפקיד המכלול בהערכת מצב:</b>
+      <br /> <br />
       <b>כשירות המכלול לביצוע משימותיו -</b> כ"א, קבלנים,
       חומרים, ציוד הנדסי.
       <br />
@@ -143,7 +151,8 @@ const cardData = [
     photo: '/assesment8.png',
     title: 'מכלול לוגיסטיקה ותפעול',
     headline: '8. מכלול לוגיסטיקה ותפעול',
-    text: (<>
+    text: (<><b>תפקיד המכלול בהערכת מצב:</b>
+      <br /> <br />
       <b>כשירות המכלול לביצוע משימותיו.</b>
       <br />
       <b>תמ"צ שירותים חיוניים</b> למול מדיניות התגוננות.
@@ -163,7 +172,8 @@ const cardData = [
     photo: '/assesment9.png',
     title: 'מכלול משאבי אנוש ומנהל כללי',
     headline: '9. מכלול משאבי אנוש ומנהל כללי',
-    text: (<>
+    text: (<><b>תפקיד המכלול בהערכת מצב:</b>
+      <br /> <br />
       <b>תמ"צ כוח אדם</b> למול צרכי הרשות והמלצות לצמצום הפערים.
       <br />
       <b>הנחיות לעובדי הרשות</b> למול מדיניות התגוננות.
@@ -180,7 +190,8 @@ const cardData = [
     photo: '/assesment10.png',
     title: 'ארגוני חירום וגופי סיוע',
     headline: '10. ארגוני חירום וגופי סיוע',
-    text: (<>
+    text: (<><b>תפקיד המכלול בהערכת מצב:</b>
+      <br /> <br />
       <b>תמ"צ טיפול באירועים.</b>
       <br />
       <b>תמ"צ כוחות בשטח.</b>
@@ -191,7 +202,8 @@ const cardData = [
     photo: '/assesment11.png',
     title: 'מרכז שליטה ודיווח(מכלול מבצעים)',
     headline: '11. מרכז שליטה ודיווח(מכלול מבצעים)',
-    text: (<>
+    text: (<><b>תפקיד המכלול בהערכת מצב:</b>
+      <br /> <br />
       <b>כשירות המכלול לביצוע תפקידיו.</b>
       <br />
       <b>תמ"צ מקלטים</b> (ציבוריים ומשותפים) וכשירות צופרים.
@@ -206,42 +218,49 @@ const cardData = [
     photo: '/assesment12.png',
     title: 'ראש הרשות',
     headline: '12. ראש הרשות',
-    text: (<>
+    text: (<><b>תפקיד המכלול בהערכת מצב:</b>
+      <br /> <br />
      <b>משימות מרכזיות –</b> תעדוף וטיפול.
      <br/>
      <b>סיכום והנחיות לביצוע.</b>
     </>),
     video: '/ass1.mp4'
   },
-  // ... other entries
+
 ];
+
+
 const Gallery = () => {
   const [selectedCardIndex, setSelectedCardIndex] = useState(null);
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const handlePhotoClick = (index) => {
     setSelectedCardIndex(index);
+    scrollToTop();  // Scroll to the top when opening CardDetails
   };
 
   const handleNext = () => {
-    // setSelectedCardIndex((prevIndex) => (prevIndex + 1) % cardData.length);
     setSelectedCardIndex((prevIndex) => {
       const newIndex = (prevIndex + 1) % cardData.length;
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      scrollToTop();  // Scroll to the top when navigating to the next card
       return newIndex;
     });
   };
 
   const handlePrevious = () => {
-    // setSelectedCardIndex((prevIndex) => (prevIndex - 1 + cardData.length) % cardData.length);
     setSelectedCardIndex((prevIndex) => {
       const newIndex = (prevIndex - 1 + cardData.length) % cardData.length;
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      scrollToTop();  // Scroll to the top when navigating to the previous card
       return newIndex;
     });
   };
 
   const handleBackToList = () => {
     setSelectedCardIndex(null);
+    scrollToTop();  // Scroll to the top when returning to the PhotoList
   };
 
   const handlePrintGalleryClick = () => {
@@ -285,10 +304,12 @@ const Gallery = () => {
         </>
       )}
 
-      <div className='btn-print-gallery' onClick={handlePrintGalleryClick}>
-        <img src={process.env.PUBLIC_URL + '/print.png'} className="print-img-gallery" alt="print"></img>
-        <p className='text-print'>הורדת גרסה להדפסה</p>
-      </div>
+      {selectedCardIndex === null && (
+        <div className='btn-print-gallery' onClick={handlePrintGalleryClick}>
+          <img src={process.env.PUBLIC_URL + '/print.png'} className="print-img-gallery" alt="print"></img>
+          <p className='text-print'>הורדת גרסה להדפסה</p>
+        </div>
+      )}
     </div>
   );
 };
