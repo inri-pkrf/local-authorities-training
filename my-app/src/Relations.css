@@ -1,4 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Karantina:wght@300;400;700&display=swap');
+.title-page1 {
+  font-family: 'Karantina', cursive;
+  font-size: 16vw;
+  margin-bottom: 3vw;
+  margin-top: 17vh;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top:8vh;
+  transition: color 0.3s;
+}
+
+.all-steps {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  margin-bottom: 4vh;
+  display: flex;
+  width: 71vw;
+  justify-content: center;
+  direction: rtl;
+}
+
+.btn-steps {
+  width: 11vh;
+  height: 4vh;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  padding-top: 1vh;
+  border-radius: 10vw;
+  text-align: center;
+  font-family: 'Heebo', sans-serif;
+  color: white;
+  transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+
+.content-page1 {
+  height: 61vh;
+  overflow-y: auto;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  width: 100%;
+  margin-top: 7vh;
+}
+
+.text-page1 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 5vmin;
+  color: grey;
+  text-align: center;
+  margin-top: 2vh;
+  width: 90%;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  direction: rtl;
+}
+
+.all-opotion {
+  font-family: 'Heebo', sans-serif;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  text-align: center;
+  color: #595959;
+  margin-top: 12vh;
+}
+
+.array-item {
+  height: 6vh;
+  width: 85vw;
+  background-color: #d9d9d9;
+  margin-top: 2vh;
+  padding-top: 1.5vh;
+  font-size: 5vmin;
+  cursor: pointer; /* Add pointer cursor on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Karantina:wght@300;400;700&display=swap');
 
 .relations-container {
   display: flex;
@@ -9,7 +105,7 @@
   padding-right: 3vw;
   font-family: 'Heebo', sans-serif;
   color: #333;
-  padding-bottom: 25vw; /* Add bottom padding */
+  padding-bottom: 25vw; 
 }
 
 .relations-title {
@@ -17,7 +113,7 @@
   font-size: 11vw;
   color: #175a85;
   margin-bottom: 2vw;
-  margin-top: 0; /* Remove the bottom margin and add top margin */
+  margin-top: 0; 
 }
 
 .relations-subtitle {
@@ -26,7 +122,7 @@
   color: grey;
   text-align: center;
   margin-bottom: 2vw;
-  margin-top: 0; /* Remove the bottom margin and add top margin */
+  margin-top: 0; 
   width: 80%;
 }
 
@@ -132,4 +228,4 @@
   font-size: 2vw;
   text-align: justify;
 }
-
+ */

@@ -1,0 +1,71 @@
+.sub-Interfaces {
+    font-family: 'Heebo', sans-serif;
+    font-size: 5vmin;
+    color: grey;
+    text-align: center;
+    margin-top: 4vh;
+    width: 90%;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    direction: rtl;
+  }
+
+
+.Interfaces-contect{
+    font-family: 'Heebo', sans-serif;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    direction: rtl;
+    margin-top: 11vh;
+    overflow-y: auto;
+    height: 34vh;
+}
+
+.title-Interfaces{
+    width: 100vw;
+    height: 6vh;
+    background-color: #b7b7b7;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2vh;
+    font-size: 5vmin;
+}
+
+.text-Interfaces{
+    width: 100vw;
+    height: 25vh;
+    background-color: #d9d9d9;
+    color: #8f908f;
+    margin-bottom: 2vh;
+}
+
+.btn-div{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    display: flex;
+    margin-top: 46vh;
+}
+
+.btn-Interfaces{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2vh;
+    font-family: 'Heebo', sans-serif;
+    height: 6vh;
+    width: 40vw;
+    border-radius: 8vw;
+    margin-right: 2vh;
+}
+
+#next-btn-Interfaces{
+    background-color: #1cb4e3;
+}
+
+#prev-btn-Interfaces{
+    background-color: #999;
+}

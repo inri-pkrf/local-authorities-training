@@ -47,7 +47,7 @@
   color: grey;
   text-align: center;
   position: absolute;
-  margin-top: 115vh;
+  margin-top: 128vh;
   right: 50%;
   transform: translateX(50%);
   width: 95vw;
@@ -99,7 +99,7 @@
   height: auto;
   width: 58vw;
   position: absolute;
-  margin-top: 95vh;
+  margin-top: 110vh;
   right: 50%;
   transform: translateX(50%);
 }
@@ -128,7 +128,7 @@
   font-size: 3vh;
   color: #50565c;
   font-weight: bolder;
-  margin-top: 135vh;
+  margin-top: 145vh;
   right: 50%;
   transform: translateX(50%);
   padding-bottom: 10%;
@@ -146,13 +146,13 @@
   position: absolute;
   height: auto;
   transform: translateX(50%);
-  margin-top: 85vh;
+  margin-top: 98vh;
   right: 50%;
   width: 17vw;
 }
 #line4{
   position: absolute;
-  margin-top: 125vh;
+  margin-top: 137vh;
   padding-top: 5%;
   padding-bottom: 5%;
 }
