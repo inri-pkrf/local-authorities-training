@@ -19,11 +19,14 @@
     transform: translateX(50%);
     direction: rtl;
     margin-top: 9vh;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     height: 34vh;
 }
 
 .title-Interfaces{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
     width: 100vw;
     height: 6vh;
     background-color: #b7b7b7;
@@ -32,14 +35,19 @@
     text-align: center;
     padding-top: 2vh;
     font-size: 5vmin;
+    margin-top: 2vh;
 }
 
 .text-Interfaces{
-    width: 100vw;
-    height: 25vh;
+    width: 93vw;
+    height: 20vh;
     background-color: #d9d9d9;
     color: #8f908f;
-    margin-bottom: 2vh;
+    margin-bottom: 1vh;
+    padding-right: 2vh;
+    margin-top: 9vh;
+    padding-left: 2vh;
+    padding-top: 6vh;
 }
 
 .btn-div{
@@ -47,7 +55,7 @@
     right: 50%;
     transform: translateX(50%);
     display: flex;
-    margin-top: 46vh;
+    margin-top: 83vh;
 }
 
 .btn-Interfaces{
@@ -60,6 +68,7 @@
     width: 40vw;
     border-radius: 8vw;
     margin-right: 2vh;
+    margin-bottom: 4vh;
 }
 
 #next-btn-Interfaces{

@@ -22,21 +22,39 @@
 }
 
 .btn-steps {
-  width: 11vh;
+  width: 14vh;
   height: 4vh;
-  margin-right: 2vw;
-  margin-left: 2vw;
+  margin-right: 1vw;
+  margin-left: 0vw;
   padding-top: 1vh;
-  border-radius: 10vw;
   text-align: center;
   font-family: 'Heebo', sans-serif;
   color: white;
-  transition: background-color 0.3s; /* Smooth transition for background color change */
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid rgb(86, 195, 232);
+  position: relative;
+  top: 0.5vh;
+  right: 8vw;
+}
+
+.photo-mimshak{
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  width: 10vw;
 }
 
 .content-page1 {
   height: 52vh;
-  overflow-y: auto;
+  /* overflow-y: auto; */
   position: absolute;
   right: 50%;
   transform: translateX(50%);
@@ -75,6 +93,7 @@
   padding-top: 1.5vh;
   font-size: 5vmin;
   cursor: pointer; /* Add pointer cursor on hover */
+  margin-bottom: 3vh;
 }
 
 

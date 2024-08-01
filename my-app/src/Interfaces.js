@@ -445,7 +445,7 @@ function Interfaces({ selectedItemStep1, selectedItemsStep2, setSelectedItemsSte
 
     return (
         <div className="Interfaces">
-            <div className='sub-Interfaces'>נעמה ועלמה המדהימות!</div>
+            <div className='sub-Interfaces'>הממשקים בין המכלולים</div>
 
             <div className='Interfaces-contect'>
                 <div className='title-Interfaces' id='title1-Interfaces'>מקבל מהמכלול</div>
@@ -453,7 +453,7 @@ function Interfaces({ selectedItemStep1, selectedItemsStep2, setSelectedItemsSte
                     {itemData ? itemData.connections[1] : ''}
                 </div>
 
-                <div className='title-Interfaces' id='title2-Interfaces'>נותן מהמכלול</div>
+                <div className='title-Interfaces' id='title2-Interfaces'>נותן למכלול</div>
                 <div className='text-Interfaces' id='text2-Interfaces'>
                     {itemData ? itemData.connections[0] : ''}
                 </div>
