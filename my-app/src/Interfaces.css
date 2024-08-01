@@ -3,7 +3,7 @@
     font-size: 5vmin;
     color: grey;
     text-align: center;
-    margin-top: 4vh;
+    margin-top: 3vh;
     width: 90%;
     position: absolute;
     right: 50%;
@@ -18,7 +18,7 @@
     right: 50%;
     transform: translateX(50%);
     direction: rtl;
-    margin-top: 11vh;
+    margin-top: 9vh;
     overflow-y: auto;
     height: 34vh;
 }

@@ -24,28 +24,21 @@ function Home({ onNavigate }) {
 
         <div className="photo-list-item" onClick={() => onNavigate('gallery')}>
           <div className="photo-list-content">
-            <div className="photo-list-title-homepage"> הערכת מצב ברשות המקומית</div>
+            <div className="photo-list-title-homepage"> הערכת מצב ברשות המקומית בשעת חירום </div>
             <img src={process.env.PUBLIC_URL + '/diagramIcon.png'} className="photo-list-image-homepage" alt="Gallery" />
           </div>
         </div>
         <div id='line2' className='dot-line'>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  </div>
         <div className="photo-list-item" onClick={() => onNavigate('ogen')}>
           <div className="photo-list-content">
-            <div className="photo-list-title-homepage"> עוגן איתן'  - תרחיש ייחוס משיקי'</div>
+            <div className="photo-list-title-homepage"> תרחיש ייחוס מישקי </div>
             <img src={process.env.PUBLIC_URL + '/ogenIcon.png'} className="photo-list-image-homepage" alt="Ogen" />
           </div>
         </div>
         <div id='line3' className='dot-line'>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  </div>
-
-
-
-
-
-
-
         <div className="photo-list-item" onClick={() => onNavigate('relations')}>
         <div className="photo-list-content">
-          <div className="photo-list-title-homepage">ממשק עבודה בין מכלולים</div>
+          <div className="photo-list-title-homepage">ממשקי עבודה בין מכלולים</div>
           <img src={process.env.PUBLIC_URL + '/mimshak.png'} className="photo-list-image-homepage" alt="Relations" />
         </div>
       </div>

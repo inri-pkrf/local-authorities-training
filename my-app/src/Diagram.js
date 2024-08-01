@@ -24,7 +24,9 @@ const Diagram = () => {
       <h1 className="diagram-title">מבנה הרשות המקומית בשעת חירום</h1>
       <div className="subtitle-diagram">
         בכדי לפעול באופן מיטבי בשעת חירום, הרשות המקומית משנה תצורה ופעולת במכלולים המחולקים לתחומי אחריות.
-        <br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <img src={process.env.PUBLIC_URL + '/setup.jpg'} class="setup" alt="setup"></img>
+
         בלחיצה על כל רכיב יפתח חלון עם הסבר נוסף -
       </div>
 

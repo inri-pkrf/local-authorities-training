@@ -175,4 +175,12 @@
   font-weight: bold;
 }
 
+.setup{
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  width: 88vw;
+  margin-top: -42vh;
+}
+
 
