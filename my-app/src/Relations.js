@@ -94,7 +94,7 @@ function Relations() {
   return (
     <div className="Relations">
 
-        {/* <img src={process.env.PUBLIC_URL + '/mimshak.png'} className="photo-mimshak" alt="Relations" /> */}
+        <img src={process.env.PUBLIC_URL + '/mimshak.png'} className="photo-mimshak" alt="Relations" />
 
         <div className='all-steps'>
             <div
@@ -130,6 +130,8 @@ function Relations() {
             {title}
         </div>
 
+        {(step === 2 || step === 3) && <div className='sub-text-relations'>בחרת ב</div>}
+
         <div className='content-page1'>
             <div className="text-page1" style={{ display: newComponent ? 'none' : 'block' }}>
                 {text}
@@ -155,7 +157,7 @@ function Relations() {
             />}
         </div>
     </div>
-);
+  );
 }
 
 export default Relations;

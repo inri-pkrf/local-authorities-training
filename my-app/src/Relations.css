@@ -2,11 +2,12 @@
   font-family: 'Karantina', cursive;
   font-size: 16vw;
   margin-bottom: 3vw;
-  margin-top: 17vh;
+  margin-top: 32vh;
   width: 100%;
   text-align: center;
-  position: relative;
-  top:8vh;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
   transition: color 0.3s;
 }
 
@@ -19,6 +20,7 @@
   width: 71vw;
   justify-content: center;
   direction: rtl;
+  margin-top: 21vh;
 }
 
 .btn-steps {
@@ -41,7 +43,7 @@
   border-right: 12px solid transparent;
   border-top: 12px solid rgb(86, 195, 232);
   position: relative;
-  top: 0.5vh;
+  top: 0vh;
   right: 8vw;
 }
 
@@ -49,7 +51,9 @@
   position: absolute;
   right: 50%;
   transform: translateX(50%);
-  width: 10vw;
+  width: 19vw;
+  margin-top: 10vh;
+  z-index: 10000;
 }
 
 .content-page1 {
@@ -59,7 +63,7 @@
   right: 50%;
   transform: translateX(50%);
   width: 100%;
-  margin-top: 7vh;
+  margin-top: 40vh;
 }
 
 .text-page1 {
@@ -97,6 +101,19 @@
 }
 
 
+
+.sub-text-relations{
+  font-family: 'Heebo', sans-serif;
+  font-size: 5vmin;
+  color: grey;
+  text-align: center;
+  margin-top: 29vh;
+  width: 90%;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  direction: rtl;
+}   
 
 
 
