@@ -37,9 +37,12 @@ function Relations() {
     setArrayOfMechlol(arrayOfMechlol.filter(mechlol => mechlol !== item));
     setStep1Color('rgb(86 195 232)');
     setStep2Color('rgb(86 195 232)'); // Change color of Step 2 button
+    window.scrollTo(0, 0); // Scroll to the top of the page
   };
 
   const handleStepClick = (stepNumber) => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+
     if (stepNumber === 1) {
       setStep(1);
       setSelectedItemStep1(null);
@@ -86,6 +89,7 @@ function Relations() {
       }
       setNewComponent(true);
       setStep(3);
+      window.scrollTo(0, 0); // Scroll to the top of the page
     } else {
       handleClick(item);
     }
