@@ -41,38 +41,38 @@ function Relations() {
   };
 
   const handleStepClick = (stepNumber) => {
-    window.scrollTo(0, 0); // Scroll to the top of the page
+    if (stepNumber <= step) {
+      window.scrollTo(0, 0); // Scroll to the top of the page
 
-    if (stepNumber === 1) {
-      setStep(1);
-      setSelectedItemStep1(null);
-      setSelectedItemsStep2(null); // Clear selected item for Step 2
-      setTitle('בחירת מכלול');
-      setTitleColor('#50565c');
-      setText('יש לבחור את המכלול הראשי');
-      setArrayOfMechlol(initialArray);
-      setStep1Color('rgb(86 195 232)'); // Reset color for Step 1
-      setStep2Color('rgb(217 217 217)'); // Reset color for Step 2
-      setStep3Color('rgb(217 217 217)'); // Reset color for Step 3
-      setNewComponent(false); // Hide the Interfaces component
-    } else if (stepNumber === 2 && step === 1) { // Check if in Step 1
-      console.log("Complete Step 1 before proceeding to Step 2");
-    } else if (stepNumber === 2) {
-      setStep(2);
-      setStep2Color('rgb(86 195 232)'); // Highlight Step 2 button
-      setStep3Color('rgb(217 217 217)');
-      setNewComponent(false); // Ensure Interfaces is hidden
-      setText('יש לבחור את המכלול הראשי'); // Reset text for Step 2
-      // Update title to reflect selected item in Step 1
-      if (selectedItemStep1) {
-        setTitle(`מכלול ${selectedItemStep1}`);
-      } else {
+      if (stepNumber === 1) {
+        setStep(1);
+        setSelectedItemStep1(null);
+        setSelectedItemsStep2(null); // Clear selected item for Step 2
         setTitle('בחירת מכלול');
+        setTitleColor('#50565c');
+        setText('יש לבחור את המכלול הראשי');
+        setArrayOfMechlol(initialArray);
+        setStep1Color('rgb(86 195 232)'); // Reset color for Step 1
+        setStep2Color('rgb(217 217 217)'); // Reset color for Step 2
+        setStep3Color('rgb(217 217 217)'); // Reset color for Step 3
+        setNewComponent(false); // Hide the Interfaces component
+      } else if (stepNumber === 2) {
+        setStep(2);
+        setStep2Color('rgb(86 195 232)'); // Highlight Step 2 button
+        setStep3Color('rgb(217 217 217)');
+        setNewComponent(false); // Ensure Interfaces is hidden
+        setText('יש לבחור את המכלול הראשי'); // Reset text for Step 2
+        // Update title to reflect selected item in Step 1
+        if (selectedItemStep1) {
+          setTitle(`מכלול ${selectedItemStep1}`);
+        } else {
+          setTitle('בחירת מכלול');
+        }
+      } else if (stepNumber === 3) {
+        setStep(3);
+        setStep3Color('rgb(86 195 232)'); // Highlight Step 3 button
+        setTitle(`ממשק בין ${selectedItemStep1} ו${selectedItemsStep2}`); // Update title for Step 3
       }
-    } else if (stepNumber === 3) {
-      setStep(3);
-      setStep3Color('rgb(86 195 232)'); // Highlight Step 3 button
-      setTitle(`ממשק בין ${selectedItemStep1} ו${selectedItemsStep2}`); // Update title for Step 3
     }
   };
 
@@ -111,19 +111,19 @@ function Relations() {
                 <div className='arrow-down' id='arrow-down1' style={{ display: step === 1 ? 'block' : 'none' }}></div>
             </div>
             <div
-                className={`btn-steps ${step !== 1 ? '' : 'disabled'}`} // Fixed className
+                className={`btn-steps ${step < 2 ? 'disabled' : ''}`} // Add disabled class if step < 2
                 id='step2'
                 style={{ backgroundColor: step2Color }}
-                onClick={() => step !== 1 && handleStepClick(2)} // Prevent clicking if not in step 1
+                onClick={() => step >= 1 && handleStepClick(2)} // Prevent clicking if not in step 1 or higher
             >
                 שלב 2
                 <div className='arrow-down' id='arrow-down2' style={{ display: step === 2 ? 'block' : 'none' }}></div>
             </div>
             <div
-                className='btn-steps'
+                className={`btn-steps ${step < 3 ? 'disabled' : ''}`} // Add disabled class if step < 3
                 id='step3'
                 style={{ backgroundColor: step3Color }}
-                onClick={() => handleStepClick(3)}
+                onClick={() => step >= 2 && handleStepClick(3)} // Prevent clicking if not in step 2 or higher
             >
                 שלב 3
                 <div className='arrow-down' id='arrow-down3' style={{ display: step === 3 ? 'block' : 'none' }}></div>
