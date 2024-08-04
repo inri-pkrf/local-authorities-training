@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Diagram.css';
 import PopUp from './PopUp';
 
@@ -19,8 +19,15 @@ const Diagram = () => {
     window.open(`${process.env.PUBLIC_URL}/מבנה הרשות המקומית בשעת חירום.pdf`, '_blank');
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   return (
     <div className="diagram-container">
+      <img src={process.env.PUBLIC_URL + '/mivne.png'} className="mivne" alt="Diagram" />
+
       <h1 className="diagram-title">מבנה הרשות המקומית בשעת חירום</h1>
       <div className="subtitle-diagram">
         בכדי לפעול באופן מיטבי בשעת חירום, הרשות המקומית משנה תצורה ופעולת במכלולים המחולקים לתחומי אחריות.

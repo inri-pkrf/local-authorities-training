@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PhotoList from './PhotoList';
 import CardDetails from './CardDetails';
 import './Gallery.css';
@@ -10,8 +10,8 @@ const cardData = [
     headline: '1. ראש הרשות\ מנכ"ל (רמ"ט)',
     text: (
       <>
-      <b>תפקיד המכלול בהערכת מצב:</b>
-      <br /> <br />
+        <b>תפקיד המכלול בהערכת מצב:</b>
+        <br /> <br />
         מטרה ומיקוד הנושאים המרכזיים בהערכת מצב
       </>
     ),
@@ -23,7 +23,7 @@ const cardData = [
     headline: '2. מרכז שליטה ודיווח (מבצעים)',
     text: (
       <><b>תפקיד המכלול בהערכת מצב:</b>
-      <br /> <br />
+        <br /> <br />
         <b>אירועים מרכזיים</b> ברשות וסטאטוס הטיפול בהם.
         <br />
         <b>תמ"צ כוחות וצוותים</b> בשטח.
@@ -39,7 +39,7 @@ const cardData = [
     headline: '3. יקל"ר',
     text: (
       <><b>תפקיד המכלול בהערכת מצב:</b>
-      <br /> <br />
+        <br /> <br />
         <b>תמ"צ צבאית -</b> הערכת האיום, מצב משפטית, תמ"צ כוחות ומאמצים עיקריים בפקע"ר.
         <br />
         <b> מדיניות התגוננות –</b> מדיניות נוכחית ותמונת מצב
@@ -207,9 +207,9 @@ const cardData = [
       <b>כשירות המכלול לביצוע תפקידיו.</b>
       <br />
       <b>תמ"צ מקלטים</b> (ציבוריים ומשותפים) וכשירות צופרים.
-      <br/>
+      <br />
       <b>מדיניות ההתגוננות –</b> משימות מרכזיות למימוש והמלצות.
-      <br/>
+      <br />
       <b>דרישות הרשות לסיוע חיצוני</b> ודרישות גופי החירום מהרשות.
     </>),
     video: '/ass2.mp4'
@@ -220,9 +220,9 @@ const cardData = [
     headline: '12. ראש הרשות',
     text: (<><b>תפקיד המכלול בהערכת מצב:</b>
       <br /> <br />
-     <b>משימות מרכזיות –</b> תעדוף וטיפול.
-     <br/>
-     <b>סיכום והנחיות לביצוע.</b>
+      <b>משימות מרכזיות –</b> תעדוף וטיפול.
+      <br />
+      <b>סיכום והנחיות לביצוע.</b>
     </>),
     video: '/ass1.mp4'
   },
@@ -267,8 +267,16 @@ const Gallery = () => {
     window.open(`${process.env.PUBLIC_URL}/עזר - הערכת מצב רשות.pdf`, '_blank');
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
+
   return (
     <div className="gallery">
+      <img src={process.env.PUBLIC_URL + '/diagramIcon.png'} className="diagramIcon" alt="Gallery" />
+
       <h1 className="Gallery-title">הערכת מצב ברשות המקומית</h1>
       {selectedCardIndex === null ? (
         <div id='temp-title'>

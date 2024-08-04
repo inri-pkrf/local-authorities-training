@@ -29,19 +29,21 @@ function Home({ onNavigate }) {
           </div>
         </div>
         <div id='line2' className='dot-line'>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  </div>
-        <div className="photo-list-item" onClick={() => onNavigate('ogen')}>
-          <div className="photo-list-content">
-            <div className="photo-list-title-homepage"> תרחיש ייחוס מישקי </div>
-            <img src={process.env.PUBLIC_URL + '/ogenIcon.png'} className="photo-list-image-homepage" alt="Ogen" />
-          </div>
-        </div>
-        <div id='line3' className='dot-line'>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  </div>
+       
         <div className="photo-list-item" onClick={() => onNavigate('relations')}>
         <div className="photo-list-content">
           <div className="photo-list-title-homepage">ממשקי עבודה בין מכלולים</div>
           <img src={process.env.PUBLIC_URL + '/mimshak.png'} className="photo-list-image-homepage" alt="Relations" />
         </div>
       </div>
+      <div id='line3' className='dot-line'>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  </div>
+
+      <div className="photo-list-item" onClick={() => onNavigate('ogen')}>
+          <div className="photo-list-content">
+            <div className="photo-list-title-homepage"> תרחיש ייחוס מישקי </div>
+            <img src={process.env.PUBLIC_URL + '/ogenIcon.png'} className="photo-list-image-homepage" alt="Ogen" />
+          </div>
+        </div>
        
 
 

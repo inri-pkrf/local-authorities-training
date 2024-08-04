@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './Relations.css';
 import Interfaces from './Interfaces.js';
 
@@ -13,6 +13,7 @@ function Relations() {
   const [step2Color, setStep2Color] = useState('rgb(217 217 217)'); // Initial color for step 2 button
   const [step3Color, setStep3Color] = useState('rgb(217 217 217)'); // Initial color for step 3 button
   const [newComponent, setNewComponent] = useState(false);
+  const [introVisible, setIntroVisible] = useState(true); // State to manage visibility of intro section
 
   const initialArray = [
     'שליטה ודיווח',
@@ -27,9 +28,15 @@ function Relations() {
 
   const [arrayOfMechlol, setArrayOfMechlol] = useState(initialArray);
 
+  const introRef = useRef(null);
+  const contentRef = useRef(null);
+
+  useEffect(() => {
+    // Optionally, you can perform some initial setup
+  }, []);
+
   const handleClick = (item) => {
     setSelectedItemStep1(item);
-    console.log("Selected Item Step 1:", item); // Log the item clicked
     setTitle(`מכלול ${item}`);
     setTitleColor('#56c3e8');
     setText('יש לבחור מכלול נוסף, בכדי לצפות בממשקים שלו כחלק מהעבודה השוטפת ');
@@ -37,13 +44,10 @@ function Relations() {
     setArrayOfMechlol(arrayOfMechlol.filter(mechlol => mechlol !== item));
     setStep1Color('rgb(86 195 232)');
     setStep2Color('rgb(86 195 232)'); // Change color of Step 2 button
-    window.scrollTo(0, 0); // Scroll to the top of the page
   };
 
   const handleStepClick = (stepNumber) => {
     if (stepNumber <= step) {
-      window.scrollTo(0, 0); // Scroll to the top of the page
-
       if (stepNumber === 1) {
         setStep(1);
         setSelectedItemStep1(null);
@@ -62,7 +66,6 @@ function Relations() {
         setStep3Color('rgb(217 217 217)');
         setNewComponent(false); // Ensure Interfaces is hidden
         setText('יש לבחור את המכלול הראשי'); // Reset text for Step 2
-        // Update title to reflect selected item in Step 1
         if (selectedItemStep1) {
           setTitle(`מכלול ${selectedItemStep1}`);
         } else {
@@ -78,88 +81,110 @@ function Relations() {
 
   const handleItemClick = (item) => {
     if (step === 2) {
-      // Save the item for Step 2
       setSelectedItemsStep2(item);
       setStep2Color('rgb(86 195 232)');
       setStep3Color('rgb(86 195 232)');
-      console.log("Selected Item Step 2:", item); // Log the item clicked in Step 2
-      // Update title to include both selected items
       if (selectedItemStep1 && item) {
         setTitle(`ממשק בין ${selectedItemStep1} ו${item}`);
       }
       setNewComponent(true);
       setStep(3);
-      window.scrollTo(0, 0); // Scroll to the top of the page
     } else {
       handleClick(item);
     }
   };
 
+  // Function to toggle visibility of intro and main content
+  const handleArrowClick = () => {
+    setIntroVisible(false);
+  };
+
   return (
     <div className="Relations">
-
-        <img src={process.env.PUBLIC_URL + '/mimshak.png'} className="photo-mimshak" alt="Relations" />
-
-        <div className='all-steps'>
-            <div
-                className='btn-steps'
-                id='step1'
-                style={{ backgroundColor: step1Color }}
-                onClick={() => handleStepClick(1)}
-            >
-                שלב 1
-                <div className='arrow-down' id='arrow-down1' style={{ display: step === 1 ? 'block' : 'none' }}></div>
-            </div>
-            <div
-                className={`btn-steps ${step < 2 ? 'disabled' : ''}`} // Add disabled class if step < 2
-                id='step2'
-                style={{ backgroundColor: step2Color }}
-                onClick={() => step >= 1 && handleStepClick(2)} // Prevent clicking if not in step 1 or higher
-            >
-                שלב 2
-                <div className='arrow-down' id='arrow-down2' style={{ display: step === 2 ? 'block' : 'none' }}></div>
-            </div>
-            <div
-                className={`btn-steps ${step < 3 ? 'disabled' : ''}`} // Add disabled class if step < 3
-                id='step3'
-                style={{ backgroundColor: step3Color }}
-                onClick={() => step >= 2 && handleStepClick(3)} // Prevent clicking if not in step 2 or higher
-            >
-                שלב 3
-                <div className='arrow-down' id='arrow-down3' style={{ display: step === 3 ? 'block' : 'none' }}></div>
-            </div>
+      {introVisible ? (
+        <div className='intro-div-Relations' ref={introRef}>
+          {/* <div>ממשקים בין מכלולים
+          </div>
+          <div>
+            לפניך כאן ניתן ללמוד על תפקיד המכלול שלי, מה מכלולים אחרים צריכים לקבל ממני ומה אני מהם
+          </div> */}
+          <img
+            src={process.env.PUBLIC_URL + '/hpArrow.png'}
+            className="hpArrow-Relations"
+            alt="Arrow"
+            onClick={handleArrowClick}
+          />
         </div>
+      ) : (
+        <div className='Relations-div'>
+          <img
+            src={process.env.PUBLIC_URL + '/mimshak.png'}
+            className="photo-mimshak"
+            alt="Relations"
+          />
 
-        <div className="title-page1" style={{ color: titleColor }}>
+          <div className='all-steps'>
+            <div
+              className='btn-steps'
+              id='step1'
+              style={{ backgroundColor: step1Color }}
+              onClick={() => handleStepClick(1)}
+            >
+              שלב 1
+              <div className='arrow-down' id='arrow-down1' style={{ display: step === 1 ? 'block' : 'none' }}></div>
+            </div>
+            <div
+              className={`btn-steps ${step < 2 ? 'disabled' : ''}`} // Add disabled class if step < 2
+              id='step2'
+              style={{ backgroundColor: step2Color }}
+              onClick={() => step >= 1 && handleStepClick(2)} // Prevent clicking if not in step 1 or higher
+            >
+              שלב 2
+              <div className='arrow-down' id='arrow-down2' style={{ display: step === 2 ? 'block' : 'none' }}></div>
+            </div>
+            <div
+              className={`btn-steps ${step < 3 ? 'disabled' : ''}`} // Add disabled class if step < 3
+              id='step3'
+              style={{ backgroundColor: step3Color }}
+              onClick={() => step >= 2 && handleStepClick(3)} // Prevent clicking if not in step 2 or higher
+            >
+              שלב 3
+              <div className='arrow-down' id='arrow-down3' style={{ display: step === 3 ? 'block' : 'none' }}></div>
+            </div>
+          </div>
+
+          <div className="title-page1" style={{ color: titleColor }}>
             {title}
-        </div>
+          </div>
 
-        {(step === 2 || step === 3) && <div className='sub-text-relations'>בחרת ב</div>}
+          {(step === 2 || step === 3) && <div className='sub-text-relations'>בחרת ב</div>}
 
-        <div className='content-page1'>
+          <div className='content-page1' ref={contentRef}>
             <div className="text-page1" style={{ display: newComponent ? 'none' : 'block' }}>
-                {text}
+              {text}
             </div>
 
             <div className='all-opotion' style={{ display: newComponent ? 'none' : 'block' }}>
-                {arrayOfMechlol.map((item, index) => (
-                    <div
-                        key={index}
-                        className="array-item"
-                        onClick={() => handleItemClick(item)}
-                    >
-                        {item}
-                    </div>
-                ))}
+              {arrayOfMechlol.map((item, index) => (
+                <div
+                  key={index}
+                  className="array-item"
+                  onClick={() => handleItemClick(item)}
+                >
+                  {item}
+                </div>
+              ))}
             </div>
 
             {newComponent && <Interfaces
-                selectedItemStep1={selectedItemStep1}
-                selectedItemsStep2={selectedItemsStep2}
-                setSelectedItemsStep2={setSelectedItemsStep2}
-                setTitle={setTitle}
+              selectedItemStep1={selectedItemStep1}
+              selectedItemsStep2={selectedItemsStep2}
+              setSelectedItemsStep2={setSelectedItemsStep2}
+              setTitle={setTitle}
             />}
+          </div>
         </div>
+      )}
     </div>
   );
 }

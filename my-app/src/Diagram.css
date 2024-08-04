@@ -7,7 +7,7 @@
 
 .diagram-title {
   position: absolute;
-  top: -15vh;
+  top: -13vh;
   left: -21vw;
   font-family: 'Karantina', cursive;
   font-size: 14vw;
@@ -131,7 +131,7 @@
   position: relative;
   left: -8vw;
   width: 100%;
-  top: 9vh;
+  top: 11vh;
   direction: rtl;
 }
 
@@ -180,7 +180,16 @@
   right: 50%;
   transform: translateX(50%);
   width: 88vw;
-  margin-top: -42vh;
+  margin-top: -40vh;
+}
+
+.mivne{
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  width: 19vw;
+  margin-top: -19vh;
+  margin-right: 9vw;
 }
 
 

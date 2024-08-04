@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Ogen.css'; // Import Ogen component CSS
 
 function Ogen() {
@@ -21,6 +21,11 @@ function Ogen() {
     window.open(`${process.env.PUBLIC_URL}/עזר עוגן איתן - מאפשרים.pdf`, '_blank');
   };
 
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="ogen-container">
       <img src={process.env.PUBLIC_URL + '/ogenIcon.png'} alt="ogenIcon" className="ogenIcon" />
@@ -36,8 +41,8 @@ function Ogen() {
 
       <img src={process.env.PUBLIC_URL + '/hpArrow.png'} className="hpArrow-Ogen" alt="Ogen"></img>
 
-      <h1 className="ogen-title2">עוגן איתן - תרחיש ייחוס משקי</h1>
-      <p className="ogen-subtitle2">תרחיש שמדגים משהו לגבי פיקוד העורף</p>
+      {/* <h1 className="ogen-title2">עוגן איתן - תרחיש ייחוס משקי</h1>
+      <p className="ogen-subtitle2">תרחיש שמדגים משהו לגבי פיקוד העורף</p> */}
 
       <div className="image-container">
         {images.map((image, index) => (

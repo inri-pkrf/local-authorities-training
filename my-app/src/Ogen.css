@@ -39,12 +39,13 @@
 }
 
 .hpArrow-Ogen{
-  position: relative;
-  top: 4vh;
-  display: block;
-  width: 17vw;
-  left: 3vw;
-  margin-bottom: -5vh;
+    display: block;
+    width: 17vw;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    margin-top: -137vh;
+    margin-bottom: 1vh;
 }
 
 .ogen-title2 {
@@ -68,11 +69,10 @@
 .image-container {
   display: flex;
   flex-wrap: wrap;
-  /* Allow wrapping */
   justify-content: center;
   gap: 2vw;
-  /* Space between images */
   width: 100%;
+  margin-top: 12vh;
 }
 
 .image-item {

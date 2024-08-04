@@ -26,7 +26,7 @@
 
 .Gallery-title {
   position: relative;
-  top: -3vh;
+  top: 5vh;
   left: 1vw;
   text-align: center;
   font-family: 'Karantina', cursive;
@@ -154,4 +154,11 @@
   text-decoration: underline;
   color: #595959;
   font-weight: bold;
+}
+
+.diagramIcon{
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  width: 19vw;
 }
