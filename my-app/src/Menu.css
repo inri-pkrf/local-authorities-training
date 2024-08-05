@@ -33,16 +33,16 @@
   border-bottom: 0.2vh solid white;
   padding: 1.5vh 0;
   text-align: center;
-  padding-right: 5vw;
+  /* padding-right: 5vw; */
   font-size: 5vw;
 }
 
 .closeBtn {
   position: fixed;
-  top: 3vh;
-  left: 3vw;
-  width: 20%;
-  height: 10%;
+  top: 2vh;
+  left: 2vw;
+  width: 15%;
+  height: auto;
 }
 
 .whiteLogo {
