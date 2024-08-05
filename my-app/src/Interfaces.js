@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Interfaces.css';
 
 function Interfaces({ selectedItemStep1, selectedItemsStep2, setSelectedItemsStep2, setTitle  }) {
@@ -421,17 +421,23 @@ function Interfaces({ selectedItemStep1, selectedItemsStep2, setSelectedItemsSte
     };
 
 
-    // Find the selected data
     const selectedData = data[selectedItemStep1] || [];
     const currentIndex = selectedData.findIndex(item => item.name === selectedItemsStep2);
     const itemData = selectedData[currentIndex];
+
+    useEffect(() => {
+        // Scroll to the top of the page when the component mounts
+        window.scrollTo(0, 0);
+    }, []);
 
     const handleNext = () => {
         if (selectedData.length > 0) {
             const nextIndex = (currentIndex + 1) % selectedData.length;
             const nextItem = selectedData[nextIndex].name;
             setSelectedItemsStep2(nextItem);
-            setTitle(`ממשק בין ${selectedItemStep1} ו${nextItem}`);        }
+            setTitle(`ממשק בין ${selectedItemStep1} ו${nextItem}`);
+            window.scrollTo(0, 0);
+        }
     };
 
     const handlePrev = () => {
@@ -440,6 +446,7 @@ function Interfaces({ selectedItemStep1, selectedItemsStep2, setSelectedItemsSte
             const prevItem = selectedData[prevIndex].name;
             setSelectedItemsStep2(prevItem);
             setTitle(`ממשק בין ${selectedItemStep1} ו${prevItem}`);
+            window.scrollTo(0, 0);
         }
     };
 

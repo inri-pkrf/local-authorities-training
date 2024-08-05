@@ -13,10 +13,11 @@
   }
   
   .card-details-photo {
-    width: 45%;
+    width: 39%;
     position: relative;
-    right: 27%;
+    right: 30%;
     height: auto;
+    margin-top: 7vh;
     border-radius: 1vh 1vh 0 0;
     text-align: center;
   }

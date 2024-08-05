@@ -1,7 +1,7 @@
 .intro-div-Relations{
   background-color: white;
-  position: absolute;
-  display: block;
+  /* position: absolute;
+  display: block; */
 }
 
 .hpArrow-Relations{
@@ -9,8 +9,55 @@
   right: 50%;
   transform: translateX(50%);
   width: 20vw;
-  margin-top: 51vh;
-  margin-right: -48vw;
+  /* margin-top: 68vh; */
+  bottom: 15vh;
+  animation: bounce2 2s ease infinite;
+}
+
+.photo-mimshak-intro{
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  width: 26vw;
+  margin-top: 18vh;
+}
+
+@keyframes bounce2 {
+  0% {
+    bottom: 15vh;
+  }
+
+  50% {
+    bottom: 12vh;
+  }
+
+  100% {
+    bottom: 15vh;
+  }
+}
+
+.title-intro-rel{
+  font-family: 'Karantina', cursive;
+  font-size: 16vw;
+  /* margin-bottom: 3vw; */
+  margin-top: 34vh;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.sub-intro-rel{
+  font-family: 'Heebo', sans-serif;
+  font-size: 5vw;
+  color: grey;
+  text-align: center;
+  margin-top: 49vh;
+  width: 82vw;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
 }
 
 

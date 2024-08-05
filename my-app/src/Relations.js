@@ -32,8 +32,14 @@ function Relations() {
   const contentRef = useRef(null);
 
   useEffect(() => {
-    // Optionally, you can perform some initial setup
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
   }, []);
+
+  useEffect(() => {
+    // Scroll to the top of the page when step changes
+    window.scrollTo(0, 0);
+  }, [step]);
 
   const handleClick = (item) => {
     setSelectedItemStep1(item);
@@ -103,11 +109,16 @@ function Relations() {
     <div className="Relations">
       {introVisible ? (
         <div className='intro-div-Relations' ref={introRef}>
-          {/* <div>ממשקים בין מכלולים
+            <img
+            src={process.env.PUBLIC_URL + '/mimshak.png'}
+            className="photo-mimshak-intro"
+            alt="Relations"
+          />
+          <div className="title-intro-rel">ממשקים בין מכלולים
           </div>
-          <div>
+          <div className="sub-intro-rel">
             לפניך כאן ניתן ללמוד על תפקיד המכלול שלי, מה מכלולים אחרים צריכים לקבל ממני ומה אני מהם
-          </div> */}
+          </div>
           <img
             src={process.env.PUBLIC_URL + '/hpArrow.png'}
             className="hpArrow-Relations"

@@ -66,16 +66,20 @@
 }
 
 .btn-Interfaces{
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 2vh;
     font-family: 'Heebo', sans-serif;
-    height: 6vh;
-    width: 40vw;
-    border-radius: 8vw;
     margin-right: 2vh;
-    margin-bottom: 4vh;
+    margin-bottom: 4vh; 
+    color: white;
+    position: relative;
+    /* left: 24vw; */
+    width: 38vw;
+    height: 3vh;
+    /* top: -1vh; */
+    padding: 1vh;
+    text-align: center;
+    font-size: 4vmin;
+    font-weight: bold;
+    border-radius: 15vw;
 }
 
 #next-btn-Interfaces{
