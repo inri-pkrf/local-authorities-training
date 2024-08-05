@@ -117,7 +117,7 @@ function Relations() {
           <div className="title-intro-rel">ממשקים בין מכלולים
           </div>
           <div className="sub-intro-rel">
-            לפניך כאן ניתן ללמוד על תפקיד המכלול שלי, מה מכלולים אחרים צריכים לקבל ממני ומה אני מהם
+          לפניך מערכת הצלבה בין המכלולים. <br/>כאן ניתן ללמוד על תפקיד המכלול שלי, מה מכלולים אחרים צריכים לקבל ממני ומה אני מהם
           </div>
           <img
             src={process.env.PUBLIC_URL + '/hpArrow.png'}

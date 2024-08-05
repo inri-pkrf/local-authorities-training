@@ -46,6 +46,7 @@
   position: absolute;
   right: 50%;
   transform: translateX(50%);
+  color: rgb(86, 195, 232);
 }
 
 .sub-intro-rel{
@@ -58,6 +59,7 @@
   position: absolute;
   right: 50%;
   transform: translateX(50%);
+  direction: rtl;
 }
 
 
