@@ -8,6 +8,7 @@ import Gallery from './Gallery';
 import Relations from './Relations';
 import Ogen from './Ogen';
 import IntroComponent from './IntroComponent.js';
+import Target from './Target.js';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -41,6 +42,7 @@ function App() {
               {activeComponent === 'diagram' && <Diagram />}
               {activeComponent === 'gallery' && <Gallery />}
               {activeComponent === 'relations' && <Relations onNavigate={handleNavigate} />}
+              {activeComponent === 'target' && <Target />}
               {activeComponent === 'ogen' && <Ogen />}
             </div>
           )}

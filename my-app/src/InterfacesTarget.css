@@ -1,0 +1,70 @@
+
+.Interfaces-contect-target{
+    font-family: 'Heebo', sans-serif;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    direction: rtl;
+    margin-top: 12vh;
+    /* overflow-y: auto; */
+    height: 34vh;
+}
+
+.title-Interfaces{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    width: 100vw;
+    height: 6vh;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2vh;
+    font-size: 5vmin;
+    margin-top: 5vh;
+}
+
+.text-interfaces-target{
+    width: 93vw;
+    height: 25vh;
+    background-color: #e9e9e9;
+    color: #000000;
+    margin-bottom: 1vh;
+    padding-right: 2vh;
+    margin-top: 9vh;
+    padding-left: 2vh;
+    padding-top: 6vh;
+}
+
+.btn-div-target{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    display: flex;
+    margin-top: 56vh;
+}
+
+.btn-Interfaces{
+    font-family: 'Heebo', sans-serif;
+    margin-right: 2vh;
+    margin-bottom: 4vh; 
+    color: white;
+    position: relative;
+    /* left: 24vw; */
+    width: 38vw;
+    height: 3vh;
+    /* top: -1vh; */
+    padding: 1vh;
+    text-align: center;
+    font-size: 4vmin;
+    font-weight: bold;
+    border-radius: 15vw;
+}
+
+#next-btn-Interfaces{
+    background-color: #595959;
+}
+
+#prev-btn-Interfaces{
+    background-color: #eee;
+}

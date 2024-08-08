@@ -19,7 +19,8 @@ function Menu({ onClose, onNavigate }) {
         <li onClick={() => handleItemClick('diagram')}>מבנה הרשות המקומית בחירום</li>
         <li onClick={() => handleItemClick('gallery')}> הערכת מצב ברשות המקומית בשעת חירום</li>
         <li onClick={() => handleItemClick('relations')}>ממשקי עבודה בין מכלולים</li>
-        <li onClick={() => handleItemClick('ogen')}> תרחיש ייחוס מישקי</li> 
+        <li onClick={() => handleItemClick('target')}> יעדים לאומיים </li>
+        <li id='last-item-m' onClick={() => handleItemClick('ogen')}> תרחיש ייחוס מישקי</li> 
       </ul>
     </div>
   );

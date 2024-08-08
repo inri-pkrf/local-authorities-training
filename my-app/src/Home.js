@@ -38,6 +38,13 @@ function Home({ onNavigate }) {
       </div>
       <div id='line3' className='dot-line'>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  </div>
 
+      <div className="photo-list-item" onClick={() => onNavigate('target')}>
+        <div className="photo-list-content">
+          <div className="photo-list-title-homepage">  יעדים לאומיים </div>
+          <img src={process.env.PUBLIC_URL + '/icon-des.png'} id='icon-des' className="photo-list-image-homepage" alt="Relations" />
+        </div>
+      </div>
+      <div id='line4' className='dot-line'>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  </div>
       <div className="photo-list-item" onClick={() => onNavigate('ogen')}>
           <div className="photo-list-content">
             <div className="photo-list-title-homepage"> תרחיש ייחוס מישקי </div>
@@ -59,7 +66,7 @@ function Home({ onNavigate }) {
       <div className="subtitle2">
         עזר זה נבנה בשיתוף פעולה בין ענף רשויות במחלקת אוכלוסייה ומגמת אימוני רשויות במכללה הלאומית לאיתנות ישראלית
       </div>
-      <div id='line4'>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  </div>
+      <div id='line5'>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  </div>
       <div className='date'> אוגוסט 2024 </div>
     </div>
 

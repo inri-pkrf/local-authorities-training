@@ -21,6 +21,12 @@
   padding: 5vw;
 }
 
+#last-item-m{
+  border-bottom: none;
+  margin-bottom: 8vh;
+}
+
+
 .menu-list {
   list-style-type: none;
   padding: 0;

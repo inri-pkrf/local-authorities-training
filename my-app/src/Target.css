@@ -1,0 +1,97 @@
+
+  .arrow-down-target {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #595959;
+    position: relative;
+    top: 0vh;
+    right: 8vw;
+  }
+  
+
+  .all-option-step1 {
+    font-family: 'Heebo', sans-serif;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    text-align: center;
+    color: #595959;
+    margin-top: 8vh;
+    font-weight: bold;
+  }
+  
+  .array-item-step1 {
+    height: 6vh;
+    width: 85vw;
+    background-color: #d9d9d9;
+    margin-top: 2vh;
+    padding-top: 1.5vh;
+    font-size: 5vmin;
+    cursor: pointer; /* Add pointer cursor on hover */
+    margin-bottom: 3vh;
+  }
+  
+  .array-item:active {
+    background-color: #56c3e8; /* Change background color to blue when selected */
+    color: white; /* Change text color to white for better readability */
+  }
+  
+  
+  .all-option-step2 {
+    font-family: 'Heebo', sans-serif;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    text-align: center;
+    margin-top: 12vh;
+    color: white;
+  }
+  
+  .array-item-step2 {
+    height: 6vh;
+    width: 85vw;
+    margin-top: 2vh;
+    padding-top: 1.5vh;
+    font-size: 5.5vmin;
+    cursor: pointer; /* Add pointer cursor on hover */
+    margin-bottom: 3vh;
+  }
+
+  #step2Item0{
+    background-color: #6fa8dc;
+  }
+
+  #step2Item1{
+    background-color: #67d7b2;
+  }
+
+  #step2Item2{
+    background-color: #ea9999;
+    margin-bottom: 9vh;
+  }
+
+  .line-array{
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        height: 4vh;
+        width: 74vw;
+        margin-top: -41vh;
+        background-color: transparent;
+        color: black;
+  }
+
+  #step2Item3{
+    background-color: #f9cb9c;
+  }
+
+  #step2Item4{
+    background-color: #b4a7d6;
+  }
+
+  #step2Item5{
+    background-color: #b7b7b7;
+    margin-bottom: 6vh;
+  }
