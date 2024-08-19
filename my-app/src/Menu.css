@@ -22,7 +22,7 @@
 }
 
 #last-item-m{
-  border-bottom: none;
+  /* border-bottom: none; */
   margin-bottom: 8vh;
 }
 
@@ -63,4 +63,25 @@
 .menu-list li.active {
   background-color: white;
   color: #175a85;
+}
+
+
+.mashov-menu{
+  font-family: 'Heebo', sans-serif;
+  font-size: 4vw;
+  color: white;
+  text-align: center;
+  position: absolute;
+  margin-top: -5vh;
+  right: 50%;
+  transform: translateX(50%);
+  width: 67vw;
+}
+
+.mashovTextMenu{
+  margin-bottom: 6vh;
+}
+
+#linkMenu{
+  color: white;
 }

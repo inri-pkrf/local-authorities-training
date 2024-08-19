@@ -161,3 +161,23 @@
   padding-top: 5%;
   padding-bottom: 5%;
 }
+
+.mashov-home{
+  font-family: 'Heebo', sans-serif;
+  font-size: 4vw;
+  color: #50565c;
+  text-align: center;
+  position: absolute;
+  margin-top: 175vh;
+  right: 50%;
+  transform: translateX(50%);
+  width: 67vw;
+}
+
+.mashovText{
+  margin-bottom: 4vh;
+}
+
+#linkHome{
+  color: #50565c;
+}
