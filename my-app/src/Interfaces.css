@@ -89,3 +89,20 @@
 #prev-btn-Interfaces{
     background-color: #999;
 }
+
+.Interfaces-back{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    margin-top: 97vh;
+    width: 100%;
+}
+
+#stpe1btn-Interfaces{
+    color: #56c3e8;
+    font-size: 5vw;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Heebo', sans-serif;
+    margin-bottom: 5vh;
+}

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './Interfaces.css';
 
-function Interfaces({ selectedItemStep1, selectedItemsStep2, setSelectedItemsStep2, setTitle  }) {
+function Interfaces({ selectedItemStep1, selectedItemsStep2, setSelectedItemsStep2, setTitle, navigateToStep1 }) {
     const data = {
         "שליטה ודיווח": [
             {
@@ -208,10 +208,10 @@ function Interfaces({ selectedItemStep1, selectedItemsStep2, setSelectedItemsSte
                 ]
             }
         ],
-    
-       
 
-     "הנדסה ותשתיות": [
+
+
+        "הנדסה ותשתיות": [
             {
                 name: "הנדסה ותשתיות",
                 connections: [
@@ -470,6 +470,13 @@ function Interfaces({ selectedItemStep1, selectedItemsStep2, setSelectedItemsSte
                 <div className='btn-Interfaces' id='prev-btn-Interfaces' onClick={handlePrev}>לממשק הקודם</div>
                 <div className='btn-Interfaces' id='next-btn-Interfaces' onClick={handleNext}>לממשק הבא</div>
             </div>
+
+            <div className='Interfaces-back'>
+                <div id='stpe1btn-Interfaces' onClick={navigateToStep1}>
+                    חזרה לבחירת מכלול ראשון
+                </div>
+            </div>
+
         </div>
     );
 }

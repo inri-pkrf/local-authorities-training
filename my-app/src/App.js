@@ -20,6 +20,7 @@ function App() {
 
   const handleNavigate = (component) => {
     setActiveComponent(component);
+    window.scrollTo(0, 0);
     setMenuOpen(false); // Close the menu after navigating
   };
 

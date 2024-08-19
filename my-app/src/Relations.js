@@ -105,6 +105,20 @@ function Relations() {
     setIntroVisible(false);
   };
 
+  const navigateToStep1 = () => {
+    setStep(1);
+    setSelectedItemStep1(null);
+    setSelectedItemsStep2(null); // Clear selected item for Step 2
+    setTitle('בחירת מכלול');
+    setTitleColor('#50565c');
+    setText('יש לבחור את המכלול הראשי');
+    setArrayOfMechlol(initialArray);
+    setStep1Color('rgb(86 195 232)'); // Reset color for Step 1
+    setStep2Color('rgb(217 217 217)'); // Reset color for Step 2
+    setStep3Color('rgb(217 217 217)'); // Reset color for Step 3
+    setNewComponent(false); // Hide the Interfaces component
+  };
+
   return (
     <div className="Relations">
       {introVisible ? (
@@ -192,6 +206,7 @@ function Relations() {
               selectedItemsStep2={selectedItemsStep2}
               setSelectedItemsStep2={setSelectedItemsStep2}
               setTitle={setTitle}
+              navigateToStep1={navigateToStep1}
             />}
           </div>
         </div>

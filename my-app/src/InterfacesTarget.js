@@ -388,7 +388,7 @@ function InterfacesTarget({ selectedItemStep1, selectedItemsStep2, navigateToSte
     return (
         <div className="interfaces-target">
             <div className='Interfaces-contect-target'>
-                <div className='title-Interfaces'>
+                <div className='title-InterfacesTarget'>
                     {`ממשק בין ${selectedItemStep1} ו`}
                     <span style={{ color: currentColor }}>
                         {data[selectedItemStep1][currentIndex]?.name || selectedItemsStep2}

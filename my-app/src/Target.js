@@ -5,7 +5,6 @@ import InterfacesTarget from './InterfacesTarget.js';
 function Target() {
     const [title, setTitle] = useState('בחירת מכלול');
     const [titleColor, setTitleColor] = useState('#56c3e8');
-    const [text, setText] = useState('יש לבחור את המכלול הראשי');
     const [selectedItemStep1, setSelectedItemStep1] = useState(null);
     const [selectedItemsStep2, setSelectedItemsStep2] = useState(null); // State to track selected item in Step 2
     const [step, setStep] = useState(1);
@@ -53,7 +52,6 @@ function Target() {
         setSelectedItemStep1(item);
         setTitle(`מכלול ${item}`);
         setTitleColor('#50565c');
-        setText(' יש לבחור יעד או מאפשר לאומי כדי לצפות בתפקידי המכלול  ');
         setStep(2);
         setStep1Color('#595959');
         setStep2Color('#595959');
@@ -67,7 +65,6 @@ function Target() {
                 setSelectedItemsStep2(null);
                 setTitle('בחירת מכלול');
                 setTitleColor('#56c3e8');
-                setText('יש לבחור את המכלול הראשי');
                 setStep1Color('#595959');
                 setStep2Color('#d9d9d9');
                 setStep3Color('#d9d9d9');
@@ -77,7 +74,6 @@ function Target() {
                 setStep2Color('#595959');
                 setStep3Color('#d9d9d9');
                 setNewComponent(false);
-                setText('יש לבחור יעד או מאפשר לאומי');
                 if (selectedItemStep1) {
                     setTitle(`מכלול ${selectedItemStep1}`);
                 } else {
@@ -119,7 +115,6 @@ function Target() {
         setSelectedItemsStep2(null);
         setTitle('בחירת מכלול');
         setTitleColor('#56c3e8');
-        setText('יש לבחור את המכלול הראשי');
         setStep1Color('#595959');
         setStep2Color('#d9d9d9');
         setStep3Color('#d9d9d9');
@@ -185,7 +180,7 @@ function Target() {
                         </div>
                     </div>
 
-                    <div className="title-page1" style={{ color: titleColor }}>
+                    <div className="title-Target" style={{ color: titleColor }}>
                         {/* {step === 3 ? (
                             <>
                                 {`ממשק בין ${selectedItemStep1} ו`}
@@ -196,15 +191,19 @@ function Target() {
                         ) : (
                             title
                         )} */}
-                       {step !== 3 && title}
+                        {step !== 3 && title}
                     </div>
 
                     {(step === 2 || step === 3) && <div className='sub-text-relations'>בחרת ב</div>}
 
                     <div className='content-page1' ref={contentRef}>
-                        <div className="text-page1" style={{ display: newComponent ? 'none' : 'block' }}>
-                            {text}
+                        <div id="text-Target1" style={{ display: step === 1 ? 'block' : 'none' }}>
+                            יש לבחור את המכלול הראשי
                         </div>
+                        <div id="text-Target2" style={{ display: step === 2 ? 'block' : 'none' }}>
+                            יש לבחור יעד או מאפשר לאומי כדי לצפות בתפקידי המכלול
+                        </div>
+
 
                         <div className='all-option-step1' style={{ display: step === 1 ? 'block' : 'none' }}>
                             {initialArray.map((item, index) => (
@@ -238,9 +237,9 @@ function Target() {
                         </div>
 
                         {newComponent && <InterfacesTarget
-                                  selectedItemStep1={selectedItemStep1}
-                                  selectedItemsStep2={selectedItemsStep2}
-                                  navigateToStep1={navigateToStep1} // Pass the callback here
+                            selectedItemStep1={selectedItemStep1}
+                            selectedItemsStep2={selectedItemsStep2}
+                            navigateToStep1={navigateToStep1} // Pass the callback here
                         />}
                     </div>
                 </div>
