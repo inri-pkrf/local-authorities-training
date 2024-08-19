@@ -15,7 +15,6 @@ function Target() {
     const [newComponent, setNewComponent] = useState(false);
     const [introVisible, setIntroVisible] = useState(true); // State to manage visibility of intro section
     const [selectedItemColor, setSelectedItemColor] = useState('#ffffff'); // Default color
-    // const [currentStep2Color, setCurrentStep2Color] = useState('#ffffff');
 
     const initialArray = [
         'מרכז שליטה רשותי',
@@ -28,12 +27,12 @@ function Target() {
     ];
 
     const secondArray = [
-        'יעד שירותי רפואה',
-        'יעד מחסה הולם',
         'יעד מזון ומים',
-        'מאפשר מידע לציבור',
-        'מאפשר אנרגיה',
+        'יעד מחסה הולם',
+        'יעד שירותי רפואה',
         'מאפשר כוח אדם',
+        'מאפשר אנרגיה',
+        'מאפשר מידע לציבור',
     ];
 
     // Assume these colors correspond to the second array items
@@ -114,6 +113,19 @@ function Target() {
         setIntroVisible(false);
     };
 
+    const navigateToStep1 = () => {
+        setStep(1);
+        setSelectedItemStep1(null);
+        setSelectedItemsStep2(null);
+        setTitle('בחירת מכלול');
+        setTitleColor('#56c3e8');
+        setText('יש לבחור את המכלול הראשי');
+        setStep1Color('#595959');
+        setStep2Color('#d9d9d9');
+        setStep3Color('#d9d9d9');
+        setNewComponent(false);
+    };
+
     return (
         <div className="Target">
             {introVisible ? (
@@ -174,7 +186,7 @@ function Target() {
                     </div>
 
                     <div className="title-page1" style={{ color: titleColor }}>
-                        {step === 3 ? (
+                        {/* {step === 3 ? (
                             <>
                                 {`ממשק בין ${selectedItemStep1} ו`}
                                 <span style={{ color: selectedItemColor }}>
@@ -183,7 +195,8 @@ function Target() {
                             </>
                         ) : (
                             title
-                        )}
+                        )} */}
+                       {step !== 3 && title}
                     </div>
 
                     {(step === 2 || step === 3) && <div className='sub-text-relations'>בחרת ב</div>}
@@ -225,11 +238,9 @@ function Target() {
                         </div>
 
                         {newComponent && <InterfacesTarget
-                            selectedItemStep1={selectedItemStep1}
-                            selectedItemsStep2={selectedItemsStep2}
-                            setSelectedItemsStep2={setSelectedItemsStep2}
-                            setTitle={setTitle}
-                            selectedItemColor={selectedItemColor}
+                                  selectedItemStep1={selectedItemStep1}
+                                  selectedItemsStep2={selectedItemsStep2}
+                                  navigateToStep1={navigateToStep1} // Pass the callback here
                         />}
                     </div>
                 </div>

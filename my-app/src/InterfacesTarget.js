@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import './InterfacesTarget.css';
 
-function InterfacesTarget({ selectedItemStep1, selectedItemsStep2, setTitle, selectedItemColor }) {
-    const [connections, setConnections] = useState([]);
-    const [currentIndex, setCurrentIndex] = useState(0);
+function InterfacesTarget({ selectedItemStep1, selectedItemsStep2, navigateToStep1  }) {
+    const [currentColor, setCurrentColor] = useState(''); // To show the correcr colore that mach the selectedItemsStep2
+    const [connections, setConnections] = useState([]); // To get the correct datat according to the selectedItemStep1 
+    const [currentIndex, setCurrentIndex] = useState(0); // To keep track of the current item index
+
 
     const data = {
         "מרכז שליטה רשותי": [
             {
-                name: "יעד ומזון למים",
+                name: "יעד מזון ומים",
                 connections: [
                     "מענה רשותי לאספקה וחלוקת מים.",
                     "מענה רשותי לחלוקת מזון.",
@@ -61,7 +63,7 @@ function InterfacesTarget({ selectedItemStep1, selectedItemsStep2, setTitle, sel
         ],
         "אוכלוסייה": [
             {
-                name: "יעד ומזון למים",
+                name: "יעד מזון ומים",
                 connections: [
                     'מיפוי אוכלוסייה: קשישים חסרי עורף משפחתי, חצר"מים, אנשים עם מוגבלויות.',
                     "תכנון מענה לחלוקת מזון ומים עד הבית לאוכלוסיות רווחה וקשר רציף עימם."
@@ -110,7 +112,7 @@ function InterfacesTarget({ selectedItemStep1, selectedItemsStep2, setTitle, sel
         ],
         "חינוך": [
             {
-                name: "יעד ומזון למים",
+                name: "יעד מזון ומים",
                 connections: [
                     'תכנון תגבור כ"א מקצועי (חינוכי וטיפולי) למשימות מכלול אוכלוסייה.'
                 ]
@@ -152,7 +154,7 @@ function InterfacesTarget({ selectedItemStep1, selectedItemsStep2, setTitle, sel
         ],
         "מידע לציבור": [
             {
-                name: "יעד ומזון למים",
+                name: "יעד מזון ומים",
                 connections: [
                     'גיבוש תוכנית הסברה והפצת מידע על חנויות לממכר מזון הפתוחות בחירום ברשות, אופן אספקה וחלוקה של מים ומזון.'
                 ]
@@ -193,7 +195,7 @@ function InterfacesTarget({ selectedItemStep1, selectedItemsStep2, setTitle, sel
         ],
         "הנדסה ותשתיות": [
             {
-                name: "יעד ומזון למים",
+                name: "יעד מזון ומים",
                 connections: [
                     'איתור מרחבים מוגנים לטובת הקמת תחנות לחלוקת מים.'
                 ]
@@ -236,7 +238,7 @@ function InterfacesTarget({ selectedItemStep1, selectedItemsStep2, setTitle, sel
         ],
         "לוגיסטיקה ותפעול": [
             {
-                name: "יעד ומזון למים",
+                name: "יעד מזון ומים",
                 connections: [
                     'תוכנית להקמת תחנות לחלוקת מים ותיאום מול תאגיד המים.',
                     'הכרת סופרים ברזל בשטח הרשות.',
@@ -285,9 +287,9 @@ function InterfacesTarget({ selectedItemStep1, selectedItemsStep2, setTitle, sel
                 ]
             }
         ],
-        'משאבי אנוש ומנהל כללי' : [
+        'משאבי אנוש ומנהל כללי': [
             {
-                name: "יעד ומזון למים",
+                name: "יעד מזון ומים",
                 connections: [
                     'איתור ותכנון כ”א (כולל כ"א עם רכבים) למשימות חלוקת מים ומזון.'
                 ]
@@ -333,10 +335,8 @@ function InterfacesTarget({ selectedItemStep1, selectedItemsStep2, setTitle, sel
         ]
     };
 
-    // const colors = ['#6fa8dc', '#67d7b2', '#ea9999', '#f9cb9c', '#b4a7d6', '#b7b7b7'];
-
     const correctColors = [
-        { string: "יעד ומזון למים", color: "#6fa8dc" },
+        { string: "יעד מזון ומים", color: "#6fa8dc" },
         { string: "יעד מחסה הולם", color: "#67d7b2" },
         { string: "יעד שירותי רפואה", color: "#ea9999" },
         { string: "מאפשר כוח אדם", color: "#f9cb9c" },
@@ -344,61 +344,85 @@ function InterfacesTarget({ selectedItemStep1, selectedItemsStep2, setTitle, sel
         { string: "מאפשר מידע לציבור", color: "#b7b7b7" },
     ];
 
-    const items = data[selectedItemStep1] || [];
+    useEffect(() => {
+        if (data[selectedItemStep1] && selectedItemsStep2) {
+            const index = data[selectedItemStep1].findIndex(item => item.name === selectedItemsStep2);
+            setCurrentIndex(index >= 0 ? index : 0);
+        }
+    }, [selectedItemStep1, selectedItemsStep2]);
 
     useEffect(() => {
-        const currentItem = items[currentIndex];
-        setConnections(currentItem ? currentItem.connections : []);
-        setTitle(currentItem ? currentItem.name : '');
+        getConnections();
+        getCurrentItemColor();
     }, [currentIndex, selectedItemStep1]);
 
-    const handleNext = () => {
-        if (currentIndex < items.length - 1) {
-            setCurrentIndex(currentIndex + 1);
-        }
-    };
-
-    const handlePrev = () => {
-        if (currentIndex > 0) {
-            setCurrentIndex(currentIndex - 1);
-        }
-    };
-
     const getCurrentItemColor = () => {
-        const currentItem = items[currentIndex];
-        if (currentItem) {
-            const colorObj = correctColors.find(item => item.string === currentItem.name);
-            return colorObj ? colorObj.color : '#ffffff'; // Default color if not found
+        const item = data[selectedItemStep1][currentIndex];
+        if (item) {
+            const match = correctColors.find(colorItem => colorItem.string === item.name);
+            if (match) {
+                setCurrentColor(match.color);
+            } else {
+                setCurrentColor('');
+            }
         }
-        return '#ffffff'; // Default color if no item is selected
+    };
+
+    const getConnections = () => {
+        const item = data[selectedItemStep1][currentIndex];
+        if (item) {
+            setConnections(item.connections);
+        }
+    };
+
+    const handlePrevClick = () => {
+        setCurrentIndex(prevIndex => Math.max(prevIndex - 1, 0));
+        window.scrollTo(0, 0);
+    };
+
+    const handleNextClick = () => {
+        setCurrentIndex(prevIndex => Math.min(prevIndex + 1, data[selectedItemStep1].length - 1));
+        window.scrollTo(0, 0);
     };
 
     return (
         <div className="interfaces-target">
             <div className='Interfaces-contect-target'>
+                <div className='title-Interfaces'>
+                    {`ממשק בין ${selectedItemStep1} ו`}
+                    <span style={{ color: currentColor }}>
+                        {data[selectedItemStep1][currentIndex]?.name || selectedItemsStep2}
+                    </span>
+                </div>
                 <div
-                    className='title-Interfaces'
+                    className='suTtitle-Interfaces'
                     id='title1-Interfaces'
-                    style={{ backgroundColor: getCurrentItemColor() }}
+                    style={{ backgroundColor: currentColor }}
                 >
                     תפקיד המכלול:
                 </div>
                 <div className='text-interfaces-target'>
                     <ul className="connection-list">
-                        {connections.length > 0 ? (
-                            connections.map((connection, index) => (
-                                <li key={index}>{connection}</li>
-                            ))
-                        ) : (
-                            <li>לא נמצאו פרטים עבור ממשק זה.</li>
-                        )}
+                        {connections.map((connection, index) => (
+                            <li key={index}>{connection}</li>
+                        ))}
                     </ul>
                 </div>
             </div>
 
             <div className='btn-div-target'>
-                <div className='btn-Interfaces' id='prev-btn-Interfaces' onClick={handlePrev}> הקודם</div>
-                <div className='btn-Interfaces' id='next-btn-Interfaces' onClick={handleNext}> הבא</div>
+                <div className='btn-Interfaces' id='prev-btn-Interfaces' onClick={handlePrevClick}>
+                    הקודם
+                </div>
+                <div className='btn-Interfaces' id='next-btn-Interfaces' onClick={handleNextClick}>
+                    הבא
+                </div>
+            </div>
+
+            <div className='btnBackToStep1'>
+                <div id='stpe1btn' onClick={navigateToStep1}>
+                חזרה לבחירת מכלול
+                </div>
             </div>
         </div>
     );

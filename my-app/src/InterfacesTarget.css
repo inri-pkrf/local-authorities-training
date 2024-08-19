@@ -11,6 +11,21 @@
 }
 
 .title-Interfaces{
+    font-family: 'Karantina';
+    color: #595959;
+    font-size: 13vw;
+    margin-bottom: 3vw;
+    margin-top: -20vh;
+    width: 92%;
+    text-align: center;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    transition: color 0.3s;
+    font-weight: normal;
+}
+
+.suTtitle-Interfaces{
     position: absolute;
     right: 50%;
     transform: translateX(50%);
@@ -68,3 +83,20 @@
 #prev-btn-Interfaces{
     background-color: #eee;
 }
+
+.btnBackToStep1{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    margin-top: 66vh;
+}
+
+#stpe1btn{
+    color: #56c3e8;
+    font-size: 5vw;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Heebo', sans-serif;
+    margin-bottom: 3vh;
+}
+

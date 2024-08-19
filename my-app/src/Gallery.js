@@ -233,19 +233,19 @@ const cardData = [
 const Gallery = () => {
   const [selectedCardIndex, setSelectedCardIndex] = useState(null);
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  // const scrollToTop = () => {
+  //   window.scrollTo({ top: 0, behavior: 'smooth' });
+  // };
 
   const handlePhotoClick = (index) => {
     setSelectedCardIndex(index);
-    scrollToTop();  // Scroll to the top when opening CardDetails
+    window.scrollTo(0, 0);
   };
 
   const handleNext = () => {
     setSelectedCardIndex((prevIndex) => {
       const newIndex = (prevIndex + 1) % cardData.length;
-      scrollToTop();  // Scroll to the top when navigating to the next card
+      window.scrollTo(0, 0);
       return newIndex;
     });
   };
@@ -253,18 +253,19 @@ const Gallery = () => {
   const handlePrevious = () => {
     setSelectedCardIndex((prevIndex) => {
       const newIndex = (prevIndex - 1 + cardData.length) % cardData.length;
-      scrollToTop();  // Scroll to the top when navigating to the previous card
+      window.scrollTo(0, 0);
       return newIndex;
     });
   };
 
   const handleBackToList = () => {
     setSelectedCardIndex(null);
-    scrollToTop();  // Scroll to the top when returning to the PhotoList
+    window.scrollTo(0, 0);
   };
 
   const handlePrintGalleryClick = () => {
     window.open(`${process.env.PUBLIC_URL}/עזר - הערכת מצב רשות.pdf`, '_blank');
+    window.scrollTo(0, 0);
   };
 
   useEffect(() => {
