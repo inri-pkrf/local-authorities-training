@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './InterfacesTarget.css';
 
-function InterfacesTarget({ selectedItemStep1, selectedItemsStep2, navigateToStep1  }) {
+function InterfacesTarget({ selectedItemStep1, selectedItemsStep2, navigateToStep1 }) {
     const [currentColor, setCurrentColor] = useState(''); // To show the correcr colore that mach the selectedItemsStep2
     const [connections, setConnections] = useState([]); // To get the correct datat according to the selectedItemStep1 
     const [currentIndex, setCurrentIndex] = useState(0); // To keep track of the current item index
@@ -385,6 +385,10 @@ function InterfacesTarget({ selectedItemStep1, selectedItemsStep2, navigateToSte
         window.scrollTo(0, 0);
     };
 
+    const handlePrintOgenClick = () => {
+        window.open(`${process.env.PUBLIC_URL}/עזר עוגן איתן - מאפשרים.pdf`, '_blank');
+    };
+
     return (
         <div className="interfaces-target">
             <div className='Interfaces-contect-target'>
@@ -421,9 +425,17 @@ function InterfacesTarget({ selectedItemStep1, selectedItemsStep2, navigateToSte
 
             <div className='btnBackToStep1'>
                 <div id='stpe1btn' onClick={navigateToStep1}>
-                חזרה לבחירת מכלול
+                    חזרה לבחירת מכלול
                 </div>
             </div>
+
+            <div id='btn-print-relations2' onClick={handlePrintOgenClick}>
+                <div className='relationsPrintDiv'>
+                    <img src={process.env.PUBLIC_URL + '/print.png'} className="print-img-gallery" alt="print"></img>
+                    <p className='text-print'>הורדת גרסה להדפסה</p>
+                </div>
+            </div>
+
         </div>
     );
 }

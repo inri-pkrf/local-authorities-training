@@ -182,3 +182,17 @@
   transform: translateX(50%);
   direction: rtl;
 }   
+
+#btn-print-relations1 {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  background-color: transparent;
+  width: 56vw;
+  height: 5vh;
+}
+
+.relationsPrintDiv {
+  height: 8vh;
+}
+

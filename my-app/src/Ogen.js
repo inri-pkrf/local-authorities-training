@@ -17,9 +17,9 @@ function Ogen() {
     { src: '/ogen12.png', title: 'גפ"מ ', text: 'שיבושים במועדי ההספקה ' },
   ];
 
-  const handlePrintOgenClick = () => {
-    window.open(`${process.env.PUBLIC_URL}/עזר עוגן איתן - מאפשרים.pdf`, '_blank');
-  };
+  // const handlePrintOgenClick = () => {
+  //   window.open(`${process.env.PUBLIC_URL}/עזר עוגן איתן - מאפשרים.pdf`, '_blank');
+  // };
 
   useEffect(() => {
     // Scroll to the top of the page when the component mounts
@@ -54,10 +54,10 @@ function Ogen() {
         ))}
       </div>
 
-      <div className='btn-print-ogen' onClick={handlePrintOgenClick}>
+      {/* <div className='btn-print-ogen' onClick={handlePrintOgenClick}>
         <img src={process.env.PUBLIC_URL + '/print.png'} className="print-img-gallery" alt="print"></img>
         <p className='text-print'>הורדת גרסה להדפסה</p>
-      </div>
+      </div> */}
 
     </div>
   );

@@ -100,3 +100,18 @@
     margin-bottom: 3vh;
 }
 
+
+#btn-print-target2 {
+    position: absolute;
+    right: 48%;
+    transform: translateX(50%);
+    background-color: transparent;
+    width: 56vw;
+    height: 5vh;
+    margin-top: 80vh;
+  }
+
+  .targetPrintDiv {
+    height: 8vh;
+  }
+  

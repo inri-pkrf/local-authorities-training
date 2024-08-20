@@ -105,6 +105,10 @@ function Relations() {
     setIntroVisible(false);
   };
 
+  const handlePrintRelationsClick = () => {
+    window.open(`${process.env.PUBLIC_URL}/ממשקים בין מכלולים.pdf`, '_blank');
+  };
+
   const navigateToStep1 = () => {
     setStep(1);
     setSelectedItemStep1(null);
@@ -123,7 +127,7 @@ function Relations() {
     <div className="Relations">
       {introVisible ? (
         <div className='intro-div-Relations' ref={introRef}>
-            <img
+          <img
             src={process.env.PUBLIC_URL + '/mimshak.png'}
             className="photo-mimshak-intro"
             alt="Relations"
@@ -131,7 +135,7 @@ function Relations() {
           <div className="title-intro-rel">ממשקים בין מכלולים
           </div>
           <div className="sub-intro-rel">
-          לפניך מערכת הצלבה בין המכלולים. <br/>כאן ניתן ללמוד על תפקיד המכלול שלי, מה מכלולים אחרים צריכים לקבל ממני ומה אני מהם
+            לפניך מערכת הצלבה בין המכלולים. <br />כאן ניתן ללמוד על תפקיד המכלול שלי, מה מכלולים אחרים צריכים לקבל ממני ומה אני מהם
           </div>
           <img
             src={process.env.PUBLIC_URL + '/hpArrow.png'}
@@ -199,6 +203,13 @@ function Relations() {
                   {item}
                 </div>
               ))}
+            </div>
+
+            <div id='btn-print-relations1' onClick={handlePrintRelationsClick} style={{ display: step === 3 ? 'none' : 'block', marginTop: step === 1 ? '99vh' : "89vh" }}>
+              <div className='relationsPrintDiv'>
+                <img src={process.env.PUBLIC_URL + '/print.png'} className="print-img-gallery" alt="print"></img>
+                <p className='text-print'>הורדת גרסה להדפסה</p>
+              </div>
             </div>
 
             {newComponent && <Interfaces

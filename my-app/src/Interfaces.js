@@ -450,6 +450,11 @@ function Interfaces({ selectedItemStep1, selectedItemsStep2, setSelectedItemsSte
         }
     };
 
+    const handlePrintRelationsClick = () => {
+        window.open(`${process.env.PUBLIC_URL}/ממשקים בין מכלולים.pdf`, '_blank');
+    };
+    
+
     return (
         <div className="Interfaces">
             <div className='sub-Interfaces'>הממשקים בין המכלולים</div>
@@ -476,6 +481,14 @@ function Interfaces({ selectedItemStep1, selectedItemsStep2, setSelectedItemsSte
                     חזרה לבחירת מכלול ראשון
                 </div>
             </div>
+
+            <div id='btn-print-target2' onClick={handlePrintRelationsClick}>
+                <div className='targetPrintDiv'>
+                    <img src={process.env.PUBLIC_URL + '/print.png'} className="print-img-gallery" alt="print"></img>
+                    <p className='text-print'>הורדת גרסה להדפסה</p>
+                </div>
+            </div>
+
 
         </div>
     );

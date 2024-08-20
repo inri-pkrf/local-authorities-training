@@ -73,6 +73,7 @@
   gap: 2vw;
   width: 100%;
   margin-top: 21vh;
+  margin-bottom: -9vh;
 }
 
 .image-item {
@@ -152,11 +153,8 @@
   top: 2vh;
 }
 
-.btn-print-ogen {
-  margin-top: -14vh;
-}
 
-.btn-print-ogen {
+/* .btn-print-ogen {
   position: relative;
   top: 20vh;
   left: 2vw;
@@ -171,4 +169,4 @@
   top: 0vh;
   left: 39vw;
   width: 7vw;
-}
+} */
