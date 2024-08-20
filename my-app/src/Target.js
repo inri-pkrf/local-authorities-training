@@ -109,7 +109,7 @@ function Target() {
         setIntroVisible(false);
     };
 
-    const handlePrintOgenClick = () => {
+    const handlePrintTargetClick = () => {
         window.open(`${process.env.PUBLIC_URL}/עזר עוגן איתן - מאפשרים.pdf`, '_blank');
     };
 
@@ -240,7 +240,7 @@ function Target() {
                             <div className='line-array' >. . . . . . . . . . . . . . . . . . . . . . . </div>
                         </div>
 
-                        <div id='btn-print-target1' onClick={handlePrintOgenClick} style={{ display: step === 3 ? 'none' : 'block', marginTop: step === 1 ? '84vh' : "88vh" }}>
+                        <div id='btn-print-target1' onClick={handlePrintTargetClick} style={{ display: step === 3 ? 'none' : 'block', marginTop: step === 1 ? '84vh' : "88vh" }}>
                             <div className='targetPrintDiv'>
                                 <img src={process.env.PUBLIC_URL + '/print.png'} className="print-img-gallery" alt="print"></img>
                                 <p className='text-print'>הורדת גרסה להדפסה</p>

@@ -385,7 +385,7 @@ function InterfacesTarget({ selectedItemStep1, selectedItemsStep2, navigateToSte
         window.scrollTo(0, 0);
     };
 
-    const handlePrintOgenClick = () => {
+    const handlePrintTargetClick = () => {
         window.open(`${process.env.PUBLIC_URL}/עזר עוגן איתן - מאפשרים.pdf`, '_blank');
     };
 
@@ -429,8 +429,8 @@ function InterfacesTarget({ selectedItemStep1, selectedItemsStep2, navigateToSte
                 </div>
             </div>
 
-            <div id='btn-print-relations2' onClick={handlePrintOgenClick}>
-                <div className='relationsPrintDiv'>
+            <div id='btn-print-target2' onClick={handlePrintTargetClick}>
+                <div className='targetPrintDiv'>
                     <img src={process.env.PUBLIC_URL + '/print.png'} className="print-img-gallery" alt="print"></img>
                     <p className='text-print'>הורדת גרסה להדפסה</p>
                 </div>

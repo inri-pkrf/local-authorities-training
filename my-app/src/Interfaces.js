@@ -482,8 +482,8 @@ function Interfaces({ selectedItemStep1, selectedItemsStep2, setSelectedItemsSte
                 </div>
             </div>
 
-            <div id='btn-print-target2' onClick={handlePrintRelationsClick}>
-                <div className='targetPrintDiv'>
+            <div id='btn-print-relations2' onClick={handlePrintRelationsClick}>
+                <div className='relationsPrintDiv'>
                     <img src={process.env.PUBLIC_URL + '/print.png'} className="print-img-gallery" alt="print"></img>
                     <p className='text-print'>הורדת גרסה להדפסה</p>
                 </div>
