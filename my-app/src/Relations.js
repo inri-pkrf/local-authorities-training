@@ -80,7 +80,13 @@ function Relations() {
       } else if (stepNumber === 3) {
         setStep(3);
         setStep3Color('rgb(86 195 232)'); // Highlight Step 3 button
-        setTitle(`ממשק בין ${selectedItemStep1} ו${selectedItemsStep2}`); // Update title for Step 3
+        // if (selectedItemStep1 === 'יקל"ר') {
+        //   setTitle(`ממשק בין ${selectedItemStep1} ו${selectedItemsStep2}`);
+        //   setTitleColor('#f90');
+        // } else {
+        //   setTitle(`ממשק בין ${selectedItemStep1} ו${selectedItemsStep2}`);
+        //   setTitleColor('#56c3e8');
+        // }
       }
     }
   };
@@ -90,9 +96,22 @@ function Relations() {
       setSelectedItemsStep2(item);
       setStep2Color('rgb(86 195 232)');
       setStep3Color('rgb(86 195 232)');
-      if (selectedItemStep1 && item) {
-        setTitle(`ממשק בין ${selectedItemStep1} ו${item}`);
+      if (selectedItemStep1 === 'יקל"ר') {
+        setTitle(
+          <span>
+            ממשק בין <span style={{ color: '#f90' }}>{selectedItemStep1}</span> ו{item}
+          </span>
+        );
+      } else {
+        setTitle(
+          <span>
+            ממשק בין {selectedItemStep1} ו{item}
+          </span>
+        );
       }
+      // if (selectedItemStep1 && item) {
+      //   setTitle(`ממשק בין ${selectedItemStep1} ו${item}`);
+      // }
       setNewComponent(true);
       setStep(3);
     } else {

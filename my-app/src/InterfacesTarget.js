@@ -6,7 +6,6 @@ function InterfacesTarget({ selectedItemStep1, selectedItemsStep2, navigateToSte
     const [connections, setConnections] = useState([]); // To get the correct datat according to the selectedItemStep1 
     const [currentIndex, setCurrentIndex] = useState(0); // To keep track of the current item index
 
-
     const data = {
         "מרכז שליטה רשותי": [
             {
@@ -376,12 +375,18 @@ function InterfacesTarget({ selectedItemStep1, selectedItemsStep2, navigateToSte
     };
 
     const handlePrevClick = () => {
-        setCurrentIndex(prevIndex => Math.max(prevIndex - 1, 0));
+        setCurrentIndex(prevIndex => {
+            const newIndex = prevIndex - 1;
+            return newIndex < 0 ? data[selectedItemStep1].length - 1 : newIndex;
+        });
         window.scrollTo(0, 0);
     };
-
+    
     const handleNextClick = () => {
-        setCurrentIndex(prevIndex => Math.min(prevIndex + 1, data[selectedItemStep1].length - 1));
+        setCurrentIndex(prevIndex => {
+            const newIndex = prevIndex + 1;
+            return newIndex >= data[selectedItemStep1].length ? 0 : newIndex;
+        });
         window.scrollTo(0, 0);
     };
 

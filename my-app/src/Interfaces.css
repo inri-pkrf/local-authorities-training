@@ -11,7 +11,6 @@
     direction: rtl;
   }
 
-
 .Interfaces-contect{
     font-family: 'Heebo', sans-serif;
     position: absolute;
@@ -87,7 +86,7 @@
 }
 
 #prev-btn-Interfaces{
-    background-color: #999;
+    background-color: #b7b7b7;
 }
 
 .Interfaces-back{

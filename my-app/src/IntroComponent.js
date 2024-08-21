@@ -5,14 +5,14 @@ function IntroComponent({ onMoveNext }) {
   const [isVideoEnded, setIsVideoEnded] = useState(false);
   const [showIntro, setShowIntro] = useState(false);
 
-    useEffect(() => {
-       setTimeout(() => {
-        setIsVideoEnded(true);
-      }, 13000);
+  useEffect(() => {
+    setTimeout(() => {
+      setIsVideoEnded(true);
+    }, 13000);
 
-      setTimeout(() => {
-        setShowIntro(true);
-      }, 13050);
+    setTimeout(() => {
+      setShowIntro(true);
+    }, 13050);
 
   });
 
@@ -42,8 +42,8 @@ function IntroComponent({ onMoveNext }) {
     <div id="intro-lomda">
       {!isVideoEnded && (
         <>
-          <button className="skip" onClick={skipVideo}>  
-          &lt;&lt;דלג/י
+          <button className="skip" onClick={skipVideo}>
+            &lt;&lt;דלג/י
           </button>
           <video className="video-intro" autoPlay muted playsInline>
             <source src={process.env.PUBLIC_URL + '/introVid.mp4'} type="video/mp4" />
@@ -58,8 +58,9 @@ function IntroComponent({ onMoveNext }) {
             מנהלים ומנהלות<br />מתאמנים ומתאמנות
           </h1>
           <p id="introduction-sub">
-            הכירו את הכלי הדיגיטלי שעושה סדר בין ממשקי העבודה ברשות המקומית בשעת חירום,
-            באמצעותו תכירו את היעדים הלאומיים ותתכוננו לעוגן איתן
+            הכירו את הכלי הדיגיטלי שמדייק את תפקידי המכלולים ומשפר תהליכים וממשקים ברשות המקומית בשעת חירום.
+            <br /><br />
+            באמצעותו תשפרו את תהליך הערכת המצב, בדגש על ממשקים בין מכלולים בכלל וביחס למימוש יעדי השירות והמאפשרים הלאומיים.
           </p>
           <img
             src={process.env.PUBLIC_URL + '/whiteArrow.png'}

@@ -19,7 +19,7 @@ function Menu({ onClose, onNavigate }) {
         <div className='lineMenu'></div>
         <li onClick={() => handleItemClick('diagram')}>מבנה הרשות המקומית בחירום</li>
         <div className='lineMenu'></div>
-        <li onClick={() => handleItemClick('gallery')}> הערכת מצב ברשות המקומית בשעת חירום</li>
+        <li onClick={() => handleItemClick('gallery')}> הערכת מצב ברשות המקומית בחירום</li>
         <div className='lineMenu'></div>
         <li onClick={() => handleItemClick('relations')}>ממשקי עבודה בין מכלולים</li>
         <div className='lineMenu'></div>

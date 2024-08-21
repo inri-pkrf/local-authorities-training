@@ -30,10 +30,13 @@ function Ogen() {
     <div className="ogen-container">
       <img src={process.env.PUBLIC_URL + '/ogenIcon.png'} alt="ogenIcon" className="ogenIcon" />
       <h1 className="ogen-title1"> תרחיש ייחוס משקי </h1>
-      <p className="ogen-subtitle1"> לפניך סרטון הסבר ופירוט תרחיש הייחוס לתוכנית 'עוגן איתן' וההשפעות הצפויות על המשק </p>
-
+      <p className="ogen-subtitle1">
+        לפניך סרטון הסבר ופירוט תרחיש ייחוס גנרי להדגמת ההשפעות האפשריות על המשק.
+        <br /><br />
+        נדרשת התאמה לכל רשות.
+      </p>
       <div className="video-container">
-        <video controls className="ogen-video"  poster={process.env.PUBLIC_URL + '/poster.jpg'}>
+        <video controls className="ogen-video" poster={process.env.PUBLIC_URL + '/poster.jpg'}>
           <source src={process.env.PUBLIC_URL + '/ogenVideo.mp4'} type="video/mp4" />
           Your browser does not support the video tag.
         </video>

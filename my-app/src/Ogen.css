@@ -36,6 +36,7 @@
   width: 113vw;
   margin-top: 3vh;
   width: 80%;
+  direction: rtl;
 }
 
 .hpArrow-Ogen{
@@ -44,7 +45,7 @@
   position: absolute;
   right: 50%;
   transform: translateX(50%);
-  margin-top: -130vh;
+  margin-top: -135vh;
   margin-bottom: 1vh;
 }
 
@@ -72,7 +73,7 @@
   justify-content: center;
   gap: 2vw;
   width: 100%;
-  margin-top: 22vh;
+  margin-top: 17vh;
   margin-bottom: -9vh;
 }
 
@@ -144,7 +145,7 @@
   }
 
   .image-text {
-    font-size: 3.5vw;
+    font-size: 4vw;
   }
 }
 

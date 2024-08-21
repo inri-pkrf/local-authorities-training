@@ -131,13 +131,13 @@ function Target() {
                 <div className='intro-div-Relations' ref={introRef}>
                     <img
                         src={process.env.PUBLIC_URL + '/icon-des.png'}
-                        className="photo-mimshak-intro"
+                        className="photo-target-intro"
                         alt="Relations"
                     />
-                    <div className="title-intro-rel">  יעדים לאומיים
+                    <div className="title-intro-tar">  יעדים ומאפשרים <br/>לאומיים
                     </div>
-                    <div className="sub-intro-rel">
-                        לפניך מערכת הצלבה בין המכלולים ותוכנית 'עוגן איתן' לרשות המקומית. כאן ניתן ללמוד על תפקיד המכלול למול המאפשרים להשגת היעדים הלאומיים
+                    <div className="sub-intro-tar">
+                        לפניך מערכת הצלבה בין המכלולים ותוכנית 'עוגן איתן' לרשות המקומית. כאן ניתן ללמוד על תפקיד המכלול במסגרת המאפשרים והיעדים הלאומיים.
                     </div>
                     <img
                         src={process.env.PUBLIC_URL + '/hpArrow.png'}
