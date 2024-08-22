@@ -31,7 +31,7 @@ const Diagram = () => {
       <h1 className="diagram-title">מבנה הרשות המקומית בשעת חירום</h1>
       <div className="subtitle-diagram">
         בכדי לפעול באופן מיטבי בשעת חירום, הרשות המקומית משנה תצורה ופעולת במכלולים המחולקים לתחומי אחריות.
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br />
         <img src={process.env.PUBLIC_URL + '/setup.jpg'} class="setup" alt="setup"></img>
 
         בלחיצה על כל רכיב יפתח חלון עם הסבר נוסף -
@@ -64,7 +64,7 @@ const Diagram = () => {
           <p className="black-frame-text"> מנכ"ל / רמ"ט </p>
         </div>
 
-        <div className="colored-box blue-box" onClick={() => handleBoxClick('אגף חירום וביטחון',
+        <div className="blue-frame blue-box" onClick={() => handleBoxClick('אגף חירום וביטחון',
           (<>
             <b>תפקיד המכלול: ניהול עבודת המטה של הרשות המקומית בחירום</b>
             <ul>
@@ -96,10 +96,12 @@ const Diagram = () => {
           </>)
           ,
           '#6daae2')}>
-          <p className="colored-box-text">אגף חירום וביטחון </p>
+          <p className="colored-box-text">אגף  <br />חירום וביטחון </p>
         </div>
 
-        <div className="colored-box orange-box" onClick={() => handleBoxClick('יק"לר',
+        <div className='dotLine' >..............</div>
+
+        <div className="orange-box" onClick={() => handleBoxClick('יק"לר',
           (<>
             טקסט חסר, יש להשלים מקור.
           </>)
@@ -107,7 +109,8 @@ const Diagram = () => {
           <p className="colored-box-text">יקל"ר</p>
         </div>
 
-        <div className="colored-box red-box" onClick={() => handleBoxClick('כוחות ביטחון',
+
+        <div className="red-box" onClick={() => handleBoxClick('כוחות ביטחון',
           (<>
             טקסט חסר, יש להשלים מקור.
           </>)
@@ -160,7 +163,7 @@ const Diagram = () => {
             - צוותי התערבות
           </>)
           , '#044188')}>
-          <p className="colored-box-text">מכלול אוכלוסייה</p>
+          <p className="colored-box-text">מכלול <br /> אוכלוסייה</p>
         </div>
 
         <div className="colored-box-sub" onClick={() => handleBoxClick('מכלול החינוך',
@@ -191,7 +194,7 @@ const Diagram = () => {
             - תא חינוך מוכר שאינו רשמי
           </>)
           , '#044188')}>
-          <p className="colored-box-text">מכלול החינוך</p>
+          <p className="colored-box-text">מכלול  <br />החינוך</p>
         </div>
 
         <div className="colored-box-sub" onClick={() => handleBoxClick('מכלול מידע לציבור',
@@ -236,7 +239,7 @@ const Diagram = () => {
             - לשכת המידע
           </>)
           , '#044188')}>
-          <p className="colored-box-text">מכלול מידע לציבור</p>
+          <p className="colored-box-text">מכלול <br /> מידע לציבור</p>
         </div>
 
         <div className="colored-box-sub" onClick={() => handleBoxClick('מכלול הנדסה ותשתיות',
@@ -279,7 +282,7 @@ const Diagram = () => {
             - צוותי שטח, הנדסה ותשתיות
           </>)
           , '#044188')}>
-          <p className="colored-box-text">מכלול הנדסה ותשתיות</p>
+          <p className="colored-box-text">מכלול <br /> הנדסה ותשתיות</p>
         </div>
 
         <div className="colored-box-sub" onClick={() => handleBoxClick('מכלול לוגיסטיקה ותפעול',
@@ -320,7 +323,7 @@ const Diagram = () => {
             - תא תעבורה
           </>)
           , '#044188')}>
-          <p className="colored-box-text">מכלול לוגיסטיקה ותפעול</p>
+          <p className="colored-box-text">מכלול  <br />לוגיסטיקה ותפעול</p>
         </div>
 
         <div className="colored-box-sub" onClick={() => handleBoxClick('מכלול משא"ן ומנהל כללי',
@@ -347,7 +350,7 @@ const Diagram = () => {
             - תא מחשוב
           </>)
           , '#044188')}>
-          <p className="colored-box-text"> מכלול משא"ן ומנהל כללי</p>
+          <p className="colored-box-text"> מכלול <br /> משא"ן ומנהל כללי</p>
         </div>
 
       </div>

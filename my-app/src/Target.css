@@ -34,6 +34,15 @@
   direction: rtl;
 }
 
+.hpArrow-Target{
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  width: 20vw;
+  bottom: 13vh;
+  animation: bounce2 2s ease infinite;
+}
+
 .photo-target-intro{
   position: absolute;
   right: 50%;

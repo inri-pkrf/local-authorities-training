@@ -141,7 +141,7 @@ function Target() {
                     </div>
                     <img
                         src={process.env.PUBLIC_URL + '/hpArrow.png'}
-                        className="hpArrow-Relations"
+                        className="hpArrow-Target"
                         alt="Arrow"
                         onClick={handleArrowClick}
                     />

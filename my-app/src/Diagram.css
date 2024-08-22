@@ -1,171 +1,247 @@
 .diagram-container {
-  text-align: center; /* Center align content */
-  margin-top: 32vh; /* Adjust margin as needed */
-  margin-left: 20vw; /* Move the container to the left */
-  position: relative; /* Position relative for absolute children */
+  /* text-align: center;
+  margin-top: 32vh;
+  margin-left: 20vw;
+  position: relative; */
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+
+.mivne {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  width: 19vw;
+  margin-top: 14vh;
 }
 
 .diagram-title {
   position: absolute;
-  top: -13vh;
-  left: -21vw;
+  right: 50%;
+  transform: translateX(50%);
+  margin-top: 25vh;
   font-family: 'Karantina', cursive;
   font-size: 14vw;
   color: #595959;
-  margin-bottom: 5vh; 
+  margin-bottom: 5vh;
+  width: 90vw;
+  text-align: center;
 }
 
-.frame {
-  width: 74%; /* Adjust width of the frame */
-  height: 40%;
-  margin: 0 2.5%; /* Add margin between frames */
-  background-color: #053859; /* White background color */
-  border: 1.5vw solid #053859; /* Colored border */
-  padding: 2vw; /* Add padding inside the frame */
-  display: inline-block; /* Display frames inline */
-  position: relative; /* Position relative for absolute children */
-  z-index: 2; /* Ensure the grey frame is above the line */
+.subtitle-diagram {
+  font-family: 'Heebo', sans-serif;
+  font-size: 6vw;
+  color: grey;
+  text-align: center;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  margin-top: 46vh;
+  width: 88vw;
+  direction: rtl;
 }
 
-.frame-text {
-  font-family: 'Karantina', cursive; /* Use Karantina font */
-  font-size: 13vw; /* Adjust font size as needed */
-  margin: 0; /* Remove default margins */
-  color: rgb(255, 255, 255); /* Grey text color */
+.setup {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  width: 88vw;
+  margin-top: -39vh;
 }
 
-.black-frame {
-  width: 74%; /* Adjust width of the frame */
-  height: 40%;
-  margin: 2vh auto 0; /* Center the frame horizontally and add margin above */
-  background-color: #175a85; /* White background color */
-  border: 1.5vw solid #175a85; /* Colored border */
-  padding: 2vw; /* Add padding inside the frame */
-  display: inline-block; /* Display frames inline */
-  position: relative; /* Position relative for absolute children */
-  z-index: 2; /* Ensure the black frame is above the line */
+.hpArrow-diagram {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  width: 17vw;
+  margin-top: 119vh;
 }
 
-.black-frame-text {
-  font-family: 'Karantina', cursive; /* Use Karantina font */
-  font-size: 13vw; /* Adjust font size as needed */
-  color: rgb(255, 255, 255); /* Black text color */
-  margin: 0; /* Remove default margins */
+.all-diagram {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  margin-top: 133vh;
 }
 
 .line {
-  border-left: 2vw solid #000;
-  bottom: 0;
-  height: 98%;
-  left: 50%;
+  border-left: 2vw solid #595959;
+  /* bottom: 0; */
+  height: 143%;
   position: absolute;
-  top: 1%;
-  transform: translateX(-50%);
+  right: 50%;
+  transform: translateX(50%);
   z-index: 0;
+  margin-top: 8vh;
+}
+
+.frame {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  width: 78vw;
+  height: 9vh;
+  background-color: #053859;
+  border: 1.5vw solid #053859;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  z-index: 2;
+  text-align: center;
+}
+
+.frame-text {
+  font-family: 'Karantina', cursive;
+  font-size: 13vw;
+  margin: 0;
+  color: rgb(255, 255, 255);
+}
+
+.black-frame {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  width: 65vw;
+  height: 7vh;
+  margin-top: 14vh;
+  background-color: #175a85;
+  border: 1.5vw solid #175a85;
+  padding-top: 1vh;
+  padding-bottom: 2vh;
+  z-index: 2;
+  text-align: center;
+}
+
+.black-frame-text {
+  font-family: 'Karantina', cursive;
+  font-size: 13vw;
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+.blue-frame{
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  width: 60vw;
+  height: 12vh;
+  margin-top: 31vh;
+  padding-top: 1vh;
+  padding-bottom: 2vh;
+  z-index: 2;
+  text-align: center;
+}
+
+.blue-box {
+  background-color: #1cb4e3;
+  border: 1.5vw solid #1cb4e3;
+  color: #ffffff;
+}
+
+.dotLine{
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  height: 6vh;
+  width: 42vw;
+  margin-top: 55vh;
+  background-color: transparent;
+  color: #595959;
+  font-size: 9vmin;
+}
+
+.orange-box {
+  position: absolute;
+  right: 94%;
+  transform: translateX(50%);
+  width: 35vw;
+  height: 9vh;
+  text-align: center;
+  margin-top: 53vh;
+  padding-top: 3vh;
+  padding-bottom: 1vh;
+  background-color: #ff9900;
+  border: 1.5vw solid #ff9900;
+  color: #ffffff;
+}
+
+.red-box {
+  position: absolute;
+  right: 5%;
+  transform: translateX(50%);
+  width: 35vw;
+  height: 9vh;
+  text-align: center;
+  margin-top: 53vh;
+  padding-top: 3vh;
+  padding-bottom: 1vh;
+  background-color: #e06666;
+  border: 1.5vw solid #e06666;
+  color: #ffffff;
 }
 
 .colored-box {
   width: 49vw;
   height: 11vh;
-  margin: 6vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 6vw;
   font-size: 8%;
   cursor: pointer;
   text-align: center;
   color: white;
   position: relative;
-  left: -10vw; /* Adjust the position to the left */
+  right: 50%;
+  transform: translateX(50%);
+  margin-top: 2vh;
 }
 
-.blue-box {
-  background-color: #1cb4e3; /* Blue background color */
-  border: 1.5vw solid #1cb4e3; /* Colored border */
-  color: #ffffff; /* Blue text color */
-}
-
-.orange-box {
-  background-color:  #ff9900; /* Orange background color */
-  border: 1.5vw solid  #ff9900; /* Colored border */
-  color: #ffffff; /* Orange text color */
-}
-
-.red-box {
-  background-color: #e06666; /* Red background color */
-  border: 1.5vw solid #e06666; /* Colored border */
-  color: #ffffff; /* White text color */
-}
 
 .colored-box-text {
-  font-family: 'Karantina', cursive; /* Use Karantina font */
-  font-size: 11vw; /* Adjust font size as needed */
-  margin: 0; /* Remove default margins */
+  font-family: 'Karantina', cursive;
+  font-size: 11vw;
+  margin: 0;
 }
 
-.colored-box-sub{
-  width: 62vw;
-  height: 11vh;
-  margin: 6vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.colored-box-sub {
+  margin-bottom: -122vw;
   font-size: 2vw;
   cursor: pointer;
   text-align: center;
   color: white;
   position: relative;
-  left: -8vw;
-  top: 1vh;
+  right: 50%;
+  transform: translateX(50%);
   background-color: #56c3e8;
   border: 1.5vw solid #56c3e8;
-}
-
-.subtitle-diagram{
-  font-family: 'Heebo', sans-serif;
-  font-size: 6vw;
-  color: grey;
+  margin-top: 72vh;
+  width: 60vw;
+  height: 12vh;
+  padding-top: 1vh;
+  padding-bottom: 2vh;
+  z-index: 2;
   text-align: center;
-  margin-bottom: 6vh;
-  margin-top: 6vh;
-  position: relative;
-  left: -8vw;
-  width: 100%;
-  top: 11vh;
-  direction: rtl;
 }
 
-.all-diagram{
-  position: relative;
-  top: 11vh;
-}
- 
-.hpArrow-diagram{
-  position: relative;
-  top: 7vh ; 
-  width: 17vw;
-  width: 17vw;
-  left: -7vw;
-}
 
-.btn-print-diagram{
+.btn-print-diagram {
   position: relative;
-  top: 16vh;
-  left: -7vw;
+  right: 50%;
+  transform: translateX(50%);
+  margin-top: 328vh;
   background-color: transparent;
   width: 56vw;
   height: 5vh;
-  margin-bottom: 8vh;
-}
+  margin-bottom: 2vh;
+} 
 
-.print-img-diagram{
+ .print-img-diagram {
   position: relative;
-    top: -0.5vh;
-    left: 28vw;
-    width: 7vw;
-}
+  top: -0.5vh;
+  left: 42vw;
+  width: 7vw;
+} 
 
-.text-print-diagram{
+.text-print-diagram {
   position: relative;
   top: -7vh;
   left: 5vw;
@@ -174,22 +250,4 @@
   color: #595959;
   font-weight: bold;
 }
-
-.setup{
-  position: absolute;
-  right: 50%;
-  transform: translateX(50%);
-  width: 88vw;
-  margin-top: -40vh;
-}
-
-.mivne{
-  position: absolute;
-  right: 50%;
-  transform: translateX(50%);
-  width: 19vw;
-  margin-top: -19vh;
-  margin-right: 9vw;
-}
-
 
