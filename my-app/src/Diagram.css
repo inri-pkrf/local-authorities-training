@@ -3,25 +3,32 @@
   margin-top: 32vh;
   margin-left: 20vw;
   position: relative; */
-  position: absolute;
+
+  /* position: absolute;
   right: 50%;
-  transform: translateX(50%);
+  transform: translateX(50%); */
+
+  position:relative;
+  
 }
 
 
 .mivne {
-  position: absolute;
-  right: 50%;
-  transform: translateX(50%);
+  position: relative;
+  height: auto;
   width: 19vw;
-  margin-top: 14vh;
+  top: 13vh;
+  left: 40vw;
+  /* right: 50%; */
+  /* transform: translateX(50%); */
+  /* margin-top: 20vh;*/
 }
 
 .diagram-title {
   position: absolute;
   right: 50%;
   transform: translateX(50%);
-  margin-top: 25vh;
+  margin-top: 16vh;
   font-family: 'Karantina', cursive;
   font-size: 14vw;
   color: #595959;
@@ -38,7 +45,7 @@
   position: absolute;
   right: 50%;
   transform: translateX(50%);
-  margin-top: 46vh;
+  margin-top: 37vh;
   width: 88vw;
   direction: rtl;
 }
@@ -48,7 +55,8 @@
   right: 50%;
   transform: translateX(50%);
   width: 88vw;
-  margin-top: -39vh;
+  margin-top: -38vh;
+  z-index: 3;
 }
 
 .hpArrow-diagram {
@@ -56,14 +64,14 @@
   right: 50%;
   transform: translateX(50%);
   width: 17vw;
-  margin-top: 119vh;
+  margin-top: 124vh;
 }
 
 .all-diagram {
   position: absolute;
   right: 50%;
   transform: translateX(50%);
-  margin-top: 133vh;
+  margin-top: 129vh;
 }
 
 .line {
@@ -224,7 +232,7 @@
 
 
 .btn-print-diagram {
-  position: relative;
+  position: absolute;
   right: 50%;
   transform: translateX(50%);
   margin-top: 328vh;
