@@ -64,14 +64,14 @@
   right: 50%;
   transform: translateX(50%);
   width: 17vw;
-  margin-top: 124vh;
+  margin-top: 120vh;
 }
 
 .all-diagram {
   position: absolute;
   right: 50%;
   transform: translateX(50%);
-  margin-top: 129vh;
+  margin-top: 122vh;
 }
 
 .line {
@@ -232,14 +232,15 @@
 
 
 .btn-print-diagram {
-  position: absolute;
-  right: 50%;
-  transform: translateX(50%);
-  margin-top: 328vh;
+  position: relative;
+  /* right: 50%; */
+  /* transform: translateX(50%); */
+  margin-top: 316vh;
   background-color: transparent;
   width: 56vw;
   height: 5vh;
   margin-bottom: 2vh;
+  left: 23vw;
 } 
 
  .print-img-diagram {

@@ -66,7 +66,7 @@ function Home({ onNavigate }) {
       <div className="subtitle2">
         עזר זה נבנה בשיתוף פעולה בין ענף רשויות במחלקת אוכלוסייה ומגמת אימוני רשויות במכללה הלאומית לאיתנות ישראלית
       </div>
-      <div id='line5'>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  </div>
+      <div id='line5' >. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  </div>
       <div className='date'> אוגוסט 2024 </div>
 
       <div className='mashov-home'>
