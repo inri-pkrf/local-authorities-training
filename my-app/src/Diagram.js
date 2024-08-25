@@ -39,9 +39,10 @@ const Diagram = () => {
 
       <img src={process.env.PUBLIC_URL + '/hpArrow.png'} class="hpArrow-diagram" alt="Ogen"></img>
 
-      <div className='all-diagram'>
 
-        <div className="line"></div>
+      <div className="line"></div>
+      
+      <div className='all-diagram'>
 
         <div className="frame"
           onClick={() => handleBoxClick('ראש הרשות',

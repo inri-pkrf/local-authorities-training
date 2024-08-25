@@ -8,8 +8,8 @@
   right: 50%;
   transform: translateX(50%); */
 
-  position:relative;
-  
+  position: relative;
+
 }
 
 
@@ -76,13 +76,20 @@
 
 .line {
   border-left: 2vw solid #595959;
-  /* bottom: 0; */
-  height: 143%;
+  height: 177vh;
   position: absolute;
   right: 50%;
   transform: translateX(50%);
   z-index: 0;
-  margin-top: 8vh;
+  margin-top: 128vh;
+
+  /* border-left: 2vw solid #595959;
+  height: 171vh;
+  position: relative;
+  transform: translateX(48%);
+  z-index: 0;
+  margin-top: 123vh; */
+
 }
 
 .frame {
@@ -128,7 +135,7 @@
   margin: 0;
 }
 
-.blue-frame{
+.blue-frame {
   position: absolute;
   right: 50%;
   transform: translateX(50%);
@@ -147,7 +154,7 @@
   color: #ffffff;
 }
 
-.dotLine{
+.dotLine {
   position: absolute;
   right: 50%;
   transform: translateX(50%);
@@ -240,15 +247,15 @@
   width: 56vw;
   height: 5vh;
   margin-bottom: 2vh;
-  left: 23vw;
-} 
+  left: 22vw;
+}
 
- .print-img-diagram {
+.print-img-diagram {
   position: relative;
   top: -0.5vh;
   left: 42vw;
   width: 7vw;
-} 
+}
 
 .text-print-diagram {
   position: relative;
@@ -259,4 +266,3 @@
   color: #595959;
   font-weight: bold;
 }
-
