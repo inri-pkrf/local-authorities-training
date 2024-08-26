@@ -40,9 +40,8 @@ const Diagram = () => {
       <img src={process.env.PUBLIC_URL + '/hpArrow.png'} class="hpArrow-diagram" alt="Ogen"></img>
 
 
-      <div className="line"></div>
-      
       <div className='all-diagram'>
+        <div className="line"></div>
 
         <div className="frame"
           onClick={() => handleBoxClick('ראש הרשות',
@@ -62,7 +61,7 @@ const Diagram = () => {
             </>),
             '#000000')}
         >
-          <p className="black-frame-text"> מנכ"ל / רמ"ט </p>
+          <p className="frame-text"> מנכ"ל / רמ"ט </p>
         </div>
 
         <div className="blue-frame blue-box" onClick={() => handleBoxClick('אגף חירום וביטחון',
@@ -97,7 +96,9 @@ const Diagram = () => {
           </>)
           ,
           '#6daae2')}>
-          <p className="colored-box-text">אגף  <br />חירום וביטחון </p>
+          <p className="colored-box-text">
+            <span style={{ fontSize: '10vmin' }}>אגף</span><br/> חירום וביטחון
+          </p>
         </div>
 
         <div className='dotLine' >..............</div>
@@ -201,7 +202,7 @@ const Diagram = () => {
         <div className="colored-box-sub" onClick={() => handleBoxClick('מכלול מידע לציבור',
           (<>
             <b>
-            תפקיד המכלול: מתן מענה לתושבי הרשות ע"פ יעדי השירות בתחום המידע לציבור תוך שימוש באמצעי מדיה שונים, הפעלת המוקד העירוני והפצת המסרים וההנחיות לציבור
+              תפקיד המכלול: מתן מענה לתושבי הרשות ע"פ יעדי השירות בתחום המידע לציבור תוך שימוש באמצעי מדיה שונים, הפעלת המוקד העירוני והפצת המסרים וההנחיות לציבור
             </b>
             <ul>
               <li>מתן מענה לפניות התושבים במידע השוטף הקשור לשירותים המוניציפאליים
