@@ -165,8 +165,8 @@ const Diagram = () => {
             - צוותי התערבות
           </>)
           , '#044188')}>
-          <p className="colored-box-text">מכלול <br /> אוכלוסייה</p>
-        </div>
+          <p className="colored-box-text"><span style={{ fontSize: '8vmin' }}>מכלול</span><br/> אוכלוסייה</p>
+          </div>
 
         <div className="colored-box-sub" onClick={() => handleBoxClick('מכלול החינוך',
           (<>
@@ -196,7 +196,7 @@ const Diagram = () => {
             - תא חינוך מוכר שאינו רשמי
           </>)
           , '#044188')}>
-          <p className="colored-box-text">מכלול  <br />החינוך</p>
+          <p className="colored-box-text"><span style={{ fontSize: '8vmin' }}>מכלול</span><br/> החינוך</p>
         </div>
 
         <div className="colored-box-sub" onClick={() => handleBoxClick('מכלול מידע לציבור',
@@ -241,8 +241,8 @@ const Diagram = () => {
             - לשכת המידע
           </>)
           , '#044188')}>
-          <p className="colored-box-text">מכלול <br /> מידע לציבור</p>
-        </div>
+          <p className="colored-box-text"><span style={{ fontSize: '8vmin' }}>מכלול</span><br/> מידע לציבור</p>
+          </div>
 
         <div className="colored-box-sub" onClick={() => handleBoxClick('מכלול הנדסה ותשתיות',
           (<>
@@ -284,8 +284,8 @@ const Diagram = () => {
             - צוותי שטח, הנדסה ותשתיות
           </>)
           , '#044188')}>
-          <p className="colored-box-text">מכלול <br /> הנדסה ותשתיות</p>
-        </div>
+          <p className="colored-box-text"><span style={{ fontSize: '8vmin' }}>מכלול</span><br/> הנדסה ותשתיות</p>
+          </div>
 
         <div className="colored-box-sub" onClick={() => handleBoxClick('מכלול לוגיסטיקה ותפעול',
           (<>
@@ -325,8 +325,8 @@ const Diagram = () => {
             - תא תעבורה
           </>)
           , '#044188')}>
-          <p className="colored-box-text">מכלול  <br />לוגיסטיקה ותפעול</p>
-        </div>
+          <p className="colored-box-text"><span style={{ fontSize: '8vmin' }}>מכלול</span><br/> לוגיסטיקה ותפעול</p>
+          </div>
 
         <div className="colored-box-sub" onClick={() => handleBoxClick('מכלול משא"ן ומנהל כללי',
           (<>
@@ -352,8 +352,8 @@ const Diagram = () => {
             - תא מחשוב
           </>)
           , '#044188')}>
-          <p className="colored-box-text"> מכלול <br /> משא"ן ומנהל כללי</p>
-        </div>
+          <p className="colored-box-text"><span style={{ fontSize: '8vmin' }}>מכלול</span><br/> משא"ן ומנהל כללי</p>
+          </div>
 
       </div>
 

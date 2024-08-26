@@ -309,7 +309,7 @@
   position: absolute;
   height: 180vh;
   /* margin-top: 1vh; */
-  left: 48vw;
+  left: 49vw;
   z-index: 0;
   top: -176vh;
 }
@@ -357,7 +357,7 @@
   right: 50%;
   transform: translateX(109%);
   width: 60vw;
-  height: 11vh;
+  height: 12vh;
   margin-top: 6vh;
   padding-top: 1vh;
   padding-bottom: 2vh;
@@ -366,8 +366,8 @@
 }
 
 .blue-box {
-  background-color: #1cb4e3;
-  border: 1.5vw solid #1cb4e3;
+  background-color: #56c3e8;
+  border: 1.5vw solid #56c3e8;
   color: #ffffff;
 }
 
@@ -385,7 +385,7 @@
   width: 35vw;
   height: 8vh;
   text-align: center;
-  margin-top: 4vh;
+  margin-top: 1vh;
   padding-top: 2vh;
   padding-bottom: 1vh;
   background-color: #ff9900;
@@ -417,7 +417,7 @@
   background-color: transparent;
   color: #595959;
   font-size: 9vmin;
-  top: 11vh;
+  top: 8vh;
 }
 
 .colored-box-sub {
@@ -432,7 +432,7 @@
   border: 1.5vw solid #56c3e8;
   width: 60vw;
   height: 12vh;
-  padding-top: 1vh;
+  padding-top: 0vh;
   padding-bottom: 2vh;
   z-index: 2;
   text-align: center;
@@ -442,7 +442,7 @@
 
 .btn-print-diagram {
   position: absolute;
-  margin-top: 323vh;
+  margin-top: 315vh;
   background-color: transparent;
   width: 56vw;
   height: 5vh;
@@ -452,8 +452,8 @@
 
 .print-img-diagram {
   position: relative;
-  top: -0.5vh;
-  left: 42vw;
+  top: -0.75vh;
+  left: 43vw;
   width: 7vw;
 }
 
