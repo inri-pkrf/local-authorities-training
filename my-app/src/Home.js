@@ -24,7 +24,7 @@ function Home({ onNavigate }) {
 
         <div className="photo-list-item" onClick={() => onNavigate('gallery')}>
           <div className="photo-list-content">
-            <div className="photo-list-title-homepage"> הערכת מצב ברשות המקומית בשעת חירום </div>
+            <div className="photo-list-title-homepage"> הערכת מצב ברשות המקומית בחירום </div>
             <img src={process.env.PUBLIC_URL + '/diagramIcon.png'} className="photo-list-image-homepage" alt="Gallery" />
           </div>
         </div>

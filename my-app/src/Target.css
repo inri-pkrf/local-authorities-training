@@ -40,7 +40,21 @@
   transform: translateX(50%);
   width: 20vw;
   bottom: 13vh;
-  animation: bounce2 2s ease infinite;
+  animation: bounce3 2s ease infinite;
+}
+
+@keyframes bounce3 {
+  0% {
+    bottom: 13vh;
+  }
+
+  50% {
+    bottom: 10vh;
+  }
+
+  100% {
+    bottom: 13vh;
+  }
 }
 
 .photo-target-intro{

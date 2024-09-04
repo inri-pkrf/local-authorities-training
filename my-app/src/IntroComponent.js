@@ -4,34 +4,27 @@ import './IntroComponent.css';
 function IntroComponent({ onMoveNext }) {
   const [isVideoEnded, setIsVideoEnded] = useState(false);
   const [showIntro, setShowIntro] = useState(false);
+  const [showSkipButton, setShowSkipButton] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => {
+    const videoEndTimeout = setTimeout(() => {
       setIsVideoEnded(true);
     }, 13000);
 
-    setTimeout(() => {
+    const introTextTimeout = setTimeout(() => {
       setShowIntro(true);
     }, 13050);
 
-  });
+    const skipButtonTimeout = setTimeout(() => {
+      setShowSkipButton(true);
+    }, 3500); // Show the skip button after 5 seconds
 
-  // const timeout1 = () => {
-  //   setTimeout(() => {
-  //     setIsVideoEnded(true);
-  //   }, 13000);
-  // }
-
-  // const timeout2 = () => {
-  //   setTimeout(() => {
-  //     setIsVideoEnded(true);
-  //   }, 13000);
-  // }
-
-  // const timeout2 = setTimeout(() => {
-  //   setShowIntro(true);
-  // }, 13050);
-
+    return () => {
+      clearTimeout(videoEndTimeout);
+      clearTimeout(introTextTimeout);
+      clearTimeout(skipButtonTimeout);
+    };
+  }, []);
 
   const skipVideo = () => {
     setIsVideoEnded(true);
@@ -42,9 +35,11 @@ function IntroComponent({ onMoveNext }) {
     <div id="intro-lomda">
       {!isVideoEnded && (
         <>
-          <button className="skip" onClick={skipVideo}>
-            &lt;&lt;דלג/י
-          </button>
+          {showSkipButton && (
+            <button className="skip" onClick={skipVideo}>
+              &lt;&lt;דלג/י
+            </button>
+          )}
           <video className="video-intro" autoPlay muted playsInline>
             <source src={process.env.PUBLIC_URL + '/introVid.mp4'} type="video/mp4" />
             Your browser does not support the video tag.
@@ -66,7 +61,7 @@ function IntroComponent({ onMoveNext }) {
             src={process.env.PUBLIC_URL + '/whiteArrow.png'}
             className="hpArrow-intro"
             alt="Arrow"
-            onClick={onMoveNext} // Trigger the callback when the arrow is clicked
+            onClick={onMoveNext}
           />
         </div>
       )}
